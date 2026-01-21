@@ -94,8 +94,8 @@ prescriptionSchema.index({ visit: 1 });
 prescriptionSchema.index({ isDispensed: 1 });
 prescriptionSchema.index({ createdAt: -1 });
 
-// Auto-generate prescriptionNumber before saving
-prescriptionSchema.pre('save', async function (next) {
+// Auto-generate prescriptionNumber before validation
+prescriptionSchema.pre('validate', async function (next) {
     if (this.isNew) {
         const today = new Date();
         const dateStr = today.toISOString().slice(0, 10).replace(/-/g, '');

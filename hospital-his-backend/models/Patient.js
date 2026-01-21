@@ -58,6 +58,24 @@ const patientSchema = new mongoose.Schema(
             enum: BLOOD_GROUPS,
         },
         allergies: [{ type: String, trim: true }],
+        // Structured allergy alerts for safety checking
+        allergyAlerts: [{
+            allergen: { type: String, required: true, trim: true },
+            allergenType: {
+                type: String,
+                enum: ['drug', 'food', 'environmental', 'contrast', 'other'],
+                default: 'drug'
+            },
+            severity: {
+                type: String,
+                enum: ['mild', 'moderate', 'severe', 'life-threatening'],
+                default: 'moderate'
+            },
+            reaction: { type: String, trim: true },
+            verifiedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+            verifiedAt: { type: Date },
+            isActive: { type: Boolean, default: true }
+        }],
         medicalHistory: [{ type: String, trim: true }],
         insuranceDetails: {
             provider: {

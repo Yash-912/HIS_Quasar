@@ -106,8 +106,8 @@ emergencySchema.index({ status: 1 });
 emergencySchema.index({ triageLevel: 1 });
 emergencySchema.index({ arrivalTime: -1 });
 
-// Auto-generate emergencyNumber before saving
-emergencySchema.pre('save', async function (next) {
+// Auto-generate emergencyNumber before validation
+emergencySchema.pre('validate', async function (next) {
     if (this.isNew) {
         const today = new Date();
         const dateStr = today.toISOString().slice(0, 10).replace(/-/g, '');
@@ -123,8 +123,9 @@ emergencySchema.pre('save', async function (next) {
 });
 
 // Export constants for use in other files
-Emergency = mongoose.model('Emergency', emergencySchema);
+const Emergency = mongoose.model('Emergency', emergencySchema);
 Emergency.EMERGENCY_STATUS = EMERGENCY_STATUS;
 Emergency.TRIAGE_LEVELS = TRIAGE_LEVELS;
 
 module.exports = Emergency;
+

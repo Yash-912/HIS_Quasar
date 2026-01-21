@@ -1,0 +1,14 @@
+2026-01-21 17:37:11 [ERROR]: unhandledRejection: createResponse is not a function
+TypeError: createResponse is not a function
+    at getAllOrderSets (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\orderSet.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+TypeError: createResponse is not a function
+    at getAllOrderSets (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\orderSet.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-21 17:38:16 [ERROR]: unhandledRejection: createResponse is not a function
+TypeError: createResponse is not a function
+    at getAllOrderSets (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\orderSet.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+TypeError: createResponse is not a function
+    at getAllOrderSets (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\orderSet.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

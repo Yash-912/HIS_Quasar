@@ -1,6 +1,6 @@
 // No changes needed.
 
-require('dotenv').config();
+require('dotenv').config({ path: './.env' });
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -39,6 +39,8 @@ const analyticsRoutes = require('./routes/analytics.routes');
 const aiRoutes = require('./routes/ai.routes');
 const adminRoutes = require('./routes/admin.routes');
 const notificationRoutes = require('./routes/notification.routes');
+const orderSetRoutes = require('./routes/orderSet.routes');
+
 
 // Initialize Express app
 const app = express();
@@ -144,6 +146,8 @@ app.use(`${API_PREFIX}/analytics`, analyticsRoutes);
 app.use(`${API_PREFIX}/ai`, aiRoutes);
 app.use(`${API_PREFIX}/admin`, adminRoutes);
 app.use(`${API_PREFIX}/notifications`, notificationRoutes);
+app.use(`${API_PREFIX}/order-sets`, orderSetRoutes);
+
 
 // 404 handler for undefined routes
 app.use('*', (req, res) => {

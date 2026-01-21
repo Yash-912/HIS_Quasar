@@ -1,9 +1,81 @@
 const PharmacyInventory = require('../models/PharmacyInventory');
 const Medicine = require('../models/Medicine');
 const Appointment = require('../models/Appointment');
+const Prescription = require('../models/Prescription'); // Add Prescription model
 const asyncHandler = require('../utils/asyncHandler');
 const ErrorResponse = require('../utils/errorResponse');
 const { APPOINTMENT_STATUS, INVENTORY_STATUS } = require('../config/constants');
+
+/**
+ * @desc    Get Pending Prescriptions Queue (Aggregates Appointments and Emergency Prescriptions)
+ * @route   GET /api/pharmacy/queue
+ */
+exports.getPendingQueue = asyncHandler(async (req, res, next) => {
+    // 1. Fetch Appointments with pending pharmacy status
+    const pendingAppointments = await Appointment.find({
+        status: APPOINTMENT_STATUS.COMPLETED,
+        prescription: { $exists: true, $not: { $size: 0 } },
+        // Check if NOT already cleared (though status should be PHARMACY_CLEARED if so)
+    })
+        .populate('patient', 'firstName lastName patientId gender age')
+        .populate('doctor', 'profile.firstName profile.lastName')
+        .sort({ updatedAt: -1 });
+
+    // 2. Fetch Standalone Prescriptions (Emergency / IPD)
+    const pendingPrescriptions = await Prescription.find({
+        isDispensed: false
+    })
+        .populate('patient', 'firstName lastName patientId gender age')
+        .populate('doctor', 'profile.firstName profile.lastName')
+        .populate('medicines.medicine', 'name genericName') // Add population for medicine details
+        .sort({ createdAt: -1 });
+
+    // 3. Normalize Data Structure for Frontend
+    const queue = [];
+
+    // Map Appointments
+    pendingAppointments.forEach(appt => {
+        queue.push({
+            _id: appt._id,
+            sourceType: 'appointment',
+            tokenNumber: appt.tokenNumber || 'OPD',
+            patient: appt.patient,
+            doctor: appt.doctor,
+            updatedAt: appt.updatedAt,
+            prescription: appt.prescription, // Array of medicines
+            diagnosis: appt.diagnosis
+        });
+    });
+
+    // Map Prescriptions
+    pendingPrescriptions.forEach(rx => {
+        queue.push({
+            _id: rx._id,
+            sourceType: 'prescription',
+            tokenNumber: rx.prescriptionNumber || 'RX',
+            patient: rx.patient,
+            doctor: rx.doctor,
+            updatedAt: rx.createdAt,
+            prescription: rx.medicines.map(m => ({ // Map to match frontend expectations
+                name: m.medicine.name || 'Unknown Medicine', // Need populate in query if deep
+                dosage: m.dosage,
+                frequency: m.frequency,
+                duration: m.duration,
+                quantity: m.quantity
+            })),
+            diagnosis: rx.specialInstructions // Use special instructions as diagnosis/notes
+        });
+    });
+
+    // Sort combined queue by date
+    queue.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+
+    res.status(200).json({
+        success: true,
+        count: queue.length,
+        data: queue
+    });
+});
 
 /**
  * @desc    Get all pharmacy inventory items (Batches)
@@ -103,19 +175,50 @@ exports.addMedicine = asyncHandler(async (req, res, next) => {
  * @route   POST /api/pharmacy/dispense
  */
 exports.dispenseMedicines = asyncHandler(async (req, res, next) => {
-    const { appointmentId } = req.body;
+    const { appointmentId, prescriptionId } = req.body;
 
-    const appointment = await Appointment.findById(appointmentId);
+    let appointment, prescriptionDoc;
+    let medicines = [];
+    let patientId;
+    let visitId;
 
-    if (!appointment) {
-        return next(new ErrorResponse('Appointment not found', 404));
+    // Handle Appointment-based Dispensing (OPD)
+    if (appointmentId) {
+        appointment = await Appointment.findById(appointmentId);
+        if (!appointment) {
+            return next(new ErrorResponse('Appointment not found', 404));
+        }
+        if (appointment.status === APPOINTMENT_STATUS.PHARMACY_CLEARED) {
+            return next(new ErrorResponse('Medicines already dispensed', 400));
+        }
+        medicines = appointment.prescription;
+        patientId = appointment.patient;
+        visitId = appointment._id;
+    }
+    // Handle Standalone Prescription Dispensing (Emergency/IPD)
+    else if (prescriptionId) {
+        prescriptionDoc = await Prescription.findById(prescriptionId).populate('medicines.medicine');
+        if (!prescriptionDoc) {
+            return next(new ErrorResponse('Prescription not found', 404));
+        }
+        if (prescriptionDoc.isDispensed) {
+            return next(new ErrorResponse('Medicines already dispensed', 400));
+        }
+        // Map to flat structure for processing
+        medicines = prescriptionDoc.medicines.map(m => ({
+            name: m.medicine.name, // Use populated name
+            dosage: m.dosage,
+            frequency: m.frequency,
+            quantity: m.quantity, // Prioritize quantity if available
+            duration: m.duration
+        }));
+        patientId = prescriptionDoc.patient;
+        visitId = prescriptionDoc.visit;
+    } else {
+        return next(new ErrorResponse('Appointment ID or Prescription ID required', 400));
     }
 
-    if (appointment.status === APPOINTMENT_STATUS.PHARMACY_CLEARED) {
-        return next(new ErrorResponse('Medicines already dispensed', 400));
-    }
 
-    const medicines = appointment.prescription; // Array of { name, dosage, frequency, duration }
     const dispenseLog = [];
     const errors = [];
 
@@ -190,18 +293,26 @@ exports.dispenseMedicines = asyncHandler(async (req, res, next) => {
     // For now, mark cleared if no critical blocking errors? 
     // Let's mark cleared regardless for Prototype, but return errors.
 
-    appointment.status = APPOINTMENT_STATUS.PHARMACY_CLEARED;
-    await appointment.save();
+    // Finalize Status Update
+    if (appointment) {
+        appointment.status = APPOINTMENT_STATUS.PHARMACY_CLEARED;
+        await appointment.save();
+    } else if (prescriptionDoc) {
+        prescriptionDoc.isDispensed = true;
+        prescriptionDoc.dispensedBy = req.user.id;
+        prescriptionDoc.dispensedAt = new Date();
+        await prescriptionDoc.save();
+    }
 
-    // Trigger Automated Billing for Dispensed Items
+    // Trigger Automated Billing
     if (billingItems.length > 0) {
         try {
             const { addItemToBill } = require('../services/billing.internal.service');
             for (const item of billingItems) {
                 await addItemToBill({
-                    patientId: appointment.patient,
-                    visitId: appointment._id,
-                    visitType: 'opd', // Or fetch from appointment.type
+                    patientId: patientId,
+                    visitId: visitId,
+                    visitType: appointment ? 'opd' : 'emergency', // Infer type
                     itemType: item.itemType,
                     itemReference: item.itemReference,
                     description: item.description,
@@ -214,6 +325,7 @@ exports.dispenseMedicines = asyncHandler(async (req, res, next) => {
             console.error('Failed to trigger pharmacy billing:', err);
         }
     }
+
 
     res.status(200).json({
         success: true,

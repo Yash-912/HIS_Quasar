@@ -1,0 +1,288 @@
+/* Order Set Preview Modal Styles */
+
+.preview-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.preview-modal {
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.preview-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: #64748b;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.preview-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #1e293b;
+}
+
+.close-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #e2e8f0;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background: #cbd5e1;
+    color: #1e293b;
+}
+
+.preview-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.preview-description {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Preview Stats */
+.preview-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* Preview Sections */
+.preview-section {
+    margin-bottom: 24px;
+}
+
+.preview-section h4 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.preview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preview-list li {
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid #e2e8f0;
+}
+
+.preview-list li.priority-stat {
+    border-left-color: #ef4444;
+    background: #fef2f2;
+}
+
+.preview-list li.priority-urgent {
+    border-left-color: #f59e0b;
+    background: #fffbeb;
+}
+
+.preview-list li.priority-routine {
+    border-left-color: #22c55e;
+    background: #f0fdf4;
+}
+
+.item-name {
+    font-weight: 500;
+    color: #1e293b;
+    margin-right: 10px;
+}
+
+.priority-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.priority-badge.stat {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.priority-badge.urgent {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.priority-badge.routine {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.item-notes {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Medication specific styles */
+.preview-list.medications li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.med-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.med-details {
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.med-details span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Simple list */
+.preview-list.simple li {
+    padding: 8px 12px;
+    border-left: 2px solid #3b82f6;
+}
+
+/* Preview Footer */
+.preview-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.warning-notice {
+    padding: 10px;
+    background: #fef3c7;
+    border-radius: 6px;
+    color: #92400e;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.preview-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.preview-actions .cancel-btn {
+    padding: 10px 20px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.preview-actions .cancel-btn:hover {
+    background: #f1f5f9;
+}
+
+.preview-actions .apply-btn {
+    padding: 10px 24px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.preview-actions .apply-btn:hover {
+    background: #2563eb;
+}
+
+.preview-actions .apply-btn:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}

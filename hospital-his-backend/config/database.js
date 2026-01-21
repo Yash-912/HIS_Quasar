@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
+const dns = require('dns');
 const logger = require('../utils/logger');
 const config = require('./config');
+
+// Fix for Node.js DNS issues on Windows with MongoDB Atlas SRV
+dns.setDefaultResultOrder('ipv4first');
 
 /**
  * MongoDB Connection Configuration
@@ -9,10 +13,7 @@ const config = require('./config');
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(config.mongodbUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        const conn = await mongoose.connect(config.mongodbUri);
 
         logger.info(`MongoDB Connected: ${conn.connection.host}`);
 
@@ -45,3 +46,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+console.log("MONGODB_URI =", process.env.MONGODB_URI);

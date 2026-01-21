@@ -653,3 +653,88 @@ Require stack:
     at require (node:internal/modules/helpers:152:16)
     at Object.<anonymous> (C:\Users\shrav\OneDrive\Desktop\HIS Quasar\HIS_Quasar\hospital-his-backend\controllers\surgery.controller.js:6:28)
     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-01-21 18:08:48 [ERROR]: uncaughtException: Unexpected token 'catch'
+C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:53
+        } catch (err) {
+          ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\auth.routes.js:4:26)
+C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:53
+        } catch (err) {
+          ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\auth.routes.js:4:26)
+2026-01-21 18:27:10 [ERROR]: uncaughtException: Identifier 'dispenseLog' has already been declared
+C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\pharmacy.controller.js:222
+    const dispenseLog = [];
+          ^
+
+SyntaxError: Identifier 'dispenseLog' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\pharmacy.routes.js:2:58)
+C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\controllers\pharmacy.controller.js:222
+    const dispenseLog = [];
+          ^
+
+SyntaxError: Identifier 'dispenseLog' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1692:18)
+    at Module._compile (node:internal/modules/cjs/loader:1735:20)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\pharmacy.routes.js:2:58)
+2026-01-21 18:27:32 [ERROR]: uncaughtException: getPendingQueue is not defined
+ReferenceError: getPendingQueue is not defined
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\pharmacy.routes.js:10:74)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\server.js:28:24)
+ReferenceError: getPendingQueue is not defined
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\routes\pharmacy.routes.js:10:74)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (C:\Users\SAKET\Desktop\Quasar2\HIS_Quasar\hospital-his-backend\server.js:28:24)

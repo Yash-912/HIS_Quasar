@@ -82,8 +82,8 @@ radiologySchema.index({ status: 1 });
 radiologySchema.index({ scheduledAt: 1 });
 radiologySchema.index({ createdAt: -1 });
 
-// Auto-generate testNumber before saving
-radiologySchema.pre('save', async function (next) {
+// Auto-generate testNumber before validation
+radiologySchema.pre('validate', async function (next) {
     if (this.isNew) {
         const today = new Date();
         const dateStr = today.toISOString().slice(0, 10).replace(/-/g, '');

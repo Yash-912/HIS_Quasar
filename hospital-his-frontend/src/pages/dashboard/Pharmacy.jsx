@@ -37,7 +37,11 @@ const Pharmacy = () => {
     const handleDispense = async () => {
         if (!selectedPrescription) return;
         try {
-            await pharmacyService.dispensePrescription(selectedPrescription._id);
+            const payload = selectedPrescription.sourceType === 'prescription'
+                ? { prescriptionId: selectedPrescription._id }
+                : { appointmentId: selectedPrescription._id };
+
+            await pharmacyService.dispensePrescription(payload);
             alert("Medicines Dispensed Successfully!");
             setSelectedPrescription(null);
             fetchQueue(); // Refresh queue

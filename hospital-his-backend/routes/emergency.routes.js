@@ -4,6 +4,8 @@ const emergencyController = require('../controllers/emergency.controller');
 const { authenticate } = require('../middleware/auth.middleware');
 const { authorize } = require('../middleware/rbac.middleware');
 
+// Public test route removed
+
 router.use(authenticate);
 
 /**

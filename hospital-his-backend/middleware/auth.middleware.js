@@ -22,6 +22,8 @@ exports.authenticate = asyncHandler(async (req, res, next) => {
     ) {
         token = req.headers.authorization.split(' ')[1];
     }
+    console.log(`Auth Middleware: Token present? ${!!token}`);
+
 
     // Make sure token exists
     if (!token) {
@@ -34,6 +36,8 @@ exports.authenticate = asyncHandler(async (req, res, next) => {
 
         // Get user from token
         req.user = await User.findById(decoded.id).populate('department');
+
+        console.log(`Auth Middleware: User found? ${!!req.user}, ID: ${req.user?._id}, Role: ${req.user?.role}`);
 
         if (!req.user) {
             return next(new ErrorResponse('User not found', 404));
@@ -55,6 +59,7 @@ exports.authenticate = asyncHandler(async (req, res, next) => {
 exports.authorize = (...roles) => {
     return (req, res, next) => {
         if (!roles.includes(req.user.role)) {
+            console.log(`RBAC Fail: User Role '${req.user.role}' not in allowed roles: [${roles.join(', ')}]`);
             return next(
                 new ErrorResponse(
                     `User role '${req.user.role}' is not authorized to access this route`,

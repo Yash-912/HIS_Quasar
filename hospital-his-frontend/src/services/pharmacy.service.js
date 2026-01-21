@@ -9,15 +9,16 @@ const getConfig = () => {
 };
 
 const pharmacyService = {
-    // Get Pending Prescriptions (Appointments with status='completed' waiting for pharmacy)
+    // Get Pending Prescriptions (Unified Queue for OPD & Emergency)
     getPendingPrescriptions: async () => {
-        const response = await axios.get(`${APPOINTMENT_URL}?status=completed`, getConfig());
+        const response = await axios.get(`${API_URL}/queue`, getConfig());
         return response.data;
     },
 
-    // Dispense Medicines (Deduct Stock & Clear Appointment)
-    dispensePrescription: async (appointmentId) => {
-        const response = await axios.post(`${API_URL}/dispense`, { appointmentId }, getConfig());
+    // Dispense Medicines (Deduct Stock & Clear Request)
+    // data: { appointmentId } OR { prescriptionId }
+    dispensePrescription: async (data) => {
+        const response = await axios.post(`${API_URL}/dispense`, data, getConfig());
         return response.data;
     },
 

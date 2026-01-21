@@ -7,6 +7,8 @@ const ErrorResponse = require('../utils/errorResponse');
  * @route   POST /api/emergency/cases
  */
 exports.createEmergencyCase = asyncHandler(async (req, res, next) => {
+    console.log('Emergency Controller: createEmergencyCase called');
+    console.log('Request Body:', JSON.stringify(req.body, null, 2));
     req.body.createdBy = req.user.id;
 
     const emergencyCase = await Emergency.create(req.body);
