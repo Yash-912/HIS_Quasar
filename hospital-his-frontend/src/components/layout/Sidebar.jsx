@@ -70,6 +70,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             roles: ['admin', 'doctor', 'nurse']
         },
         {
+            title: 'Nursing Station',
+            path: '/dashboard/nursing',
+            icon: <Stethoscope size={20} />,
+            roles: ['admin', 'nurse']
+        },
+        {
             title: 'Billing',
             path: '/dashboard/billing',
             icon: <Banknote size={20} />,

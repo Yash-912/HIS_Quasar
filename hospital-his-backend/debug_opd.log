@@ -1,0 +1,42 @@
+[2026-01-21T14:45:57.117Z] Start creating prescription for 696f4e8af07c260c3e05c2ef
+[2026-01-21T14:45:57.118Z] Processing med: Paracetamol
+[2026-01-21T14:45:57.130Z] Found med: Paracetamol 500mg (696f65b4bd147fbd62fee86d)
+[2026-01-21T14:45:57.132Z] Creating Prescription with 1 items
+[2026-01-21T14:45:57.133Z] ERROR: Cannot read properties of null (reading '_id')
+TypeError: Cannot read properties of null (reading '_id')
+    at D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\controllers\opd.controller.js:153:52
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2026-01-21T15:14:19.962Z] Start creating prescription for 6970ed25288f96e285271b99
+[2026-01-21T15:14:19.971Z] Processing med: Paracetamol
+[2026-01-21T15:14:19.988Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-21T15:14:19.990Z] Creating Prescription with 1 items
+[2026-01-21T15:14:20.004Z] ERROR: Prescription validation failed: prescriptionNumber: Path `prescriptionNumber` is required.
+ValidationError: Prescription validation failed: prescriptionNumber: Path `prescriptionNumber` is required.
+    at Document.invalidate (D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2026-01-21T15:17:11.822Z] Start creating prescription for 6970ece9288f96e285271b11
+[2026-01-21T15:17:11.836Z] Processing med: Warfarin
+[2026-01-21T15:17:11.860Z] Med NOT FOUND: Warfarin
+[2026-01-21T15:17:11.865Z] No valid medicines found to create Rx
+[2026-01-21T15:19:51.138Z] Start creating prescription for 6970ee439edacf619a08b24b
+[2026-01-21T15:19:51.149Z] Processing med: Paracetamol 500mg
+[2026-01-21T15:19:51.172Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-21T15:19:51.173Z] Creating Prescription with 1 items
+[2026-01-21T15:19:51.189Z] ERROR: Prescription validation failed: prescriptionNumber: Path `prescriptionNumber` is required., medicines.0.dosage: Dosage is required
+ValidationError: Prescription validation failed: prescriptionNumber: Path `prescriptionNumber` is required., medicines.0.dosage: Dosage is required
+    at Document.invalidate (D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\HIS Quasar 2\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2026-01-21T15:26:24.374Z] Start creating prescription for 6970ef7b9edacf619a08b2be
+[2026-01-21T15:26:24.380Z] Processing med: Paracetamol 500mg
+[2026-01-21T15:26:24.399Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-21T15:26:24.400Z] Creating Prescription with 1 items
+[2026-01-21T15:26:24.470Z] Created Rx ID: 6970f020eee7829516a2371d
+[2026-01-22T04:52:46.813Z] Start creating prescription for 6971abdaa4f122ffc0afce74
+[2026-01-22T04:52:46.833Z] Processing med: Paracetamol 500mg
+[2026-01-22T04:52:46.868Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-22T04:52:46.873Z] Creating Prescription with 1 items
+[2026-01-22T04:52:46.938Z] Created Rx ID: 6971ad1ea4f122ffc0afcefb

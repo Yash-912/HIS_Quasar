@@ -156,6 +156,63 @@ const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
 // Gender Options
 const GENDERS = ['Male', 'Female', 'Other'];
 
+// Drug Interaction Severity
+const INTERACTION_SEVERITY = {
+    MAJOR: 'major',
+    MODERATE: 'moderate',
+    MINOR: 'minor',
+};
+
+// MAR (Medication Administration Record) Status
+const MAR_STATUS = {
+    SCHEDULED: 'scheduled',
+    GIVEN: 'given',
+    HELD: 'held',
+    REFUSED: 'refused',
+    MISSED: 'missed',
+    SELF_ADMINISTERED: 'self-administered',
+};
+
+// Medication Administration Routes
+const MED_ROUTES = {
+    ORAL: 'oral',
+    IV: 'iv',
+    IM: 'im',
+    SC: 'sc',
+    TOPICAL: 'topical',
+    INHALATION: 'inhalation',
+    SUBLINGUAL: 'sublingual',
+    RECTAL: 'rectal',
+    NASAL: 'nasal',
+    OPHTHALMIC: 'ophthalmic',
+    OTIC: 'otic',
+    OTHER: 'other',
+};
+
+// Drug Recall Status
+const RECALL_STATUS = {
+    ACTIVE: 'active',
+    RESOLVED: 'resolved',
+    CANCELLED: 'cancelled',
+};
+
+// Drug Recall Class
+const RECALL_CLASS = {
+    CLASS_I: 'class-i',      // Serious health hazard
+    CLASS_II: 'class-ii',    // May cause temporary problems
+    CLASS_III: 'class-iii',  // Not likely to cause problems
+};
+
+// Hold Reasons for MAR
+const MAR_HOLD_REASONS = {
+    NPO: 'npo',
+    PATIENT_NOT_AVAILABLE: 'patient_not_available',
+    VITAL_SIGNS: 'vital_signs',
+    LAB_VALUES: 'lab_values',
+    DOCTOR_ORDER: 'doctor_order',
+    OTHER: 'other',
+};
+
 module.exports = {
     USER_ROLES,
     APPOINTMENT_STATUS,
@@ -176,4 +233,11 @@ module.exports = {
     VISIT_TYPES,
     BLOOD_GROUPS,
     GENDERS,
+    // New pharmacy constants
+    INTERACTION_SEVERITY,
+    MAR_STATUS,
+    MED_ROUTES,
+    RECALL_STATUS,
+    RECALL_CLASS,
+    MAR_HOLD_REASONS,
 };

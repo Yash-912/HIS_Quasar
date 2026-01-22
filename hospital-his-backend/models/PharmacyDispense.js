@@ -10,7 +10,6 @@ const pharmacyDispenseSchema = new mongoose.Schema(
         dispenseNumber: {
             type: String,
             unique: true,
-            required: true,
         },
         prescription: {
             type: mongoose.Schema.Types.ObjectId,
@@ -33,6 +32,14 @@ const pharmacyDispenseSchema = new mongoose.Schema(
                     type: mongoose.Schema.Types.ObjectId,
                     ref: 'PharmacyInventory',
                 },
+                // Denormalized batch details for traceability
+                batchNumber: {
+                    type: String,
+                    required: true,
+                },
+                expiryDate: Date,
+                supplier: String,
+                grnNumber: String,
                 prescribedQuantity: {
                     type: Number,
                     required: true,
@@ -48,6 +55,30 @@ const pharmacyDispenseSchema = new mongoose.Schema(
                 totalPrice: {
                     type: Number,
                     required: true,
+                },
+                // Recall status at time of dispense
+                recallStatus: {
+                    type: String,
+                    enum: ['none', 'recalled', 'checked'],
+                    default: 'none',
+                },
+                recallCheckedAt: Date,
+                // Safety checks for this item
+                interactionChecked: {
+                    type: Boolean,
+                    default: false,
+                },
+                safetyOverride: {
+                    required: {
+                        type: Boolean,
+                        default: false,
+                    },
+                    approvedBy: {
+                        type: mongoose.Schema.Types.ObjectId,
+                        ref: 'User',
+                    },
+                    reason: String,
+                    approvedAt: Date,
                 },
             },
         ],
@@ -80,6 +111,20 @@ const pharmacyDispenseSchema = new mongoose.Schema(
         notes: {
             type: String,
             trim: true,
+        },
+        // For IPD: link to admission and MAR creation
+        admission: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Admission',
+        },
+        marScheduleCreated: {
+            type: Boolean,
+            default: false,
+        },
+        // Billing link
+        billingRef: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Billing',
         },
     },
     {

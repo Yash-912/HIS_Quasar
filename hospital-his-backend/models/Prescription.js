@@ -10,7 +10,7 @@ const prescriptionSchema = new mongoose.Schema(
         prescriptionNumber: {
             type: String,
             unique: true,
-            required: true,
+            sparse: true,
         },
         patient: {
             type: mongoose.Schema.Types.ObjectId,
@@ -63,11 +63,71 @@ const prescriptionSchema = new mongoose.Schema(
                     required: [true, 'Quantity is required'],
                     min: [1, 'Quantity must be at least 1'],
                 },
+                // Safety tracking per medicine
+                interactionChecked: {
+                    type: Boolean,
+                    default: false,
+                },
+                interactions: [{
+                    withMedicine: {
+                        type: mongoose.Schema.Types.ObjectId,
+                        ref: 'Medicine',
+                    },
+                    withMedicineName: String,
+                    severity: {
+                        type: String,
+                        enum: ['major', 'moderate', 'minor'],
+                    },
+                    description: String,
+                    overrideBy: {
+                        type: mongoose.Schema.Types.ObjectId,
+                        ref: 'User',
+                    },
+                    overrideReason: String,
+                    overrideAt: Date,
+                }],
+                allergyChecked: {
+                    type: Boolean,
+                    default: false,
+                },
+                allergyWarnings: [String],
             },
         ],
         specialInstructions: {
             type: String,
             trim: true,
+        },
+        // Prescription-level safety status
+        safetyStatus: {
+            allChecksComplete: {
+                type: Boolean,
+                default: false,
+            },
+            hasInteractions: {
+                type: Boolean,
+                default: false,
+            },
+            hasMajorInteractions: {
+                type: Boolean,
+                default: false,
+            },
+            hasAllergyWarnings: {
+                type: Boolean,
+                default: false,
+            },
+            checkedAt: Date,
+            checkedBy: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'User',
+            },
+            overrideRequired: {
+                type: Boolean,
+                default: false,
+            },
+            overrideComplete: {
+                type: Boolean,
+                default: false,
+            },
         },
         isDispensed: {
             type: Boolean,
@@ -96,11 +156,15 @@ prescriptionSchema.index({ createdAt: -1 });
 
 // Auto-generate prescriptionNumber before saving
 prescriptionSchema.pre('save', async function (next) {
-    if (this.isNew) {
-        const today = new Date();
-        const dateStr = today.toISOString().slice(0, 10).replace(/-/g, '');
-        const count = await mongoose.model('Prescription').countDocuments();
-        this.prescriptionNumber = `RX${dateStr}${String(count + 1).padStart(5, '0')}`;
+    if (this.isNew && !this.prescriptionNumber) {
+        try {
+            const today = new Date();
+            const dateStr = today.toISOString().slice(0, 10).replace(/-/g, '');
+            const count = await mongoose.model('Prescription').countDocuments();
+            this.prescriptionNumber = `RX${dateStr}${String(count + 1).padStart(5, '0')}`;
+        } catch (err) {
+            return next(err);
+        }
     }
     next();
 });

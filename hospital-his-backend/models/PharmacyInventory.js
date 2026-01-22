@@ -49,6 +49,12 @@ const pharmacyInventorySchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
+        // GRN (Goods Receipt Note) tracking
+        grnNumber: {
+            type: String,
+            trim: true,
+        },
+        grnDate: Date,
         status: {
             type: String,
             enum: Object.values(INVENTORY_STATUS),
@@ -57,6 +63,20 @@ const pharmacyInventorySchema = new mongoose.Schema(
         location: {
             type: String,
             trim: true,
+        },
+        // Recall tracking
+        isRecalled: {
+            type: Boolean,
+            default: false,
+        },
+        recallRef: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'DrugRecall',
+        },
+        recalledAt: Date,
+        recallBlockedBy: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User',
         },
     },
     {
