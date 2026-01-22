@@ -30,7 +30,7 @@ const billingRoutes = require('./routes/billing.routes');
 const paymentRoutes = require('./routes/payment.routes');
 const insuranceRoutes = require('./routes/insurance.routes');
 const surgeryRoutes = require('./routes/surgery.routes');
-const inventoryRoutes = require('./routes/inventory.routes');
+// const inventoryRoutes = require('./routes/inventory.routes');
 const bedRoutes = require('./routes/bed.routes');
 const staffRoutes = require('./routes/staff.routes');
 const departmentRoutes = require('./routes/department.routes');
@@ -39,6 +39,7 @@ const analyticsRoutes = require('./routes/analytics.routes');
 const aiRoutes = require('./routes/ai.routes');
 const adminRoutes = require('./routes/admin.routes');
 const notificationRoutes = require('./routes/notification.routes');
+const nursingRoutes = require('./routes/nursing.routes');
 
 // Initialize Express app
 const app = express();
@@ -135,7 +136,7 @@ app.use(`${API_PREFIX}/billing`, billingRoutes);
 app.use(`${API_PREFIX}/payments`, paymentRoutes);
 app.use(`${API_PREFIX}/insurance`, insuranceRoutes);
 app.use(`${API_PREFIX}/surgery`, surgeryRoutes);
-app.use(`${API_PREFIX}/inventory`, inventoryRoutes);
+// app.use(`${API_PREFIX}/inventory`, inventoryRoutes);
 app.use(`${API_PREFIX}/beds`, bedRoutes);
 app.use(`${API_PREFIX}/staff`, staffRoutes);
 app.use(`${API_PREFIX}/departments`, departmentRoutes);
@@ -144,6 +145,7 @@ app.use(`${API_PREFIX}/analytics`, analyticsRoutes);
 app.use(`${API_PREFIX}/ai`, aiRoutes);
 app.use(`${API_PREFIX}/admin`, adminRoutes);
 app.use(`${API_PREFIX}/notifications`, notificationRoutes);
+app.use(`${API_PREFIX}/nursing`, nursingRoutes);
 
 // 404 handler for undefined routes
 app.use('*', (req, res) => {

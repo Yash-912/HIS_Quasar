@@ -14,6 +14,7 @@ import Radiology from './pages/dashboard/Radiology';
 import Pharmacy from './pages/dashboard/Pharmacy';
 import Billing from './pages/dashboard/Billing';
 import OperationTheatre from './pages/dashboard/OperationTheatre';
+import Nursing from './pages/dashboard/Nursing';
 import DashboardLayout from './layouts/DashboardLayout';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
@@ -41,6 +42,7 @@ function App() {
             <Route path="radiology" element={<Radiology />} />
             <Route path="billing" element={<Billing />} />
             <Route path="ot" element={<OperationTheatre />} />
+            <Route path="nursing" element={<Nursing />} />
 
             {/* Future routes will be nested here */}
             {/* <Route path="patients" element={<Patients />} /> */}

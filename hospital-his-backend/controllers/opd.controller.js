@@ -1,8 +1,11 @@
 const Appointment = require('../models/Appointment');
 const Patient = require('../models/Patient');
+const Medicine = require('../models/Medicine');
+const Prescription = require('../models/Prescription');
 const { APPOINTMENT_STATUS } = require('../config/constants');
 const asyncHandler = require('../utils/asyncHandler');
 const ErrorResponse = require('../utils/errorResponse');
+const fs = require('fs');
 
 /**
  * @desc    Create a new appointment
@@ -80,19 +83,36 @@ exports.getAppointmentById = asyncHandler(async (req, res, next) => {
  * @route   PUT /api/opd/appointments/:id
  */
 exports.updateAppointment = asyncHandler(async (req, res, next) => {
-    const appointment = await Appointment.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true,
-    }).populate(['patient', 'doctor', 'department']);
+    // Fetch full appointment first to ensure all fields are populated
+    let appointment = await Appointment.findById(req.params.id)
+        .populate('patient')
+        .populate('doctor')
+        .populate('department');
 
     if (!appointment) {
         return next(new ErrorResponse('Appointment not found', 404));
     }
 
+    // Update the appointment with new values
+    Object.assign(appointment, req.body);
+    await appointment.save();
+
+    // Reload to get populated references after save
+    appointment = await Appointment.findById(appointment._id)
+        .populate('patient')
+        .populate('doctor')
+        .populate('department');
+
     // Automated Billing: If status changed to 'completed', add Consultation Fee
     if (req.body.status === 'completed') {
         try {
             const { addItemToBill } = require('../services/billing.internal.service');
+            
+            // Ensure appointment has patient and doctor data
+            if (!appointment.patient || !appointment.doctor) {
+                throw new Error('Appointment patient or doctor is missing');
+            }
+
             await addItemToBill({
                 patientId: appointment.patient._id,
                 visitId: appointment._id,
@@ -108,6 +128,79 @@ exports.updateAppointment = asyncHandler(async (req, res, next) => {
         } catch (err) {
             console.error('[OPD] Failed to trigger automated billing:', err);
             console.error(err.stack); // Log stack trace
+        }
+
+        // CREATE PRESCRIPTION IF PROVIDED
+        if (req.body.prescription && Array.isArray(req.body.prescription) && req.body.prescription.length > 0) {
+            try {
+                fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Start creating prescription for ${appointment._id}\n`);
+                console.log(`[OPD] Creating prescription for visit ${appointment._id}`);
+                const prescriptionItems = [];
+
+                for (const medItem of req.body.prescription) {
+                    fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Processing med: ${medItem.name}\n`);
+                    
+                    // Validate required fields
+                    const dosage = (medItem.dosage || '').trim();
+                    const frequency = (medItem.frequency || '').trim();
+                    const duration = (medItem.duration || '').trim();
+                    
+                    if (!dosage || !frequency || !duration) {
+                        fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Missing required fields for ${medItem.name}: dosage=${dosage}, frequency=${frequency}, duration=${duration}\n`);
+                        console.warn(`[OPD] Missing required fields for medicine: ${medItem.name}`);
+                        continue; // Skip this medicine
+                    }
+                    
+                    // Look up medicine by name (case insensitive regex)
+                    let medicine = await Medicine.findOne({
+                        $or: [
+                            { name: { $regex: new RegExp('^' + medItem.name.trim(), 'i') } },
+                            { medicineCode: { $regex: new RegExp('^' + medItem.name.trim(), 'i') } }
+                        ]
+                    });
+
+                    if (medicine) {
+                        fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Found med: ${medicine.name} (${medicine._id})\n`);
+                        prescriptionItems.push({
+                            medicine: medicine._id,
+                            dosage: dosage,
+                            frequency: frequency,
+                            duration: duration,
+                            quantity: medItem.quantity || 10,
+                            instructions: (medItem.instructions || '').trim()
+                        });
+                    } else {
+                        fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Med NOT FOUND: ${medItem.name}\n`);
+                        console.warn(`[OPD] Medicine not found: ${medItem.name}`);
+                    }
+                }
+
+                if (prescriptionItems.length > 0) {
+                    fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Creating Prescription with ${prescriptionItems.length} items\n`);
+
+                    // CRITICAL FIX: Use appointment.patient._id and appointment.doctor._id properly
+                    // appointment was already populated above, so these should be objects not null
+                    const newRx = await Prescription.create({
+                        patient: appointment.patient._id,
+                        doctor: appointment.doctor._id,
+                        visit: appointment._id,
+                        visitModel: 'Appointment',
+                        medicines: prescriptionItems,
+                        isDispensed: false,
+                        specialInstructions: req.body.notes || ''
+                    });
+                    fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] Created Rx ID: ${newRx._id}\n`);
+                    console.log(`[OPD] Prescription created successfully with ${prescriptionItems.length} items.`);
+                } else {
+                    fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] No valid medicines found to create Rx\n`);
+                }
+            } catch (err) {
+                fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] ERROR: ${err.message}\n${err.stack}\n`);
+                console.error('[OPD] Failed to create prescription:', err);
+                console.error(err.stack);
+            }
+        } else {
+            fs.appendFileSync('debug_opd.log', `[${new Date().toISOString()}] No prescription body found or empty array\n`);
         }
     }
 
