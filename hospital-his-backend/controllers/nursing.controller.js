@@ -83,21 +83,26 @@ exports.startShift = asyncHandler(async (req, res, next) => {
     }
 
     // Determine final list of wards to fetch patients from
-    const finalWardIds = shift.assignedWards;
+    const finalWardIds = shift.assignedWards || [];
 
     // Get patients in assigned wards
-    const admissions = await Admission.find({
-        ward: { $in: finalWardIds },
-        status: 'admitted',
-    }).populate('patient bed');
+    let admissions = [];
+    if (finalWardIds.length > 0) {
+        admissions = await Admission.find({
+            ward: { $in: finalWardIds },
+            status: 'admitted',
+        }).populate('patient bed');
+    }
 
-    // Assign patients to shift (refresh assignment)
-    shift.assignedPatients = admissions.map(adm => ({
-        patient: adm.patient._id,
-        admission: adm._id,
-        bed: adm.bed?._id,
-        assignedAt: new Date(),
-    }));
+    // Assign patients to shift (refresh assignment) - filter out any admissions without a patient
+    shift.assignedPatients = admissions
+        .filter(adm => adm.patient)
+        .map(adm => ({
+            patient: adm.patient._id,
+            admission: adm._id,
+            bed: adm.bed?._id,
+            assignedAt: new Date(),
+        }));
     await shift.save();
 
     // Auto-generate nursing tasks from prescriptions and care plans
@@ -144,15 +149,30 @@ exports.startShift = asyncHandler(async (req, res, next) => {
  * @route   GET /api/nursing/shifts/current
  */
 exports.getCurrentShift = asyncHandler(async (req, res, next) => {
-    const shift = await NursingShift.findOne({
+    // First, try to find a shift with handover already created (priority)
+    let shift = await NursingShift.findOne({
         nurse: req.user._id,
-        status: 'active',
+        status: { $in: ['active', 'handover_pending'] },
+        handoverRecord: { $exists: true, $ne: null }
     })
         .populate('nurse', 'profile.firstName profile.lastName')
         .populate('assignedWards', 'name wardNumber')
         .populate('assignedPatients.patient', 'patientId firstName lastName dateOfBirth gender')
         .populate('assignedPatients.bed', 'bedNumber')
         .populate('assignedPatients.admission', 'admissionNumber diagnosis');
+
+    // If no shift with handover, find any active/pending shift
+    if (!shift) {
+        shift = await NursingShift.findOne({
+            nurse: req.user._id,
+            status: { $in: ['active', 'handover_pending'] },
+        })
+            .populate('nurse', 'profile.firstName profile.lastName')
+            .populate('assignedWards', 'name wardNumber')
+            .populate('assignedPatients.patient', 'patientId firstName lastName dateOfBirth gender')
+            .populate('assignedPatients.bed', 'bedNumber')
+            .populate('assignedPatients.admission', 'admissionNumber diagnosis');
+    }
 
     if (!shift) {
         return res.status(200).json({
@@ -250,6 +270,29 @@ exports.getDashboard = asyncHandler(async (req, res, next) => {
  * @route   POST /api/nursing/shifts/end
  */
 exports.endShift = asyncHandler(async (req, res, next) => {
+    // Find ALL shifts with handover already created and complete them
+    const shiftsWithHandover = await NursingShift.find({
+        nurse: req.user._id,
+        status: { $in: ['active', 'handover_pending'] },
+        handoverRecord: { $exists: true, $ne: null }
+    });
+
+    if (shiftsWithHandover.length > 0) {
+        // Complete all shifts that have handover records
+        for (const shift of shiftsWithHandover) {
+            shift.status = 'completed';
+            shift.actualEndTime = new Date();
+            await shift.save();
+        }
+
+        return res.status(200).json({
+            success: true,
+            message: `${shiftsWithHandover.length} shift(s) ended successfully.`,
+            data: shiftsWithHandover[0], // Return the first for backwards compatibility
+        });
+    }
+
+    // If no shifts with handover, find any active/pending shift
     const shift = await NursingShift.findOne({
         nurse: req.user._id,
         status: { $in: ['active', 'handover_pending'] },
@@ -259,20 +302,7 @@ exports.endShift = asyncHandler(async (req, res, next) => {
         return next(new ErrorResponse('No active or pending shift found', 404));
     }
 
-    // If handover is already created, complete the shift
-    if (shift.handoverRecord) {
-        shift.status = 'completed';
-        shift.actualEndTime = new Date();
-        await shift.save();
-
-        return res.status(200).json({
-            success: true,
-            message: 'Shift ended successfully.',
-            data: shift,
-        });
-    }
-
-    // Otherwise mark as pending handover
+    // Mark as pending handover
     shift.status = 'handover_pending';
     await shift.save();
 
@@ -1259,6 +1289,9 @@ async function generateNursingTasks(shift, admissions) {
     const shiftEnd = shift.endTime;
 
     for (const admission of admissions) {
+        // Skip if no patient
+        if (!admission.patient) continue;
+
         // Get active prescriptions
         const prescriptions = await Prescription.find({
             visit: admission._id,
@@ -1268,6 +1301,9 @@ async function generateNursingTasks(shift, admissions) {
         // Generate medication tasks
         for (const prescription of prescriptions) {
             for (const med of prescription.medicines) {
+                // Skip if no medicine data
+                if (!med.medicine) continue;
+
                 // Create MAR entries based on frequency
                 const schedule = generateMedicationSchedule(med.frequency, now, shiftEnd);
                 for (const scheduledTime of schedule) {

@@ -97,12 +97,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             icon: <Calendar size={20} />,
             roles: ['head_nurse']
         },
-        {
-            title: 'Nursing Station',
-            path: '/dashboard/nursing',
-            icon: <Stethoscope size={20} />,
-            roles: ['admin', 'nurse']
-        },
+
         {
             title: 'Billing',
             path: '/dashboard/billing',

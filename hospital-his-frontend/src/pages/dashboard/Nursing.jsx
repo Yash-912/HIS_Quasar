@@ -71,14 +71,17 @@ function Nursing() {
 
     // Shift selection modal state
     const [showShiftModal, setShowShiftModal] = useState(false);
+    const [hasScheduledShifts, setHasScheduledShifts] = useState(false);
     const [shiftType, setShiftType] = useState('morning');
     const [selectedWards, setSelectedWards] = useState([]);
     const [wards, setWards] = useState([]);
 
     // Handover state
     const [showHandoverForm, setShowHandoverForm] = useState(false);
+    const [handoverSubmitted, setHandoverSubmitted] = useState(false);
     const [selectedHandover, setSelectedHandover] = useState(null);
     const [assignedPatients, setAssignedPatients] = useState([]);
+    const [completedForToday, setCompletedForToday] = useState(false);
 
     useEffect(() => {
         const fetchCarePlans = async () => {
@@ -118,6 +121,11 @@ function Nursing() {
             const shiftResponse = await nursingService.getCurrentShift();
             if (shiftResponse.data) {
                 setActiveShift(shiftResponse.data);
+                setShowShiftModal(false);
+                // Check if handover was already created for this shift
+                if (shiftResponse.data.handoverRecord) {
+                    setHandoverSubmitted(true);
+                }
                 await loadDashboardData();
                 await loadAlerts();
             } else {
@@ -125,18 +133,28 @@ function Nursing() {
                 try {
                     const scheduledRes = await nursingService.getScheduledShifts(new Date());
                     const scheduled = scheduledRes.data?.find(s => s.status === 'scheduled');
+                    // Check if any shift was completed today
+                    const completed = scheduledRes.data?.find(s => s.status === 'completed');
+                    if (completed) {
+                        setCompletedForToday(true);
+                    }
                     if (scheduled) {
                         setScheduledShift(scheduled);
                         setShiftType(scheduled.shiftType);
                         // Extract IDs from populated wards
                         setSelectedWards(scheduled.assignedWards.map(w => w._id));
+                        setHasScheduledShifts(true);
+                        setShowShiftModal(true);
+                    } else {
+                        // No scheduled shifts available
+                        setHasScheduledShifts(false);
+                        setShowShiftModal(false);
                     }
                 } catch (e) {
                     console.error('Error loading scheduled shift:', e);
+                    setHasScheduledShifts(false);
+                    setShowShiftModal(false);
                 }
-
-                // No active shift - show shift selection
-                setShowShiftModal(true);
             }
 
             // Check for pending handovers
@@ -184,15 +202,38 @@ function Nursing() {
         }
     };
 
+
     const handleEndShift = async () => {
-        if (!confirm('Are you sure you want to end your shift? You will need to complete a handover.')) {
-            return;
+        // Skip confirmation if handover was already submitted
+        if (!handoverSubmitted) {
+            if (!confirm('Are you sure you want to end your shift? You will need to complete a handover first.')) {
+                return;
+            }
         }
         try {
-            await nursingService.endShift();
-            setActiveTab('handover');
+            const response = await nursingService.endShift();
+
+            // Check the backend response to determine what happened
+            if (response.data?.status === 'completed') {
+                // Shift was actually ended
+                setHandoverSubmitted(false);
+                setActiveShift(null);
+                await loadInitialData();
+                setActiveTab('overview');
+                alert('Shift ended successfully!');
+            } else if (response.data?.status === 'handover_pending') {
+                // Shift is waiting for handover - navigate to handover tab
+                await loadInitialData();
+                setActiveTab('handover');
+                alert('Please complete the handover form first before ending your shift.');
+            } else {
+                // Unexpected state - just refresh
+                await loadInitialData();
+                alert(response.message || 'Shift status updated.');
+            }
         } catch (error) {
             console.error('Error ending shift:', error);
+            alert('Failed to end shift: ' + (error.response?.data?.error || error.message));
         }
     };
 
@@ -522,6 +563,35 @@ function Nursing() {
             {/* Shift Selection Modal */}
             {showShiftModal && <ShiftSelectionModal />}
 
+            {/* No Shifts Available Message */}
+            {!activeShift && !showShiftModal && !pendingHandovers.length > 0 && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full mx-4 text-center">
+                        <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${completedForToday ? 'bg-green-100' : 'bg-gradient-to-br from-gray-300 to-gray-400'}`}>
+                            {completedForToday ? (
+                                <CheckCircle2 className="w-8 h-8 text-green-500" />
+                            ) : (
+                                <Clock className="w-8 h-8 text-white" />
+                            )}
+                        </div>
+                        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                            {completedForToday ? 'Shift Completed' : 'No Shifts Available'}
+                        </h2>
+                        <p className="text-gray-500 mb-6">
+                            {completedForToday
+                                ? 'You have completed your shift for today. Have a great rest!'
+                                : 'You currently have no scheduled shifts for today. Please check back later or contact your supervisor.'}
+                        </p>
+                        <button
+                            onClick={() => window.location.reload()}
+                            className="w-full py-3 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-xl font-semibold hover:from-teal-600 hover:to-teal-700 transition-all"
+                        >
+                            Refresh
+                        </button>
+                    </div>
+                </div>
+            )}
+
             {/* Pending Handover Alert */}
             {pendingHandovers.length > 0 && (
                 <div className="bg-orange-500 text-white px-6 py-3">
@@ -799,7 +869,25 @@ function Nursing() {
                                     End Shift & Create Handover
                                 </h2>
 
-                                {!showHandoverForm ? (
+                                {handoverSubmitted ? (
+                                    /* Show End Shift confirmation after handover is submitted */
+                                    <div className="text-center py-8">
+                                        <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                                            <CheckCircle2 className="w-8 h-8 text-green-500" />
+                                        </div>
+                                        <h3 className="text-lg font-medium text-gray-800 mb-2">Handover Submitted Successfully!</h3>
+                                        <p className="text-gray-500 mb-6 max-w-md mx-auto">
+                                            Your handover has been created and is ready for the incoming nurse. You can now end your shift.
+                                        </p>
+                                        <button
+                                            onClick={handleEndShift}
+                                            className="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-semibold hover:from-red-600 hover:to-red-700 transition-all inline-flex items-center gap-2 shadow-lg"
+                                        >
+                                            <LogOut className="w-5 h-5" />
+                                            End Shift Now
+                                        </button>
+                                    </div>
+                                ) : !showHandoverForm ? (
                                     <div className="text-center py-8">
                                         <div className="w-16 h-16 mx-auto mb-4 bg-teal-100 rounded-full flex items-center justify-center">
                                             <ArrowRightLeft className="w-8 h-8 text-teal-500" />
@@ -835,7 +923,7 @@ function Nursing() {
 
                                                 await nursingService.createHandover(payload);
                                                 setShowHandoverForm(false);
-                                                alert('Handover submitted successfully! You can now end your shift.');
+                                                setHandoverSubmitted(true);
                                                 loadDashboardData();
                                             } catch (error) {
                                                 console.error('Error creating handover:', error);

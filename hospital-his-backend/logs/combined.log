@@ -8004,3 +8004,766 @@ Error: Invalid credentials
 Error: Invalid credentials
     at /Users/khush/Desktop/Hackathons/Quasar/HIS_Quasar_2/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-22 15:11:05 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:11:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:11:05 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:11:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:11:05 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:11:05 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:11:05 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:11:05 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:11:05 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:12:29 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:15:02 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:15:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:15:02 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:15:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:15:02 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:15:02 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:15:02 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:15:02 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:15:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:10 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:17:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:10 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:17:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:10 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:17:10 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:17:10 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:17:10 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:17:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:48 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-22 15:17:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:48 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:17:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:17:48 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:17:48 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:17:48 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:17:48 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:17:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:18:15 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 15:18:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:18:15 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:18:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:18:15 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:18:15 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:18:15 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:18:15 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:18:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:18:32 [ERROR]: Please provide email and password
+Error: Please provide email and password
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:17:21
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+2026-01-22 15:21:58 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:21:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:21:58 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:21:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:21:58 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:21:58 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:21:58 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:21:58 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:21:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:22:47 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-22 15:22:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:22:47 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:22:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:22:47 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:22:47 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:22:47 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:22:47 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:22:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:25:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:25:44 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:25:44 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:25:56 [ERROR]: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+MongoServerError: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:26:30 [ERROR]: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+MongoServerError: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:26:43 [ERROR]: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+MongoServerError: E11000 duplicate key error collection: test.nursingshifts index: shiftNumber_1 dup key: { shiftNumber: "NS20260121M001" }
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:27:49 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 15:27:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:27:49 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:27:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:27:49 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:27:49 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:27:49 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:27:49 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:27:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:27:59 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:27:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:27:59 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:27:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:27:59 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:27:59 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:27:59 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:27:59 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:27:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:28:59 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-22 15:28:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:28:59 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:28:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:28:59 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:28:59 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:28:59 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:28:59 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:28:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:30:27 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:30:27 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:33:18 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-22 15:33:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:33:18 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:33:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:33:18 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:33:18 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:33:18 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:33:18 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:33:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:34:31 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:34:31 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:34:31 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:34:31 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:34:31 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:34:31 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:34:31 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:34:31 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:34:31 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:35:50 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:35:50 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:37:36 [ERROR]: E11000 duplicate key error collection: test.shifthandovers index: handoverNumber_1 dup key: { handoverNumber: "HO20260122001" }
+MongoServerError: E11000 duplicate key error collection: test.shifthandovers index: handoverNumber_1 dup key: { handoverNumber: "HO20260122001" }
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:37:56 [ERROR]: E11000 duplicate key error collection: test.shifthandovers index: handoverNumber_1 dup key: { handoverNumber: "HO20260122001" }
+MongoServerError: E11000 duplicate key error collection: test.shifthandovers index: handoverNumber_1 dup key: { handoverNumber: "HO20260122001" }
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:38:54 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 15:38:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:38:54 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:38:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:38:54 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:38:54 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:38:54 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:38:54 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:38:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:38:59 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 15:38:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:38:59 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:38:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:38:59 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:38:59 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:38:59 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:38:59 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:38:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:39:57 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 15:39:57 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:39:57 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:39:57 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:39:57 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:39:57 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:39:57 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:39:57 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:39:57 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:40:09 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:40:09 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:40:55 [ERROR]: No active or pending shift found
+Error: No active or pending shift found
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:259:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:40:58 [ERROR]: No active or pending shift found
+Error: No active or pending shift found
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:259:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:41:04 [ERROR]: No active or pending shift found
+Error: No active or pending shift found
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:259:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 15:59:07 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 15:59:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:59:07 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 15:59:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 15:59:07 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 15:59:07 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 15:59:07 [INFO]: 🔌 WebSocket enabled
+2026-01-22 15:59:07 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 15:59:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:03:12 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-22 16:05:40 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:05:40 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:09:10 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:09:10 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:12:24 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:12:24 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:12:28 [ERROR]: E11000 duplicate key error collection: test.nursingtasks index: taskNumber_1 dup key: { taskNumber: null }
+MongoBulkWriteError: E11000 duplicate key error collection: test.nursingtasks index: taskNumber_1 dup key: { taskNumber: null }
+    at OrderedBulkOperation.handleWriteError (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\bulk\common.js:860:22)
+    at resultHandler (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\bulk\common.js:350:27)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\utils.js:297:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:13:12 [ERROR]: You already have an active shift. Please end it first.
+Error: You already have an active shift. Please end it first.
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\nursing.controller.js:36:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:13:25 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:13:26 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:13:47 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:13:47 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:14:40 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:14:40 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:15:07 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:15:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:07 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:15:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:07 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:15:07 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:15:07 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:15:07 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:15:07 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:33 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:15:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:33 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:15:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:33 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:15:33 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:15:33 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:15:33 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:15:33 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:15:56 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:15:56 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:20:49 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:20:49 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:23:20 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:23:20 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:27:06 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:27:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:27:06 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:27:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:27:06 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:27:06 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:27:06 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:27:06 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:27:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:28:40 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:28:41 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:32:53 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:32:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:32:53 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:32:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:32:53 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:32:53 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:32:53 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:32:53 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:32:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:33:16 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:33:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:33:16 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:33:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:33:16 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:33:16 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:33:16 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:33:16 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:33:16 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:33:59 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:33:59 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:34:51 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-22 16:34:58 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-22 16:36:03 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-22 16:36:03 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:36:03 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:36:03 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:36:03 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:36:03 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:36:03 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:36:03 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:36:03 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:36:36 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:36:36 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:40:02 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:40:02 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:40:18 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:40:18 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:53:00 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-22 16:53:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:53:00 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-22 16:53:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:53:00 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-22 16:53:00 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-22 16:53:00 [INFO]: 🔌 WebSocket enabled
+2026-01-22 16:53:00 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-22 16:53:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-22 16:53:57 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:53:57 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:54:29 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-22 16:54:30 [ERROR]: User role 'nurse' is not authorized to access this route
+Error: User role 'nurse' is not authorized to access this route
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\HIS Quasar 4\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

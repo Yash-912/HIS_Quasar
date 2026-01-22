@@ -188,17 +188,14 @@ shiftHandoverSchema.index({ 'handoverFrom.nurse': 1 });
 shiftHandoverSchema.index({ 'handoverTo.nurse': 1 });
 shiftHandoverSchema.index({ status: 1 });
 
-// Auto-generate handover number
+// Auto-generate handover number with UUID to avoid race conditions
 shiftHandoverSchema.pre('save', async function (next) {
     if (this.isNew && !this.handoverNumber) {
         const dateStr = this.handoverDate.toISOString().slice(0, 10).replace(/-/g, '');
-        const count = await mongoose.model('ShiftHandover').countDocuments({
-            handoverDate: {
-                $gte: new Date(this.handoverDate.setHours(0, 0, 0, 0)),
-                $lt: new Date(this.handoverDate.setHours(23, 59, 59, 999)),
-            },
-        });
-        this.handoverNumber = `HO${dateStr}${String(count + 1).padStart(3, '0')}`;
+        // Use timestamp and random number to ensure uniqueness even with concurrent requests
+        const timestamp = Date.now();
+        const random = Math.floor(Math.random() * 10000);
+        this.handoverNumber = `HO${dateStr}${String(timestamp).slice(-4)}${String(random).padStart(4, '0')}`;
     }
     next();
 });

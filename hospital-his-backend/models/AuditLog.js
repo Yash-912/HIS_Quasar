@@ -15,7 +15,23 @@ const auditLogSchema = new mongoose.Schema(
         action: {
             type: String,
             required: [true, 'Action is required'],
-            enum: ['create', 'read', 'update', 'delete', 'login', 'logout', 'export', 'print', 'other'],
+            enum: [
+                // Basic CRUD operations
+                'create', 'read', 'update', 'delete',
+                // Authentication
+                'login', 'logout',
+                // Export/Report operations
+                'export', 'print',
+                // Nursing operations
+                'shift_start', 'task_complete', 'task_skip',
+                'vitals_record', 'medication_administer', 'medication_skip',
+                'note_create', 'intervention_complete',
+                'handover_create', 'handover_acknowledge',
+                'alert_acknowledge', 'alert_resolve', 'alert_escalate',
+                'shift_assign',
+                // Other
+                'other'
+            ],
         },
         entity: {
             type: String,

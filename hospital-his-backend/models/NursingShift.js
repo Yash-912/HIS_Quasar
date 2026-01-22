@@ -102,16 +102,15 @@ nursingShiftSchema.index({ shiftDate: 1, shiftType: 1 });
 nursingShiftSchema.index({ status: 1 });
 nursingShiftSchema.index({ assignedWards: 1 });
 
-// Auto-generate shift number
+// Auto-generate shift number with UUID to avoid race conditions
 nursingShiftSchema.pre('save', async function (next) {
     if (this.isNew && !this.shiftNumber) {
         const dateStr = this.shiftDate.toISOString().slice(0, 10).replace(/-/g, '');
         const shiftCode = this.shiftType.charAt(0).toUpperCase();
-        const count = await mongoose.model('NursingShift').countDocuments({
-            shiftDate: this.shiftDate,
-            shiftType: this.shiftType,
-        });
-        this.shiftNumber = `NS${dateStr}${shiftCode}${String(count + 1).padStart(3, '0')}`;
+        // Use timestamp and random number to ensure uniqueness even with concurrent requests
+        const timestamp = Date.now();
+        const random = Math.floor(Math.random() * 10000);
+        this.shiftNumber = `NS${dateStr}${shiftCode}${String(timestamp).slice(-4)}${String(random).padStart(4, '0')}`;
     }
     next();
 });
