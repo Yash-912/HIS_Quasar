@@ -411,13 +411,33 @@ exports.generateAiSummary = asyncHandler(async (req, res, next) => {
         }
     }
 
-    if (!textToSummarize || textToSummarize.length < 20) {
-        return next(new ErrorResponse('No text available for summarization. Please upload a PDF with readable text.', 400));
+    // Build combined context from manually entered results + PDF text
+    let combinedContext = '';
+
+    if (order.results && order.results.length > 0) {
+        combinedContext += 'MANUALLY ENTERED LAB VALUES:\n';
+        order.results.forEach(r => {
+            const status = r.isCritical ? '[CRITICAL]' : (r.isAbnormal ? '[ABNORMAL]' : '[NORMAL]');
+            combinedContext += `- ${r.parameter}: ${r.value} ${r.unit || ''} (Range: ${r.normalRange || 'N/A'}) ${status}\n`;
+        });
+        if (order.remarks) {
+            combinedContext += `\nLab Technician Remarks: ${order.remarks}\n`;
+        }
+        combinedContext += '\n';
+    }
+
+    if (textToSummarize && textToSummarize.length >= 20) {
+        combinedContext += 'EXTRACTED PDF TEXT:\n' + textToSummarize;
+    }
+
+    // Ensure we have some context to summarize
+    if (!combinedContext || combinedContext.trim().length < 20) {
+        return next(new ErrorResponse('No data available for summarization. Please enter results or upload a PDF with readable text.', 400));
     }
 
     try {
-        // Generate AI summary using OpenRouter LLM
-        const summary = await summarizeLabReport(textToSummarize);
+        // Generate AI summary using OpenRouter LLM with combined context
+        const summary = await summarizeLabReport(combinedContext);
 
         order.aiSummary = JSON.stringify(summary);
         order.summaryGeneratedAt = new Date();

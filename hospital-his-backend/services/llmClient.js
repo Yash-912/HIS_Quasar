@@ -24,8 +24,10 @@ const summarizeLabReport = async (extractedText) => {
     try {
         const prompt = `You are a clinical lab report analyzer helping physicians quickly understand lab results.
 
-REPORT TEXT:
+LAB DATA:
 ${extractedText}
+
+Note: The data above may include manually entered lab values (with NORMAL/ABNORMAL/CRITICAL flags) and/or text extracted from a PDF report. Analyze all available information.
 
 INSTRUCTIONS:
 - Write a clear, concise summary in PARAGRAPH format
