@@ -99,6 +99,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             roles: ['doctor']
         },
         {
+            title: 'Lab Test Results',
+            path: '/dashboard/doctor-lab-tests',
+            icon: <FlaskConical size={20} />,
+            roles: ['doctor']
+        },
+        {
             title: 'Duty Roster',
             path: '/dashboard/duty-roster',
             icon: <Calendar size={20} />,

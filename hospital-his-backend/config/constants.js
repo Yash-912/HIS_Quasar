@@ -288,6 +288,21 @@ const CLINICAL_CODING_STATUS = {
     RETURNED: 'returned',                    // Returned for correction with reason
 };
 
+// Lab Report PDF Extraction Status
+const LAB_REPORT_EXTRACTION_STATUS = {
+    PENDING: 'pending',
+    DONE: 'done',
+    FAILED: 'failed',
+};
+
+// Lab Report AI Summary Status
+const LAB_REPORT_AI_STATUS = {
+    NOT_STARTED: 'not_started',
+    PROCESSING: 'processing',
+    READY: 'ready',
+    FAILED: 'failed',
+};
+
 module.exports = {
     USER_ROLES,
     APPOINTMENT_STATUS,
@@ -325,4 +340,7 @@ module.exports = {
     CLINICAL_CODING_STATUS,
     // Incident Report constants
     INCIDENT_REPORT_STATUS,
+    // Lab Report constants
+    LAB_REPORT_EXTRACTION_STATUS,
+    LAB_REPORT_AI_STATUS,
 };
