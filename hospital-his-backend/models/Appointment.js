@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { APPOINTMENT_STATUS } = require('../config/constants');
+require('./Counter');
 
 /**
  * Appointment Model
@@ -87,21 +88,73 @@ appointmentSchema.index({ department: 1, scheduledDate: 1 });
 appointmentSchema.pre('save', async function (next) {
     if (this.isNew && !this.appointmentNumber) {
         const now = new Date();
-        const dateStr = now.toISOString().slice(0, 10).replace(/-/g, '');
+        const apiDateStr = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`;
+        const counterId = `appointment_${apiDateStr}`;
+        const Counter = mongoose.model('Counter');
 
-        // Create separate date objects to avoid mutation
-        const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
-        const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+        try {
+            // calculatedSeq will hold the final sequence number to use
+            let calculatedSeq;
 
-        const count = await mongoose.model('Appointment').countDocuments({
-            createdAt: {
-                $gte: startOfDay,
-                $lt: endOfDay,
-            },
-        });
-        this.appointmentNumber = `APT${dateStr}${String(count + 1).padStart(4, '0')}`;
+            // 1. Try to atomically increment the counter
+            // We use 'new: true' to get the updated document
+            // We DO NOT use 'upsert: true' immediately because we need to handle the case
+            // where the counter doesn't exist yet but appointments MIGHT exist (mid-day deployment).
+            let counter = await Counter.findByIdAndUpdate(
+                counterId,
+                { $inc: { seq: 1 } },
+                { new: true }
+            );
+
+            if (!counter) {
+                // 2. Counter doesn't exist for today. Initialize it correctly.
+                // Count existing appointments for this day first to avoid duplicates.
+                const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
+                const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+
+                const existingCount = await mongoose.model('Appointment').countDocuments({
+                    createdAt: {
+                        $gte: startOfDay,
+                        $lt: endOfDay,
+                    },
+                });
+
+                // Set initial sequence to existingCount + 1
+                const initialSeq = existingCount + 1;
+
+                try {
+                    // Create the counter. usage of create() ensures only one concurrent request succeeds due to _id uniqueness
+                    const newCounter = await Counter.create({
+                        _id: counterId,
+                        seq: initialSeq
+                    });
+                    calculatedSeq = newCounter.seq;
+                } catch (err) {
+                    // 3. Race condition: Another request created the counter just now.
+                    // Fallback to atomic increment.
+                    if (err.code === 11000) {
+                        counter = await Counter.findByIdAndUpdate(
+                            counterId,
+                            { $inc: { seq: 1 } },
+                            { new: true }
+                        );
+                        calculatedSeq = counter.seq;
+                    } else {
+                        throw err;
+                    }
+                }
+            } else {
+                calculatedSeq = counter.seq;
+            }
+
+            this.appointmentNumber = `APT${apiDateStr}${String(calculatedSeq).padStart(4, '0')}`;
+            next();
+        } catch (error) {
+            next(error);
+        }
+    } else {
+        next();
     }
-    next();
 });
 
 const Appointment = mongoose.model('Appointment', appointmentSchema);

@@ -5037,3 +5037,28 @@ Error: PDF text extraction failed: PDF contains no extractable text
 Error: PDF text extraction failed: This PDF appears to be a scanned image and OCR failed. Please upload a PDF with selectable text.
     at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-25 00:47:02 [ERROR]: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+MongoServerError: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 00:48:18 [ERROR]: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+MongoServerError: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 00:58:13 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 00:58:20 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:24 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:29 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:38 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21

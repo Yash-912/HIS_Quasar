@@ -11854,3 +11854,107 @@ Error: PDF text extraction failed: This PDF appears to be a scanned image and OC
 2026-01-24 20:21:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
 2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
 2026-01-24 20:26:43 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-25 00:35:01 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:35:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:35:01 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:35:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:35:01 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:35:01 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:35:01 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:35:01 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:35:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:46:10 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-25 00:46:17 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-25 00:47:02 [ERROR]: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+MongoServerError: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 00:48:18 [ERROR]: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+MongoServerError: E11000 duplicate key error collection: test.appointments index: appointmentNumber_1 dup key: { appointmentNumber: "APT202601240001" }
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\node_modules\mongodb\lib\operations\command.js:84:64
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-25 00:50:24 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:50:24 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:50:24 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:50:24 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:50:24 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:50:24 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:50:24 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:50:24 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:50:24 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:50:31 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:50:46 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:50:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:50:46 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:50:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:50:46 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:50:46 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:50:46 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:50:46 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:50:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:51:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:52:59 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:52:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:52:59 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:52:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:52:59 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:52:59 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:52:59 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:52:59 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:52:59 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:12 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:53:12 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:12 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:53:12 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:12 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:53:12 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:53:12 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:53:12 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:53:12 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:21 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:53:21 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:21 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:53:21 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:21 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:53:21 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:53:21 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:53:21 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:53:21 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:53:29 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:53:43 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-25 00:54:14 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:54:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:54:14 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:54:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:54:14 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:54:14 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:54:14 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:54:14 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:54:14 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:54:24 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-25 00:55:06 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-25 00:55:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:55:06 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-25 00:55:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:55:06 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-25 00:55:06 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-25 00:55:06 [INFO]: 🔌 WebSocket enabled
+2026-01-25 00:55:06 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-25 00:55:06 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-25 00:58:13 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 00:58:20 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:24 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:29 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-01-25 01:00:38 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\HIS_Quasar_Final\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21

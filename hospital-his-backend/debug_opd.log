@@ -101,3 +101,5 @@ ValidationError: Prescription validation failed: prescriptionNumber: Path `presc
 [2026-01-24T14:12:54.311Z] Processing med: crocin
 [2026-01-24T14:12:54.347Z] Med NOT FOUND: crocin
 [2026-01-24T14:12:54.348Z] No valid medicines found to create Rx
+[2026-01-24T19:28:54.770Z] No prescription body found or empty array
+[2026-01-24T19:30:14.775Z] No prescription body found or empty array
