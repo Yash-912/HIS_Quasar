@@ -1,11 +1,40 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const patientController = require('../controllers/patient.controller');
 const { authenticate } = require('../middleware/auth.middleware');
 const { authorize } = require('../middleware/rbac.middleware');
 
+// Multer configuration for ID card uploads (in-memory storage)
+const upload = multer({
+    storage: multer.memoryStorage(),
+    limits: {
+        fileSize: 10 * 1024 * 1024, // 10MB limit
+    },
+    fileFilter: (req, file, cb) => {
+        // Accept only images
+        const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];
+        if (allowedTypes.includes(file.mimetype)) {
+            cb(null, true);
+        } else {
+            cb(new Error('Invalid file type. Only JPEG, PNG, and WebP are allowed.'));
+        }
+    }
+});
+
 // All routes require authentication
 router.use(authenticate);
+
+/**
+ * @route   POST /api/patients/scan-id
+ * @desc    Scan government ID card and extract patient details
+ * @access  Receptionist, Admin
+ */
+router.post('/scan-id',
+    authorize('receptionist', 'admin'),
+    upload.single('idImage'),
+    patientController.scanIdCard
+);
 
 /**
  * @route   POST /api/patients
@@ -60,3 +89,4 @@ router.get('/:id/history', patientController.getPatientHistory);
 router.get('/:id/emr', patientController.getPatientEMR);
 
 module.exports = router;
+

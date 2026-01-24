@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check } from 'lucide-react';
+import { X, Check, Scan, Shield } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { createPatient } from '../../features/patients/patientsSlice';
+import ScanIDModal from '../idScan/ScanIDModal';
 
 const AddPatientModal = ({ isOpen, onClose }) => {
     const dispatch = useDispatch();
     const [step, setStep] = useState('form'); // 'form' or 'success'
+    const [isScanModalOpen, setIsScanModalOpen] = useState(false);
 
     // Initial State
     const initialFormData = {
@@ -17,6 +19,7 @@ const AddPatientModal = ({ isOpen, onClose }) => {
         phone: '',
         email: '',
         bloodGroup: '',
+        maskedAadhaar: '',
         address: {
             street: '',
             city: '',
@@ -37,6 +40,22 @@ const AddPatientModal = ({ isOpen, onClose }) => {
         } else {
             setFormData(prev => ({ ...prev, [name]: value }));
         }
+    };
+
+    /**
+     * Handle extracted data from ID scan
+     * Auto-fills the form with extracted information
+     */
+    const handleIdExtracted = (extractedData) => {
+        setFormData(prev => ({
+            ...prev,
+            firstName: extractedData.firstName || prev.firstName,
+            lastName: extractedData.lastName || prev.lastName,
+            dateOfBirth: extractedData.dateOfBirth || prev.dateOfBirth,
+            gender: extractedData.gender || prev.gender,
+            phone: extractedData.phone || prev.phone,
+            maskedAadhaar: extractedData.maskedAadhaar || prev.maskedAadhaar,
+        }));
     };
 
     const handleSubmit = async (e) => {
@@ -76,14 +95,51 @@ const AddPatientModal = ({ isOpen, onClose }) => {
                 >
                     {step === 'form' ? (
                         <>
+                            {/* Header with Scan ID button */}
                             <div className="flex items-center justify-between p-6 border-b border-gray-100">
                                 <h2 className="text-xl font-bold text-slate-800">New Patient Registration</h2>
-                                <button onClick={onClose} className="p-2 hover:bg-slate-50 rounded-full text-gray-500">
-                                    <X size={20} />
-                                </button>
+                                <div className="flex items-center gap-2">
+                                    {/* Scan ID Button - NEW ADDITION */}
+                                    <motion.button
+                                        type="button"
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        onClick={() => setIsScanModalOpen(true)}
+                                        className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md text-sm font-medium"
+                                    >
+                                        <Scan size={16} />
+                                        Scan ID
+                                    </motion.button>
+                                    <button onClick={onClose} className="p-2 hover:bg-slate-50 rounded-full text-gray-500">
+                                        <X size={20} />
+                                    </button>
+                                </div>
                             </div>
 
                             <form onSubmit={handleSubmit} className="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
+                                {/* ID Scan hint banner */}
+                                {!formData.maskedAadhaar && (
+                                    <div className="flex items-center gap-3 p-3 bg-blue-50 border border-blue-100 rounded-lg text-blue-700 text-sm">
+                                        <Scan size={18} />
+                                        <p>
+                                            <strong>Tip:</strong> Click "Scan ID" to auto-fill patient details from Aadhaar card
+                                        </p>
+                                    </div>
+                                )}
+
+                                {/* Show masked Aadhaar if scanned */}
+                                {formData.maskedAadhaar && (
+                                    <div className="flex items-center gap-3 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+                                        <Shield size={18} className="text-emerald-600" />
+                                        <div>
+                                            <p className="text-sm font-medium text-emerald-800">ID Verified</p>
+                                            <p className="text-xs text-emerald-600 font-mono">
+                                                Aadhaar: {formData.maskedAadhaar}
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
+
                                 <div className="grid grid-cols-2 gap-4">
                                     <div>
                                         <label className="block text-sm font-medium text-slate-700 mb-1">First Name</label>
@@ -173,8 +229,16 @@ const AddPatientModal = ({ isOpen, onClose }) => {
                     )}
                 </motion.div>
             </div>
+
+            {/* Scan ID Modal */}
+            <ScanIDModal
+                isOpen={isScanModalOpen}
+                onClose={() => setIsScanModalOpen(false)}
+                onExtracted={handleIdExtracted}
+            />
         </AnimatePresence>
     );
 };
 
 export default AddPatientModal;
+

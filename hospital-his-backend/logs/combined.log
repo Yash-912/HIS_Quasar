@@ -11342,3 +11342,202 @@ Error: Invalid credentials
 2026-01-24 10:51:37 [INFO]: 📋 Health check: http://localhost:5001/api/health
 2026-01-24 10:51:37 [INFO]: ═══════════════════════════════════════════════════════════════
 2026-01-24 11:10:39 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 14:58:46 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 14:58:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 14:58:46 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 14:58:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 14:58:46 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 14:58:46 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 14:58:46 [INFO]: 🔌 WebSocket enabled
+2026-01-24 14:58:46 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 14:58:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:10:35 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 15:10:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:10:35 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 15:10:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:10:35 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 15:10:35 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 15:10:35 [INFO]: 🔌 WebSocket enabled
+2026-01-24 15:10:35 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 15:10:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:35 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 15:11:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:35 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 15:11:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:35 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 15:11:35 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 15:11:35 [INFO]: 🔌 WebSocket enabled
+2026-01-24 15:11:35 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 15:11:35 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:48 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 15:11:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:48 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 15:11:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:11:48 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 15:11:48 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 15:11:48 [INFO]: 🔌 WebSocket enabled
+2026-01-24 15:11:48 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 15:11:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:24:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 18:24:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:24:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:24:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:24:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:24:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:24:34 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:24:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:24:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:28:36 [INFO]: AI OCR Service: Sending image for extraction - captured_id.jpg
+2026-01-24 18:28:40 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:28:40 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:30:05 [INFO]: AI OCR Service: Sending image for extraction - captured_id.jpg
+2026-01-24 18:30:07 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:30:07 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:31:41 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:31:44 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:31:44 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:34:39 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:34:41 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:34:41 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:41:06 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:41:09 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:41:09 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:45:17 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:45:21 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 18:45:21 [ERROR]: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+Error: Extraction failed: Model initialization failed: Cannot instantiate this tokenizer from a slow version. If it's based on sentencepiece, make sure you have sentencepiece installed.
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 18:48:17 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 18:48:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:48:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:48:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:48:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:48:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:48:17 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:48:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:48:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:50:56 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:51:39 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 18:56:58 [INFO]: AI OCR Service: Sending image for extraction - 20260124_183101.jpg
+2026-01-24 18:58:07 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 18:59:36 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:00:36 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 19:02:43 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 19:02:43 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:02:43 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:02:43 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:02:43 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:02:43 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:02:43 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:02:43 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:02:43 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:24:32 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:25:35 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 19:33:43 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:33:48 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 19:39:34 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:39:37 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 19:39:37 [ERROR]: Extraction failed: name 'parse_date_of_birth' is not defined
+Error: Extraction failed: name 'parse_date_of_birth' is not defined
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 19:40:27 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:40:28 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 19:40:28 [ERROR]: Extraction failed: name 'parse_date_of_birth' is not defined
+Error: Extraction failed: name 'parse_date_of_birth' is not defined
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 19:40:49 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:40:51 [ERROR]: AI OCR Service Error: Request failed with status code 500
+2026-01-24 19:40:51 [ERROR]: Extraction failed: name 'parse_date_of_birth' is not defined
+Error: Extraction failed: name 'parse_date_of_birth' is not defined
+    at D:\HIS_Quasar5\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:46:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-01-24 19:43:29 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:43:34 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 19:43:44 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:43:49 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 19:49:40 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:49:43 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 19:54:01 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 19:54:04 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 19:54:32 [INFO]: AI OCR Service: Sending image for extraction - shravani.jpeg
+2026-01-24 19:54:36 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 19:55:25 [INFO]: AI OCR Service: Sending image for extraction - khush.jpeg
+2026-01-24 19:55:30 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 19:58:37 [INFO]: AI OCR Service: Sending image for extraction - captured_id.jpg
+2026-01-24 19:58:40 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:02:29 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:02:34 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:02:52 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:02:57 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:04:09 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:04:13 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:12:16 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:12:23 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:12:50 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:12:56 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:14:58 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:15:02 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:17:08 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 20:17:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:17:08 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:17:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:17:08 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:17:08 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:17:08 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:17:08 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:17:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:18:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 20:18:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:18:42 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:18:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:18:42 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:18:42 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:18:42 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:18:42 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:18:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:19:19 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:19:22 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:20:50 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 20:20:50 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:20:50 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:20:50 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:20:50 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:20:50 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:20:50 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:20:50 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:20:50 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:17 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 20:21:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:21:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:21:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:21:17 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:21:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:21:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:28 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:21:31 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 20:21:47 [INFO]: AI OCR Service: Sending image for extraction - shravani.jpeg
+2026-01-24 20:21:50 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 20:22:04 [INFO]: AI OCR Service: Sending image for extraction - khush.jpeg
+2026-01-24 20:22:07 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-01-24 20:22:31 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
+2026-01-24 20:22:34 [INFO]: AI OCR Service: Extraction successful - Confidence: high

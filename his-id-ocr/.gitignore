@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ID OCR Project Specific
+# IMPORTANT: Do not commit patient data
+app/uploads/
+app/uploads/raw/
+app/uploads/masked/
+
+# Debug scripts
+debug_*.py
+test_extraction.py
+
+# IDE / Editor
+.vscode/
+.idea/

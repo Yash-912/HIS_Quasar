@@ -4,6 +4,52 @@ const Appointment = require('../models/Appointment');
 const Admission = require('../models/Admission');
 const asyncHandler = require('../utils/asyncHandler');
 const ErrorResponse = require('../utils/errorResponse');
+const aiOcrService = require('../services/aiOcr.service');
+
+/**
+ * @desc    Scan government ID card and extract patient details
+ * @route   POST /api/patients/scan-id
+ * @access  Receptionist, Admin
+ */
+exports.scanIdCard = asyncHandler(async (req, res, next) => {
+    // Check if file was uploaded
+    if (!req.file) {
+        return next(new ErrorResponse('Please upload an ID card image', 400));
+    }
+
+    const { buffer, originalname, mimetype } = req.file;
+
+    try {
+        // Call AI OCR service to extract details
+        const extractedData = await aiOcrService.extractIdDetails(
+            buffer,
+            originalname,
+            mimetype
+        );
+
+        // Return extracted data (already masked by AI service)
+        res.status(200).json({
+            success: true,
+            message: 'ID card scanned successfully',
+            data: {
+                firstName: extractedData.firstName || '',
+                lastName: extractedData.lastName || '',
+                dateOfBirth: extractedData.dateOfBirth || null,
+                gender: extractedData.gender || null,
+                phone: extractedData.phone || null,
+                maskedAadhaar: extractedData.maskedAadhaar || null,
+                maskedImageUrl: extractedData.maskedImageUrl || null,
+                confidence: extractedData.confidence || 'low'
+            }
+        });
+    } catch (error) {
+        // Handle AI service errors gracefully
+        return next(new ErrorResponse(
+            error.message || 'Failed to extract ID details. Please try again or enter manually.',
+            500
+        ));
+    }
+});
 
 /**
  * @desc    Create a new patient
@@ -164,3 +210,4 @@ exports.getPatientEMR = asyncHandler(async (req, res, next) => {
         data: emrRecords,
     });
 });
+
