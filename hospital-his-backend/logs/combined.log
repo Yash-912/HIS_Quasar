@@ -11645,3 +11645,13 @@ Error: PDF text extraction failed: This PDF appears to be a scanned image and OC
 2026-01-24 19:47:09 [INFO]: Socket H32WQqkb1HmSGN3XAAAC joined emergency room
 2026-01-24 19:48:12 [INFO]: Client disconnected: H32WQqkb1HmSGN3XAAAC
 2026-01-24 19:49:28 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 20:21:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:21:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:21:34 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:21:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:26:43 [WARN]: MongoDB disconnected. Attempting to reconnect...
