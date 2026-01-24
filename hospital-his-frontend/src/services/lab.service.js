@@ -65,6 +65,12 @@ const labService = {
     getReport: async (orderId) => {
         const response = await axios.get(`${API_URL}/orders/${orderId}/report`, getConfig());
         return response.data;
+    },
+
+    // Generate AI Summary (on-demand)
+    generateAiSummary: async (orderId) => {
+        const response = await axios.post(`${API_URL}/orders/${orderId}/generate-summary`, {}, getConfig());
+        return response.data;
     }
 };
 

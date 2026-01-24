@@ -10,6 +10,7 @@ import OPDQueue from './pages/dashboard/OPDQueue';
 import Consultation from './pages/doctor/Consultation';
 import IPD from './pages/dashboard/IPD';
 import Laboratory from './pages/dashboard/Laboratory';
+import LabReportUpload from './pages/dashboard/LabReportUpload';
 import Radiology from './pages/dashboard/Radiology';
 import Pharmacy from './pages/dashboard/Pharmacy';
 import Billing from './pages/dashboard/Billing';
@@ -19,6 +20,9 @@ import Nursing from './pages/dashboard/Nursing';
 import BedManagement from './pages/dashboard/BedManagement';
 import Emergency from './pages/dashboard/Emergency';
 import DoctorRounds from './pages/doctor/DoctorRounds';
+import DoctorLabTests from './pages/doctor/DoctorLabTests';
+import LabReportView from './pages/doctor/LabReportView';
+import LabReportsList from './pages/doctor/LabReportsList';
 import NurseDutyRoster from './pages/nursing/NurseDutyRoster';
 import Admin from './pages/dashboard/Admin';
 import ReportIncident from './pages/dashboard/ReportIncident';
@@ -94,6 +98,7 @@ function App() {
             <Route path="pharmacy" element={<Pharmacy />} />
             <Route path="ipd" element={<IPD />} />
             <Route path="lab" element={<Laboratory />} />
+            <Route path="upload-lab-report" element={<LabReportUpload />} />
             <Route path="radiology" element={<Radiology />} />
             <Route path="billing" element={<Billing />} />
             <Route path="insurance" element={<Insurance />} />
@@ -103,11 +108,14 @@ function App() {
             <Route path="bed-management" element={<BedManagement />} />
             <Route path="emergency" element={<Emergency />} />
             <Route path="doctor-rounds" element={<DoctorRounds />} />
+            <Route path="doctor-lab-tests" element={<DoctorLabTests />} />
             <Route path="duty-roster" element={<NurseDutyRoster />} />
             <Route path="report-incident" element={<ReportIncident />} />
             <Route path="my-incidents" element={<MyIncidents />} />
             <Route path="department-incidents" element={<DepartmentIncidents />} />
             <Route path="incidents/:id" element={<IncidentDetail />} />
+            <Route path="lab-reports" element={<LabReportsList />} />
+            <Route path="lab-reports/:reportId" element={<LabReportView />} />
 
             {/* Clinical Coding Routes */}
             <Route path="coding" element={<CodingDashboard />} />
