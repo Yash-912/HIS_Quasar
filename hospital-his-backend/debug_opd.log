@@ -80,3 +80,24 @@ ValidationError: Prescription validation failed: prescriptionNumber: Path `presc
 [2026-01-23T14:03:41.077Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
 [2026-01-23T14:03:41.077Z] Creating Prescription with 1 items
 [2026-01-23T14:03:41.109Z] Created Rx ID: 69737fbd1cb345f058bf362b
+[2026-01-24T13:02:20.965Z] Start creating prescription for 6974c29cabd78c11ca217fc9
+[2026-01-24T13:02:20.968Z] Processing med: Paracetamol 500mg
+[2026-01-24T13:02:20.986Z] Found med: Paracetamol 500mg (6970e6e5ae32f124038cbfef)
+[2026-01-24T13:02:20.987Z] Creating Prescription with 1 items
+[2026-01-24T13:02:21.012Z] Created Rx ID: 6974c2dcabd78c11ca2180c7
+[2026-01-24T13:27:00.882Z] Start creating prescription for 6974c8662ec1ee960af11f56
+[2026-01-24T13:27:00.885Z] Processing med: crocin
+[2026-01-24T13:27:00.895Z] Med NOT FOUND: crocin
+[2026-01-24T13:27:00.895Z] No valid medicines found to create Rx
+[2026-01-24T14:12:47.090Z] Start creating prescription for 6974d32000077cd3e41f4a5a
+[2026-01-24T14:12:47.093Z] Processing med: crocin
+[2026-01-24T14:12:47.121Z] Med NOT FOUND: crocin
+[2026-01-24T14:12:47.122Z] No valid medicines found to create Rx
+[2026-01-24T14:12:47.652Z] Start creating prescription for 6974d32000077cd3e41f4a5a
+[2026-01-24T14:12:47.653Z] Processing med: crocin
+[2026-01-24T14:12:47.681Z] Med NOT FOUND: crocin
+[2026-01-24T14:12:47.682Z] No valid medicines found to create Rx
+[2026-01-24T14:12:54.310Z] Start creating prescription for 6974d32000077cd3e41f4a5a
+[2026-01-24T14:12:54.311Z] Processing med: crocin
+[2026-01-24T14:12:54.347Z] Med NOT FOUND: crocin
+[2026-01-24T14:12:54.348Z] No valid medicines found to create Rx

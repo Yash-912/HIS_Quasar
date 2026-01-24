@@ -17,17 +17,35 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
  */
 const extractTextFromPdf = async (filePath) => {
     try {
-        // Dynamically require pdf-parse to avoid module issues
+        // pdf-parse v1.1.1 - direct function call
         const pdfParse = require('pdf-parse');
-
         const dataBuffer = fs.readFileSync(filePath);
         const data = await pdfParse(dataBuffer);
 
-        if (!data.text || data.text.trim().length === 0) {
-            throw new Error('PDF contains no extractable text');
+        // Check if meaningful text was extracted
+        const extractedText = data?.text?.trim() || '';
+
+        if (extractedText.length >= 50) {
+            console.log(`[PDF] Text extracted successfully: ${extractedText.length} chars`);
+            return extractedText;
         }
 
-        return data.text.trim();
+        // If pdf-parse returned minimal text, try OCR
+        console.log(`[PDF] pdf-parse returned minimal text (${extractedText.length} chars), trying OCR...`);
+
+        try {
+            const { extractTextFromPdf: extractWithOcr } = require('../utils/pdfExtractor');
+            const { text, method } = await extractWithOcr(filePath);
+
+            if (text && text.length >= 20) {
+                console.log(`[PDF] OCR extraction successful (${text.length} chars) via ${method}`);
+                return text;
+            }
+        } catch (ocrError) {
+            console.error('[PDF] OCR fallback failed:', ocrError.message);
+        }
+
+        throw new Error('This PDF appears to be a scanned image and OCR failed. Please upload a PDF with selectable text.');
     } catch (error) {
         console.error('PDF extraction error:', error.message);
         throw error;

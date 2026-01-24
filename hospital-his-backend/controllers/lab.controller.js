@@ -350,3 +350,109 @@ exports.getReport = asyncHandler(async (req, res, next) => {
         },
     });
 });
+
+/**
+ * @desc    Generate AI summary for a lab test (on-demand)
+ * @route   POST /api/lab/orders/:id/generate-summary
+ * @access  Doctor, Admin
+ */
+exports.generateAiSummary = asyncHandler(async (req, res, next) => {
+    const { summarizeLabReport } = require('../services/llmClient');
+    const { extractTextFromPdf } = require('../services/ai.service');
+    const path = require('path');
+    const fs = require('fs');
+
+    const order = await LabTest.findById(req.params.id).populate('test', 'testName');
+
+    if (!order) {
+        return next(new ErrorResponse('Lab order not found', 404));
+    }
+
+    // If summary already exists, return it
+    if (order.aiSummary) {
+        return res.status(200).json({
+            success: true,
+            message: 'Existing summary returned',
+            data: {
+                aiSummary: order.aiSummary,
+                summaryGeneratedAt: order.summaryGeneratedAt
+            }
+        });
+    }
+
+    // Check if we have text to summarize
+    let textToSummarize = order.extractedText;
+    console.log(`[AI Summary] Order ${order._id} - existing extractedText: ${textToSummarize?.length || 0} chars`);
+
+    // If no extracted text but have PDF, extract it now
+    if ((!textToSummarize || textToSummarize.length < 20) && order.reportPdf) {
+        try {
+            const pdfPath = path.join(__dirname, '..', order.reportPdf);
+            console.log(`[AI Summary] Attempting text extraction from: ${pdfPath}`);
+
+            // Check if file exists
+            if (!fs.existsSync(pdfPath)) {
+                console.error(`[AI Summary] PDF file not found: ${pdfPath}`);
+                return next(new ErrorResponse(`PDF file not found: ${order.reportPdf}`, 404));
+            }
+
+            // Extract using ai.service.js (returns string directly)
+            textToSummarize = await extractTextFromPdf(pdfPath);
+            console.log(`[AI Summary] Extracted ${textToSummarize?.length || 0} chars from PDF`);
+
+            // Save for future use
+            if (textToSummarize && textToSummarize.length > 0) {
+                order.extractedText = textToSummarize;
+                await order.save();
+            }
+        } catch (err) {
+            console.error('[AI Summary] Text extraction failed:', err.message);
+            return next(new ErrorResponse(`PDF text extraction failed: ${err.message}`, 500));
+        }
+    }
+
+    // Build combined context from manually entered results + PDF text
+    let combinedContext = '';
+
+    if (order.results && order.results.length > 0) {
+        combinedContext += 'MANUALLY ENTERED LAB VALUES:\n';
+        order.results.forEach(r => {
+            const status = r.isCritical ? '[CRITICAL]' : (r.isAbnormal ? '[ABNORMAL]' : '[NORMAL]');
+            combinedContext += `- ${r.parameter}: ${r.value} ${r.unit || ''} (Range: ${r.normalRange || 'N/A'}) ${status}\n`;
+        });
+        if (order.remarks) {
+            combinedContext += `\nLab Technician Remarks: ${order.remarks}\n`;
+        }
+        combinedContext += '\n';
+    }
+
+    if (textToSummarize && textToSummarize.length >= 20) {
+        combinedContext += 'EXTRACTED PDF TEXT:\n' + textToSummarize;
+    }
+
+    // Ensure we have some context to summarize
+    if (!combinedContext || combinedContext.trim().length < 20) {
+        return next(new ErrorResponse('No data available for summarization. Please enter results or upload a PDF with readable text.', 400));
+    }
+
+    try {
+        // Generate AI summary using OpenRouter LLM with combined context
+        const summary = await summarizeLabReport(combinedContext);
+
+        order.aiSummary = JSON.stringify(summary);
+        order.summaryGeneratedAt = new Date();
+        await order.save();
+
+        res.status(200).json({
+            success: true,
+            message: 'AI summary generated successfully',
+            data: {
+                aiSummary: summary,
+                summaryGeneratedAt: order.summaryGeneratedAt
+            }
+        });
+    } catch (err) {
+        console.error('AI summary generation failed:', err);
+        return next(new ErrorResponse(`AI summary failed: ${err.message}`, 500));
+    }
+});

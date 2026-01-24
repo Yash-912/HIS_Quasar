@@ -11541,3 +11541,316 @@ Error: Extraction failed: name 'parse_date_of_birth' is not defined
 2026-01-24 20:22:07 [INFO]: AI OCR Service: Extraction successful - Confidence: low
 2026-01-24 20:22:31 [INFO]: AI OCR Service: Sending image for extraction - Screenshot 2026-01-24 185919.png
 2026-01-24 20:22:34 [INFO]: AI OCR Service: Extraction successful - Confidence: high
+2026-01-24 15:55:19 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 15:55:19 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:55:19 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 15:55:19 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:55:19 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 15:55:19 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 15:55:19 [INFO]: 🔌 WebSocket enabled
+2026-01-24 15:55:19 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 15:55:19 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 15:57:42 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 17:02:07 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 17:02:17 [INFO]: MongoDB reconnected
+2026-01-24 17:47:56 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 18:04:08 [INFO]: MongoDB reconnected
+2026-01-24 18:05:43 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 18:06:11 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 18:06:11 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:06:11 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:06:11 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:06:11 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:06:11 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:06:11 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:06:11 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:06:11 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:20:14 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 18:20:18 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 18:20:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:20:18 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:20:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:20:18 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:20:18 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:20:18 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:20:18 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:20:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:23:36 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 18:23:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 18:23:51 [INFO]: Client connected: sblFP7FT8FcKgzf5AAAC
+2026-01-24 18:23:51 [INFO]: Socket sblFP7FT8FcKgzf5AAAC joined emergency room
+2026-01-24 18:23:52 [INFO]: Client disconnected: sblFP7FT8FcKgzf5AAAC
+2026-01-24 18:24:13 [INFO]: Client connected: Hf9JmtPCHbrSSftVAAAF
+2026-01-24 18:24:13 [INFO]: Socket Hf9JmtPCHbrSSftVAAAF joined emergency room
+2026-01-24 18:24:13 [INFO]: Client disconnected: Hf9JmtPCHbrSSftVAAAF
+2026-01-24 18:24:28 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:26:46 [INFO]: Client connected: PxgsmJLBXYO3gU0FAAAI
+2026-01-24 18:26:46 [INFO]: Socket PxgsmJLBXYO3gU0FAAAI joined emergency room
+2026-01-24 18:26:47 [INFO]: Client disconnected: PxgsmJLBXYO3gU0FAAAI
+2026-01-24 18:27:22 [INFO]: Client connected: mepuRYkcJJY07bafAAAL
+2026-01-24 18:27:22 [INFO]: Socket mepuRYkcJJY07bafAAAL joined emergency room
+2026-01-24 18:27:23 [INFO]: Client disconnected: mepuRYkcJJY07bafAAAL
+2026-01-24 18:27:34 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:29:18 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 18:29:20 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 18:29:20 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:29:20 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:29:20 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:29:20 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:29:20 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:29:20 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:29:20 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:29:20 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:29:37 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:29:40 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:29:43 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:30:36 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:33:21 [INFO]: Client connected: iIArxipUfUrJMvbHAAAC
+2026-01-24 18:33:21 [INFO]: Socket iIArxipUfUrJMvbHAAAC joined emergency room
+2026-01-24 18:33:22 [INFO]: Client disconnected: iIArxipUfUrJMvbHAAAC
+2026-01-24 18:37:48 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 18:38:44 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 18:38:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:38:44 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:38:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:38:44 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:38:44 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:38:44 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:38:44 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:38:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:41:05 [ERROR]: User role 'doctor' is not authorized to access this route
+Error: User role 'doctor' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-01-24 18:47:35 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 18:50:37 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 18:50:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:50:37 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 18:50:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:50:37 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 18:50:37 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 18:50:37 [INFO]: 🔌 WebSocket enabled
+2026-01-24 18:50:37 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 18:50:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 18:52:23 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 18:52:28 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 18:52:46 [INFO]: Client connected: zF0kFixEn5yXSec-AAAC
+2026-01-24 18:52:46 [INFO]: Socket zF0kFixEn5yXSec-AAAC joined emergency room
+2026-01-24 18:52:46 [INFO]: Client disconnected: zF0kFixEn5yXSec-AAAC
+2026-01-24 18:53:26 [INFO]: Client connected: B7A_DvmrgONkCb-4AAAF
+2026-01-24 18:53:26 [INFO]: Socket B7A_DvmrgONkCb-4AAAF joined emergency room
+2026-01-24 18:53:42 [INFO]: Client disconnected: B7A_DvmrgONkCb-4AAAF
+2026-01-24 18:58:51 [INFO]: Client connected: d2DZR8qEuK6ii7wyAAAI
+2026-01-24 18:58:51 [INFO]: Socket d2DZR8qEuK6ii7wyAAAI joined emergency room
+2026-01-24 18:58:52 [INFO]: Client disconnected: d2DZR8qEuK6ii7wyAAAI
+2026-01-24 19:00:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 19:00:40 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 19:00:43 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-01-24 19:01:29 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:01:37 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 19:01:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:01:37 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:01:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:01:37 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:01:37 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:01:37 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:01:37 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:01:37 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:02:03 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:02:15 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:04:16 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:06:48 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 19:06:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:06:48 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:06:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:06:48 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:06:48 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:06:48 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:06:48 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:06:48 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:08:10 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:08:11 [INFO]: MongoDB reconnected
+2026-01-24 19:20:15 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:20:58 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 19:20:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:20:58 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:20:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:20:58 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:20:58 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:20:58 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:20:58 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:20:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:27:28 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:27:30 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:27:31 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:28:19 [ERROR]: No text available for summarization. Please upload a PDF with readable text.
+Error: No text available for summarization. Please upload a PDF with readable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:398:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:30:36 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:30:40 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 19:30:40 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:30:40 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:30:40 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:30:40 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:30:40 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:30:40 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:30:40 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:30:40 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:30:52 [ERROR]: PDF text extraction failed: PDF contains no extractable text
+Error: PDF text extraction failed: PDF contains no extractable text
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
+2026-01-24 19:30:54 [ERROR]: PDF text extraction failed: PDF contains no extractable text
+Error: PDF text extraction failed: PDF contains no extractable text
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:31:00 [ERROR]: PDF text extraction failed: PDF contains no extractable text
+Error: PDF text extraction failed: PDF contains no extractable text
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:31:59 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:32:02 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-01-24 19:32:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:32:02 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:32:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:32:02 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:32:02 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:32:02 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:32:02 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:32:02 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:32:14 [ERROR]: PDF text extraction failed: PDF contains no extractable text
+Error: PDF text extraction failed: PDF contains no extractable text
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
+2026-01-24 19:37:50 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 19:38:47 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-01-24 19:38:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:38:47 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 19:38:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:38:47 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 19:38:47 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 19:38:47 [INFO]: 🔌 WebSocket enabled
+2026-01-24 19:38:47 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 19:38:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 19:39:29 [ERROR]: PDF text extraction failed: This PDF appears to be a scanned image and OCR failed. Please upload a PDF with selectable text.
+Error: PDF text extraction failed: This PDF appears to be a scanned image and OCR failed. Please upload a PDF with selectable text.
+    at /Users/khush/Desktop/Hackathons/Quasar/HIS 4/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:410:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-01-24 19:47:09 [INFO]: Client connected: H32WQqkb1HmSGN3XAAAC
+2026-01-24 19:47:09 [INFO]: Socket H32WQqkb1HmSGN3XAAAC joined emergency room
+2026-01-24 19:48:12 [INFO]: Client disconnected: H32WQqkb1HmSGN3XAAAC
+2026-01-24 19:49:28 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-01-24 20:21:34 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:34 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:21:34 [INFO]: 🚀 Server running in development mode on port 5001
+2026-01-24 20:21:34 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-01-24 20:21:34 [INFO]: 🔌 WebSocket enabled
+2026-01-24 20:21:34 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-01-24 20:21:34 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-01-24 20:26:43 [WARN]: MongoDB disconnected. Attempting to reconnect...
