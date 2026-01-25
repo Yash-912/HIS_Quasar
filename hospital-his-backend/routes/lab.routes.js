@@ -41,7 +41,7 @@ router.post('/orders/:id/collect-sample', authorize('lab_tech', 'nurse'), labCon
  * @route   POST /api/lab/orders/:id/enter-results
  * @desc    Enter lab results
  */
-router.post('/orders/:id/enter-results', authorize('lab_tech'), labController.enterResults);
+router.post('/orders/:id/enter-results', authorize('lab_tech', 'doctor'), labController.enterResults);
 
 /**
  * @route   POST /api/lab/orders/:id/generate-report
@@ -53,7 +53,7 @@ router.post('/orders/:id/generate-report', authorize('lab_tech'), labController.
  * @route   POST /api/lab/orders/:id/upload-report
  * @desc    Upload PDF report and generate AI summary
  */
-router.post('/orders/:id/upload-report', authorize('lab_tech'), uploadLabReport.single('report'), labController.uploadReport);
+router.post('/orders/:id/upload-report', authorize('lab_tech', 'doctor'), uploadLabReport.single('report'), labController.uploadReport);
 
 /**
  * @route   GET /api/lab/orders/:id/report

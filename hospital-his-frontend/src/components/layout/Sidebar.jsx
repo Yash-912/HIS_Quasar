@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             title: 'Dashboard',
             path: '/dashboard',
             icon: <LayoutDashboard size={20} />,
-            roles: ['doctor', 'nurse', 'receptionist', 'pharmacist', 'lab_tech', 'billing', 'head_nurse'] // REMOVED 'admin'
+            roles: ['doctor', 'nurse', 'receptionist', 'pharmacist', 'lab_tech', 'radiologist', 'billing', 'head_nurse'] // REMOVED 'admin'
         },
         {
             title: 'Patients',
@@ -135,7 +135,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             title: 'Billing',
             path: '/dashboard/billing',
             icon: <Banknote size={20} />,
-            roles: ['billing', 'receptionist']
+            roles: ['billing']
         },
         {
             title: 'Insurance',

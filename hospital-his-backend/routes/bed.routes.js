@@ -35,7 +35,7 @@ router.post('/allocate', authorize('receptionist', 'nurse', 'admin'), bedControl
  * @route   POST /api/beds/transfer
  * @desc    Transfer patient to another bed
  */
-router.post('/transfer', authorize('nurse', 'admin'), bedController.transferBed);
+router.post('/transfer', authorize('nurse', 'admin', 'doctor'), bedController.transferBed);
 
 /**
  * @route   GET /api/beds/:id

@@ -49,6 +49,10 @@ const carePlanSchema = new mongoose.Schema(
                 'nutrition',
                 'infection_control',
                 'mental_health',
+                'mobility',
+                'fall_prevention',
+                'skin_care',
+                'pressure_ulcer',
                 'other'
             ],
         },
@@ -62,7 +66,7 @@ const carePlanSchema = new mongoose.Schema(
                 targetDate: Date,
                 priority: {
                     type: String,
-                    enum: ['low', 'medium', 'high'],
+                    enum: ['low', 'medium', 'high', 'critical'],
                     default: 'medium',
                 },
                 status: {
@@ -136,7 +140,7 @@ const carePlanSchema = new mongoose.Schema(
                 flaggedAt: { type: Date, default: Date.now },
                 severity: {
                     type: String,
-                    enum: ['low', 'medium', 'high'],
+                    enum: ['low', 'medium', 'high', 'critical'],
                 },
                 status: {
                     type: String,

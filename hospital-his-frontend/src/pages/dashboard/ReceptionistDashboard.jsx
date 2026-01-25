@@ -43,46 +43,92 @@ const CountUp = ({ value, duration = 1000 }) => {
 }
 
 // Reuse StatCard Component with enhancements
-const StatCard = ({ title, value, subtext, icon: Icon, color, isLoading, index }) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: index * 0.1 }}
-        whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)" }}
-        className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm transition-all relative overflow-hidden group cursor-default"
-    >
-        {/* Soft background gradient glow */}
-        <div className={`absolute top-0 right-0 w-32 h-32 ${color} bg-opacity-5 rounded-bl-[100px] -mr-10 -mt-10 transition-transform group-hover:scale-110 duration-500`} />
+const StatCard = ({ title, value, subtext, icon: Icon, baseColor, isLoading, index }) => {
+    const colorClasses = {
+        blue: {
+            bg: 'bg-blue-50',
+            border: 'border-blue-100',
+            text: 'text-blue-600',
+            iconBg: 'bg-blue-100',
+            shadow: 'shadow-blue-500/10',
+            accent: 'via-blue-400',
+            ring: 'ring-blue-500/10'
+        },
+        purple: {
+            bg: 'bg-purple-50',
+            border: 'border-purple-100',
+            text: 'text-purple-600',
+            iconBg: 'bg-purple-100',
+            shadow: 'shadow-purple-500/10',
+            accent: 'via-purple-400',
+            ring: 'ring-purple-500/10'
+        },
+        amber: {
+            bg: 'bg-amber-50',
+            border: 'border-amber-100',
+            text: 'text-amber-600',
+            iconBg: 'bg-amber-100',
+            shadow: 'shadow-amber-500/10',
+            accent: 'via-amber-400',
+            ring: 'ring-amber-500/10'
+        },
+        emerald: {
+            bg: 'bg-emerald-50',
+            border: 'border-emerald-100',
+            text: 'text-emerald-600',
+            iconBg: 'bg-emerald-100',
+            shadow: 'shadow-emerald-500/10',
+            accent: 'via-emerald-400',
+            ring: 'ring-emerald-500/10'
+        },
+    };
 
-        <div className="relative z-10">
-            <div className="flex items-start justify-between mb-4">
-                <div>
-                    <p className="text-gray-500 text-sm font-semibold tracking-wide uppercase opacity-70 mb-2">{title}</p>
-                    <h3 className="text-4xl font-extrabold text-slate-800 tracking-tight">
-                        {isLoading ? (
-                            <div className="h-10 w-20 bg-gray-100 animate-pulse rounded"></div>
-                        ) : (
-                            <CountUp value={value} />
-                        )}
-                    </h3>
+    const colors = colorClasses[baseColor] || colorClasses.blue;
+
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            whileHover={{ y: -5 }}
+            className={`relative p-6 rounded-2xl border ${colors.border} bg-white shadow-lg ${colors.shadow} hover:shadow-xl transition-all duration-300 group overflow-hidden`}
+        >
+            {/* Subtle Gradient Background */}
+            <div className={`absolute inset-0 bg-gradient-to-br ${colors.bg} to-white opacity-40`} />
+
+            {/* Top Accent Line */}
+            <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent ${colors.accent} to-transparent opacity-50`} />
+
+            <div className="relative z-10">
+                <div className="flex items-start justify-between mb-4">
+                    <div>
+                        <p className="text-slate-500 text-xs font-bold tracking-wider uppercase opacity-80 mb-1">{title}</p>
+                        <h3 className="text-4xl font-black text-slate-800 tracking-tight">
+                            {isLoading ? (
+                                <div className="h-10 w-20 bg-slate-100 animate-pulse rounded-lg"></div>
+                            ) : (
+                                <CountUp value={value} />
+                            )}
+                        </h3>
+                    </div>
+                    <motion.div
+                        whileHover={{ rotate: 15, scale: 1.1 }}
+                        className={`p-3.5 rounded-xl ${colors.iconBg} ${colors.text} shadow-sm ring-1 ring-white/50`}
+                    >
+                        <Icon size={24} strokeWidth={2.5} />
+                    </motion.div>
                 </div>
-                <motion.div
-                    whileHover={{ rotate: 15, scale: 1.1 }}
-                    className={`p-4 rounded-2xl ${color} bg-opacity-10 text-opacity-100 shadow-sm`}
-                >
-                    <Icon size={24} className={color.replace('bg-', 'text-')} />
-                </motion.div>
+                <div className="flex items-center gap-2 mt-2">
+                    <span className={`flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-white/60 ${colors.text} ring-1 ${colors.ring}`}>
+                        <TrendingUp size={10} />
+                        Live
+                    </span>
+                    <span className="text-sm font-medium text-slate-400">{subtext}</span>
+                </div>
             </div>
-            <div className="flex items-center text-sm font-medium">
-                <span className={`flex items-center ${color.replace('bg-', 'text-')} bg-opacity-10 px-2 py-0.5 rounded-full mr-2`}>
-                    <TrendingUp size={12} className="mr-1" />
-                    Live
-                </span>
-                <span className="text-gray-400">{subtext}</span>
-            </div>
-        </div>
-    </motion.div>
-);
+        </motion.div>
+    );
+}
 
 const ReceptionistDashboard = () => {
     const dispatch = useDispatch();
@@ -314,7 +360,7 @@ const ReceptionistDashboard = () => {
                     value={todayCount}
                     subtext="New patients today"
                     icon={Users}
-                    color="bg-blue-500"
+                    baseColor="blue"
                     isLoading={isRefreshing}
                 />
                 <StatCard
@@ -323,7 +369,7 @@ const ReceptionistDashboard = () => {
                     value={stats?.appointments?.scheduled || 0}
                     subtext="Scheduled for today"
                     icon={Calendar}
-                    color="bg-purple-500"
+                    baseColor="purple"
                     isLoading={isRefreshing}
                 />
                 <StatCard
@@ -332,7 +378,7 @@ const ReceptionistDashboard = () => {
                     value={stats?.appointments?.checkedIn || 0}
                     subtext="Waiting in lobby"
                     icon={Clock}
-                    color="bg-amber-500"
+                    baseColor="amber"
                     isLoading={isRefreshing}
                 />
                 <StatCard
@@ -341,7 +387,7 @@ const ReceptionistDashboard = () => {
                     value={stats?.appointments?.completed || 0}
                     subtext="Successfully cleared"
                     icon={Activity}
-                    color="bg-emerald-500"
+                    baseColor="emerald"
                     isLoading={isRefreshing}
                 />
             </div>
@@ -353,19 +399,22 @@ const ReceptionistDashboard = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
-                    className="lg:col-span-2 bg-white p-8 rounded-3xl border border-gray-100 shadow-xl shadow-slate-200/50"
+                    className="lg:col-span-2 bg-white p-6 rounded-2xl border border-slate-200/60 shadow-lg shadow-slate-200/50"
                 >
                     <div className="flex items-center justify-between mb-8">
                         <div>
-                            <h3 className="font-bold text-xl text-slate-800">Patient Traffic</h3>
-                            <p className="text-sm text-gray-500">Hourly breakdown of footfall</p>
+                            <h3 className="font-bold text-lg text-slate-800 flex items-center gap-2">
+                                <Users size={20} className="text-blue-500" />
+                                Patient Traffic
+                            </h3>
+                            <p className="text-sm font-medium text-slate-400 mt-1">Hourly breakdown of footfall</p>
                         </div>
-                        <div className="flex items-center gap-4 text-xs font-semibold">
-                            <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-blue-500"></span> Registrations
+                        <div className="flex items-center gap-4 text-xs font-bold tracking-wide">
+                            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 border border-blue-100">
+                                <span className="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Registrations
                             </div>
-                            <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-purple-500"></span> Appointments
+                            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 border border-purple-100">
+                                <span className="w-2.5 h-2.5 rounded-full bg-purple-500"></span> Appointments
                             </div>
                         </div>
                     </div>
@@ -428,17 +477,20 @@ const ReceptionistDashboard = () => {
                 {/* Right Column: Key Actions & Live Feed */}
                 <div className="space-y-8">
 
-                    {/* Quick Actions Panel */}
+                    {/* Quick Actions Panel - Dark Glass Style */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.5 }}
-                        className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 text-white shadow-xl shadow-slate-900/20 relative overflow-hidden"
+                        className="bg-slate-900 rounded-2xl p-6 text-white shadow-xl shadow-slate-900/20 relative overflow-hidden border border-slate-700/50"
                     >
                         {/* Decorative circle */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-16 -mt-16 blur-2xl pointer-events-none"></div>
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full -mr-16 -mt-16 blur-3xl pointer-events-none"></div>
 
-                        <h3 className="font-bold text-lg mb-6 relative z-10">Quick Actions</h3>
+                        <h3 className="font-bold text-lg mb-6 relative z-10 flex items-center gap-2">
+                            <Activity size={20} className="text-blue-400" />
+                            Quick Actions
+                        </h3>
 
                         <div className="space-y-4 relative z-10">
                             <button
@@ -484,50 +536,62 @@ const ReceptionistDashboard = () => {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.6 }}
-                        className="bg-white p-6 rounded-3xl border border-gray-100 shadow-xl shadow-slate-200/50"
+                        className="bg-white p-6 rounded-2xl border border-slate-200 shadow-lg shadow-slate-200/50"
                     >
                         <div className="flex justify-between items-center mb-6">
-                            <h3 className="font-bold text-slate-800 text-lg">Live Updates</h3>
-                            <span className="flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-semibold border border-green-100">
+                            <h3 className="font-bold text-slate-800 text-lg flex items-center gap-2">
+                                <Bell size={20} className="text-orange-500" />
+                                Live Updates
+                            </h3>
+                            <span className="flex items-center gap-2 px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-full text-[10px] font-bold uppercase tracking-wide border border-emerald-100">
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                                 </span>
                                 System Active
                             </span>
                         </div>
 
-                        <div className="space-y-0 max-h-[300px] overflow-y-auto pr-1 custom-scrollbar -mr-2">
+                        <div className="space-y-3 max-h-[300px] overflow-y-auto custom-scrollbar pr-2">
                             <AnimatePresence>
                                 {notifications.length === 0 ? (
                                     <motion.div
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
-                                        className="text-center py-12 border-2 border-dashed border-slate-100 rounded-2xl"
+                                        className="text-center py-8 border border-dashed border-slate-200 rounded-xl bg-slate-50/50"
                                     >
-                                        <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-3 text-slate-300">
-                                            <Activity size={20} />
+                                        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mx-auto mb-3 text-slate-300 shadow-sm border border-slate-100">
+                                            <Activity size={18} />
                                         </div>
                                         <p className="text-slate-400 font-medium text-sm">Waiting for events...</p>
-                                        <p className="text-slate-300 text-xs">New activities will appear here.</p>
                                     </motion.div>
                                 ) : (
                                     notifications.map((notif, idx) => (
                                         <motion.div
                                             key={notif.id}
-                                            initial={{ opacity: 0, x: 50, height: 0 }}
+                                            initial={{ opacity: 0, x: 20, height: 0 }}
                                             animate={{ opacity: 1, x: 0, height: 'auto' }}
-                                            exit={{ opacity: 0, x: -50, height: 0 }}
-                                            className="relative pl-6 pb-6 last:pb-0 border-l-2 border-slate-100"
+                                            exit={{ opacity: 0, x: -20, height: 0 }}
+                                            className="group relative bg-white border border-slate-100 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
                                         >
-                                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 border-4 border-white shadow-sm"></div>
-                                            <div className="bg-slate-50 p-3 rounded-xl hover:bg-blue-50 transition-colors cursor-default">
-                                                <div className="flex justify-between items-start mb-1">
-                                                    <span className="font-bold text-slate-700 text-sm">{notif.title}</span>
-                                                    <span className="text-[10px] text-slate-400 font-medium">{format(notif.time, 'h:mm a')}</span>
-                                                </div>
-                                                <p className="text-xs text-slate-500 leading-relaxed">{notif.message}</p>
+                                            {/* Left Accent Border based on type */}
+                                            <div className={`absolute left-0 top-0 bottom-0 w-1 ${notif.type === 'registration' ? 'bg-blue-500' :
+                                                notif.type === 'appointment' ? 'bg-purple-500' : 'bg-gray-400'
+                                                }`} />
+
+                                            <div className="flex justify-between items-start mb-1 pl-2">
+                                                <span className={`font-bold text-sm ${notif.type === 'registration' ? 'text-blue-700' :
+                                                    notif.type === 'appointment' ? 'text-purple-700' : 'text-slate-700'
+                                                    }`}>
+                                                    {notif.title}
+                                                </span>
+                                                <span className="text-[10px] text-slate-400 font-medium bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100">
+                                                    {format(notif.time, 'h:mm a')}
+                                                </span>
                                             </div>
+                                            <p className="text-xs text-slate-500 font-medium leading-relaxed pl-2 group-hover:text-slate-700 transition-colors">
+                                                {notif.message}
+                                            </p>
                                         </motion.div>
                                     ))
                                 )}

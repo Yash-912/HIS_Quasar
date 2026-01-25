@@ -55,8 +55,8 @@ const Header = ({ toggleSidebar }) => {
 
             {/* Right: Actions */}
             <div className="flex items-center gap-3 md:gap-4">
-                {/* Emergency Alert Badge */}
-                {activeEmergencyCount > 0 && (
+                {/* Emergency Alert Badge - Only for clinical staff */}
+                {activeEmergencyCount > 0 && ['doctor', 'nurse', 'head_nurse', 'receptionist'].includes(user?.role) && (
                     <motion.button
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}

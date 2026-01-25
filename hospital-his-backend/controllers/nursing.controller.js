@@ -26,6 +26,14 @@ exports.startShift = asyncHandler(async (req, res, next) => {
     const { shiftType, wardIds, nurseRole } = req.body;
     const nurseId = req.user._id;
 
+    // Validate shiftType
+    if (!shiftType || !['morning', 'evening', 'night'].includes(shiftType)) {
+        return next(new ErrorResponse('Invalid shift type', 400));
+    }
+
+    // Filter out empty/invalid wardIds
+    const validWardIds = (wardIds || []).filter(id => id && id.trim && id.trim() !== '');
+
     // Check if nurse already has an active shift
     const activeShift = await NursingShift.findOne({
         nurse: nurseId,
@@ -55,8 +63,8 @@ exports.startShift = asyncHandler(async (req, res, next) => {
         shift.status = 'active';
         shift.actualStartTime = new Date();
         // Update wards only if provided, otherwise keep scheduled wards
-        if (wardIds && wardIds.length > 0) {
-            shift.assignedWards = wardIds;
+        if (validWardIds.length > 0) {
+            shift.assignedWards = validWardIds;
         }
         if (nurseRole) {
             shift.nurseRole = nurseRole;
@@ -75,7 +83,7 @@ exports.startShift = asyncHandler(async (req, res, next) => {
             startTime,
             endTime,
             actualStartTime: new Date(),
-            assignedWards: wardIds,
+            assignedWards: validWardIds.length > 0 ? validWardIds : [],
             nurseRole: nurseRole || 'staff_nurse',
             status: 'active',
             createdBy: nurseId,
@@ -83,7 +91,7 @@ exports.startShift = asyncHandler(async (req, res, next) => {
     }
 
     // Determine final list of wards to fetch patients from
-    const finalWardIds = shift.assignedWards || [];
+    const finalWardIds = (shift.assignedWards || []).filter(id => id);
 
     // Get patients in assigned wards
     let admissions = [];
@@ -112,7 +120,15 @@ exports.startShift = asyncHandler(async (req, res, next) => {
     // generateNursingTasks implementation is hidden in 'generateNursingTasks(shift, admissions)' call below (Wait, it was there in original code)
     // I need to make sure I don't lose that function call or ensuring it doesn't duplicate.
 
-    await generateNursingTasks(shift, admissions);
+    // Wrap in try-catch to prevent task generation errors from blocking shift start
+    try {
+        if (shift.endTime) {
+            await generateNursingTasks(shift, admissions);
+        }
+    } catch (taskError) {
+        console.error('Non-critical error generating nursing tasks:', taskError.message);
+        // Continue with shift start even if task generation fails
+    }
 
     // Audit log
     await createAuditLog({
@@ -1287,6 +1303,12 @@ async function generateNursingTasks(shift, admissions) {
     const tasks = [];
     const now = new Date();
     const shiftEnd = shift.endTime;
+
+    // Safety check - skip task generation if endTime is not defined
+    if (!shiftEnd) {
+        console.warn('generateNursingTasks: shift.endTime not defined, skipping task generation');
+        return;
+    }
 
     for (const admission of admissions) {
         // Skip if no patient

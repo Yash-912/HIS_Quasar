@@ -7,6 +7,12 @@ import ReceptionistDashboard from './ReceptionistDashboard';
 import ClinicalDashboard from './ClinicalDashboard';
 import AdminGovernanceDashboard from '../admin/AdminGovernanceDashboard';
 import InventoryDashboard from '../inventory/InventoryDashboard';
+import LabTechDashboard from './LabTechDashboard';
+import RadiologyDashboard from './RadiologyDashboard';
+import PharmacistDashboard from './PharmacistDashboard';
+import BillingDashboard from './BillingDashboard';
+import HeadNurseDashboard from './HeadNurseDashboard';
+import NurseDashboard from './NurseDashboard';
 
 const StatCard = ({ title, value, subtext, icon: Icon, color }) => (
     <motion.div
@@ -54,9 +60,19 @@ const Dashboard = () => {
             return <ReceptionistDashboard />;
         }
 
-        // Doctors and Nurses get Clinical Dashboard
-        if (['doctor', 'nurse', 'head_nurse'].includes(user?.role)) {
+        // Doctors get Clinical Dashboard
+        if (user?.role === 'doctor') {
             return <ClinicalDashboard />;
+        }
+
+        // Regular Nurses get Nurse Dashboard (shift/task focused)
+        if (user?.role === 'nurse') {
+            return <NurseDashboard />;
+        }
+
+        // Head Nurses get Head Nurse Dashboard (ward management focused)
+        if (user?.role === 'head_nurse') {
+            return <HeadNurseDashboard />;
         }
 
         // Admin View - Use comprehensive Governance Dashboard
@@ -69,45 +85,31 @@ const Dashboard = () => {
             return <InventoryDashboard />;
         }
 
-        // Pharmacist View
-        if (user?.role === 'pharmacist') {
-            return (
-                <>
-                    <h1 className="text-2xl font-bold text-slate-800 mb-6">Pharmacy Dashboard</h1>
-                    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center">
-                        <div className="text-6xl mb-4">💊</div>
-                        <h2 className="text-xl font-bold text-slate-700 mb-2">Welcome, Pharmacist!</h2>
-                        <p className="text-gray-500 mb-6">Manage prescriptions and inventory from the Pharmacy section.</p>
-                        <a href="/pharmacy" className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition-colors">
-                            Go to Pharmacy →
-                        </a>
-                    </div>
-                </>
-            );
+        // Lab Technician View
+        if (user?.role === 'lab_tech') {
+            return <LabTechDashboard />;
         }
 
-        // Lab Tech View
-        if (user?.role === 'lab_tech') {
-            return (
-                <>
-                    <h1 className="text-2xl font-bold text-slate-800 mb-6">Laboratory Dashboard</h1>
-                    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center">
-                        <div className="text-6xl mb-4">🧪</div>
-                        <h2 className="text-xl font-bold text-slate-700 mb-2">Welcome, Lab Technician!</h2>
-                        <p className="text-gray-500 mb-6">Process lab orders and enter test results.</p>
-                        <a href="/dashboard/lab" className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-xl font-medium hover:bg-purple-700 transition-colors">
-                            Go to Laboratory →
-                        </a>
-                    </div>
-                </>
-            );
+        // Radiologist View
+        if (user?.role === 'radiologist') {
+            return <RadiologyDashboard />;
+        }
+
+        // Pharmacist View
+        if (user?.role === 'pharmacist') {
+            return <PharmacistDashboard />;
+        }
+
+        // Billing Staff View
+        if (user?.role === 'billing') {
+            return <BillingDashboard />;
         }
 
         return <div>Welcome to your dashboard</div>;
     };
 
     // For roles with dedicated dashboards, don't show the shared widgets
-    const showSharedWidgets = !['receptionist', 'doctor', 'nurse', 'head_nurse', 'inventory_manager'].includes(user?.role);
+    const showSharedWidgets = !['receptionist', 'doctor', 'nurse', 'head_nurse', 'inventory_manager', 'lab_tech', 'radiologist', 'pharmacist', 'billing'].includes(user?.role);
 
     return (
         <div className="min-h-screen">

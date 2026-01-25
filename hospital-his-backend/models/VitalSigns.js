@@ -107,10 +107,10 @@ const vitalSignsSchema = new mongoose.Schema(
             motor: { type: Number, min: 1, max: 6 },
             total: Number,
         },
-        // Level of consciousness
+        // Level of consciousness (AVPU scale + additional states)
         consciousness: {
             type: String,
-            enum: ['alert', 'drowsy', 'confused', 'unresponsive', 'sedated', 'pain'],
+            enum: ['alert', 'verbal', 'pain', 'unresponsive', 'drowsy', 'confused', 'sedated', 'agitated'],
             default: 'alert',
         },
         // Pupil assessment
