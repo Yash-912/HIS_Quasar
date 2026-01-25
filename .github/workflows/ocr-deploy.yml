@@ -2,7 +2,7 @@ name: Deploy OCR Service
 
 on:
   push:
-    branches: [main]
+    branches: [f2]
     paths:
       - 'his-id-ocr/**'
       - '.github/workflows/ocr-deploy.yml'

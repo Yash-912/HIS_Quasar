@@ -2,7 +2,7 @@ name: Deploy ML Services
 
 on:
   push:
-    branches: [main]
+    branches: [f2]
     paths:
       - 'hospital-his-ml/**'
       - '.github/workflows/ml-deploy.yml'

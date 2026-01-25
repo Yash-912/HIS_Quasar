@@ -2,7 +2,7 @@ name: Deploy Backend
 
 on:
   push:
-    branches: [main]
+    branches: [f2]
     paths:
       - 'hospital-his-backend/**'
       - '.github/workflows/backend-deploy.yml'
