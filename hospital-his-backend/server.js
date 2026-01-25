@@ -69,7 +69,7 @@ const io = new Server(httpServer, {
     cors: {
         origin: config.corsOrigins,
         methods: ['GET', 'POST'],
-        credentials: true,
+        credentials: false,
     },
 });
 
@@ -88,7 +88,7 @@ app.use(helmet({
 // CORS
 app.use(cors({
     origin: config.corsOrigins,
-    credentials: true,
+    credentials: false,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
