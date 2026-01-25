@@ -92,7 +92,7 @@ const DoctorLabTests = () => {
             const pdfPath = selectedTest.reportPdf.startsWith('/')
                 ? selectedTest.reportPdf
                 : '/' + selectedTest.reportPdf;
-            return `http://localhost:5001${pdfPath}`;
+            return `http://98.93.152.237:5000${pdfPath}`;
         }
         return null;
     };

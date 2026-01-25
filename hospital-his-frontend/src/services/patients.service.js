@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/patients/';
+const API_URL = 'http://98.93.152.237:5000/api/v1/patients/';
 
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -45,7 +45,7 @@ const getPatientHistory = async (id) => {
 
 // Get patient lab results
 const getPatientLabResults = async (patientId) => {
-    const response = await axios.get(`http://localhost:5001/api/v1/lab/orders?patient=${patientId}`, getConfig());
+    const response = await axios.get(`http://98.93.152.237:5000/api/v1/lab/orders?patient=${patientId}`, getConfig());
     return response.data.data;
 };
 

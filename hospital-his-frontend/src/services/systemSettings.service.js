@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/system-settings';
+const API_URL = 'http://98.93.152.237:5000/api/v1/system-settings';
 
 // Get token from local storage
 const getConfig = () => {

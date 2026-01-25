@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_RES_URL = 'http://localhost:5001/api/v1/';
+const API_RES_URL = 'http://98.93.152.237:5000/api/v1/';
 
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));

@@ -7,7 +7,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/patients/';
+const API_URL = 'http://98.93.152.237:5000/api/v1/patients/';
 
 /**
  * Get authorization config from localStorage
@@ -77,7 +77,7 @@ const scanIdCard = async (imageFile) => {
  */
 const checkServiceAvailability = async () => {
     try {
-        const response = await axios.get('http://localhost:8000/health', {
+        const response = await axios.get('http://98.93.152.237:8000/health', {
             timeout: 3000
         });
         return response.data.status === 'healthy';

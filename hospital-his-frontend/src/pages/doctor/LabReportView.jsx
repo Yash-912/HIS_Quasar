@@ -255,7 +255,7 @@ const LabReportView = () => {
                     <div className="p-4">
                         {report?.pdf?.url ? (
                             <iframe
-                                src={`http://localhost:5001${report.pdf.url}`}
+                                src={`http://98.93.152.237:5000${report.pdf.url}`}
                                 className="w-full h-[600px] border rounded-lg"
                                 title="Lab Report PDF"
                             />

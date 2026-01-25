@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const config = {
     // Server Configuration
-    port: process.env.PORT || 5001,
+    port: process.env.PORT || 5000,
     nodeEnv: process.env.NODE_ENV || 'development',
 
     // MongoDB Configuration
@@ -49,7 +49,7 @@ const config = {
     logLevel: process.env.LOG_LEVEL || 'info',
 
     // Cors
-    corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:5173'],
+    corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:5173', '*'],
 };
 
 module.exports = config;

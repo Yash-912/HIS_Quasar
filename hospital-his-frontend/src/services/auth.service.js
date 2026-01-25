@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Align with your backend server URL
-const API_URL = 'http://localhost:5001/api/v1/auth/';
+const API_URL = 'http://98.93.152.237:5000/api/v1/auth/';
 
 // Login user
 const login = async (userData) => {

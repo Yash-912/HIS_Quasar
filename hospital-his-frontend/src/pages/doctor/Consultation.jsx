@@ -9,7 +9,7 @@ import HandwritingCanvas from '../../components/doctor/HandwritingCanvas';
 import MedicineAutocomplete from '../../components/prescription/MedicineAutocomplete';
 import systemSettingsService from '../../services/systemSettings.service';
 
-const API_RES_URL = 'http://localhost:5001/api/v1/';
+const API_RES_URL = 'http://98.93.152.237:5000/api/v1/';
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
     return { headers: { Authorization: `Bearer ${user?.token}` } };

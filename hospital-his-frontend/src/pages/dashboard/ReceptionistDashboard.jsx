@@ -8,7 +8,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGri
 import io from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
 
-const SOCKET_URL = 'http://localhost:5001';
+const SOCKET_URL = 'http://98.93.152.237:5000';
 const POLLING_INTERVAL = 30000; // 30 seconds
 
 // Custom CountUp Component for animated numbers

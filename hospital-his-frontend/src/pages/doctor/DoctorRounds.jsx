@@ -22,7 +22,7 @@ import axios from 'axios';
 import CarePlanCreator from '../../components/doctor/CarePlanCreator';
 import * as carePlanService from '../../services/careplan.service';
 
-const API_URL = 'http://localhost:5001/api/v1';
+const API_URL = 'http://98.93.152.237:5000/api/v1';
 
 const getAuthHeaders = () => {
     const user = JSON.parse(localStorage.getItem('user'));
