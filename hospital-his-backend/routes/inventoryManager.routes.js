@@ -27,7 +27,8 @@ router.get('/items', controller.getItems);
 router.get('/items/:id', controller.getItem);
 router.post('/items', controller.createItem);
 router.put('/items/:id', controller.updateItem);
-router.put('/items/:id/deactivate', controller.deactivateItem);
+router.post('/items/:id/consume', controller.consumeStock);
+router.delete('/items/:id', controller.deactivateItem);
 router.get('/items/:id/audit-log', controller.getItemAuditLog);
 
 // ═══════════════════════════════════════════════════════════════════
@@ -118,5 +119,27 @@ router.put('/stock-transfers/:id/receive', controller.receiveStockTransfer);
 router.get('/recalls', controller.getRecalls);
 router.post('/recalls', controller.createRecall);
 router.put('/recalls/:id/progress', controller.updateRecallProgress);
+
+// ═══════════════════════════════════════════════════════════════════
+// AGENTIC REORDER WORKFLOW
+// ═══════════════════════════════════════════════════════════════════
+const reorderAgentController = require('../controllers/inventoryReorderAgent.controller');
+
+// Trigger agent to generate draft
+router.post('/reorder/agent/draft', reorderAgentController.generateReorderDraft);
+
+// Draft Purchase Request CRUD
+router.get('/draft-purchase-requests', reorderAgentController.getDraftPurchaseRequests);
+router.get('/draft-purchase-requests/:id', reorderAgentController.getDraftPurchaseRequest);
+
+// Approval workflow
+router.put('/draft-purchase-requests/:id/approve', reorderAgentController.approveDraftPurchaseRequest);
+router.put('/draft-purchase-requests/:id/reject', reorderAgentController.rejectDraftPurchaseRequest);
+
+// Convert to Purchase Requisition
+router.post('/draft-purchase-requests/:id/convert', reorderAgentController.convertToPurchaseRequisition);
+
+// Fulfill draft (directly update inventory - simulates supplier delivery)
+router.post('/draft-purchase-requests/:id/fulfill', reorderAgentController.fulfillDraftPurchaseRequest);
 
 module.exports = router;

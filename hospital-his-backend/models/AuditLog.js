@@ -32,6 +32,8 @@ const auditLogSchema = new mongoose.Schema(
                 // Onboarding operations
                 'onboarding_id_generate', 'onboarding_id_use',
                 'user_signup', 'user_approve', 'user_reject',
+                // Agentic Inventory operations
+                'inventory_reorder_agent_run',
                 // Other
                 'other'
             ],

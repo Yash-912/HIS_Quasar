@@ -90,6 +90,47 @@ const inventoryItemSchema = new mongoose.Schema(
             type: Boolean,
             default: true,
         },
+        // ═══════════════════════════════════════════════════════════════════
+        // INVENTORY POLICY FIELDS (for Agentic Reorder Workflow)
+        // ═══════════════════════════════════════════════════════════════════
+        policy: {
+            minLevel: {
+                type: Number,
+                default: 0,
+                min: 0,
+            },
+            targetLevel: {
+                type: Number,
+                default: 0,
+                min: 0,
+            },
+            priority: {
+                type: Number,
+                default: 3,
+                min: 1,
+                max: 5,
+            },
+            leadTimeDays: {
+                type: Number,
+                default: 7,
+                min: 0,
+            },
+            unitCost: {
+                type: Number,
+                default: 0,
+                min: 0,
+            },
+            maxOrderQty: {
+                type: Number,
+                default: 100,
+                min: 1,
+            },
+        },
+        policyCategory: {
+            type: String,
+            enum: ['general_stores', 'pharmacy', 'equipment', 'consumables'],
+            default: 'general_stores',
+        },
         deactivatedAt: {
             type: Date,
         },

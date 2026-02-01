@@ -16198,3 +16198,880 @@ Error: AI summary failed: LLM API failed: User not found.
 2026-01-27 02:31:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
 2026-01-27 02:32:00 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
 2026-01-27 02:32:01 [INFO]: Client disconnected: pixHqhPLKkzcMtpGAAAC
+2026-02-01 15:11:18 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 15:11:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 15:11:18 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 15:11:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 15:11:18 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 15:11:18 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 15:11:18 [INFO]: 🔌 WebSocket enabled
+2026-02-01 15:11:18 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 15:11:18 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 15:11:36 [INFO]: Client connected: qkHh6Eujyp6bTORWAAAC
+2026-02-01 15:11:36 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6975f151a85f0bd2d20f8176
+2026-02-01 15:11:37 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-02-01 15:11:37 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6975f151a85f0bd2d20f8176
+2026-02-01 15:11:37 [INFO]: [ClinicalDashboard] Response: appointments=0, labs=0, critical=0
+2026-02-01 15:11:39 [INFO]: Client disconnected: qkHh6Eujyp6bTORWAAAC
+2026-02-01 15:11:50 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-01 15:12:07 [INFO]: Client connected: WSOouEqr1_k0SwjJAAAF
+2026-02-01 15:12:07 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-02-01 15:12:07 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:12:07 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:12:07 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:12:07 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:12:13 [INFO]: Client disconnected: WSOouEqr1_k0SwjJAAAF
+2026-02-01 15:12:51 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-02-01 15:12:51 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-02-01 15:12:59 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:12:59 [INFO]: Client connected: DUH4_2zSeOyrmRVBAAAI
+2026-02-01 15:12:59 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-02-01 15:12:59 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:12:59 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:12:59 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:13 [INFO]: Client disconnected: DUH4_2zSeOyrmRVBAAAI
+2026-02-01 15:13:14 [INFO]: Client connected: wqOKiYyDc3ngRnD1AAAL
+2026-02-01 15:13:14 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-02-01 15:13:14 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:14 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:14 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:14 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:15 [INFO]: Client disconnected: wqOKiYyDc3ngRnD1AAAL
+2026-02-01 15:13:17 [INFO]: Client connected: eB4DnWz78JNKuqFeAAAO
+2026-02-01 15:13:17 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:17 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-02-01 15:13:17 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:17 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:17 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:19 [INFO]: Client disconnected: eB4DnWz78JNKuqFeAAAO
+2026-02-01 15:13:19 [INFO]: Client connected: QDyqV2L1N1RgRowuAAAR
+2026-02-01 15:13:19 [INFO]: User 6970e6e6ae32f124038cc0aa joined personal room
+2026-02-01 15:13:19 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:19 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:19 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 15:13:19 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 51
+2026-02-01 15:13:21 [INFO]: Client disconnected: QDyqV2L1N1RgRowuAAAR
+2026-02-01 15:13:35 [INFO]: AI OCR Service: Sending image for extraction - captured_id.jpg
+2026-02-01 15:13:37 [INFO]: AI OCR Service: Extraction successful - Confidence: low
+2026-02-01 15:22:32 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryManager.controller.js:691:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:22:36 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryManager.controller.js:691:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:24 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:24 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:27 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:27 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:55 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:56 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:57 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:47:20 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:47:36 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 17:24:17 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 17:24:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:24:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 17:24:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:24:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 17:24:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 17:24:17 [INFO]: 🔌 WebSocket enabled
+2026-02-01 17:24:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 17:24:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:24:32 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:25:14 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:25:16 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:26:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:28:45 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 17:28:45 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 17:29:23 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 17:30:01 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 17:30:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:30:01 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 17:30:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:30:01 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 17:30:01 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 17:30:01 [INFO]: 🔌 WebSocket enabled
+2026-02-01 17:30:01 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 17:30:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 17:30:26 [INFO]: Client connected: SOoK6klGaJUlQrV0AAAC
+2026-02-01 17:30:26 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 17:30:26 [INFO]: User 697f269a52f4567a06a1e7fa joined personal room
+2026-02-01 17:30:26 [INFO]: [ReceptionistDashboard] Registrations today: 2, Total patients: 52
+2026-02-01 17:30:26 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-01T00:00:00.000Z to 2026-02-02T00:00:00.000Z
+2026-02-01 17:30:26 [INFO]: [ReceptionistDashboard] Registrations today: 2, Total patients: 52
+2026-02-01 17:30:28 [INFO]: Client disconnected: SOoK6klGaJUlQrV0AAAC
+2026-02-01 17:50:39 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 17:50:39 [INFO]:    🔄 Updated: Disposable Syringe 5ml
+2026-02-01 17:50:39 [INFO]:    🔄 Updated: Surgical Gloves (Latex) - Medium
+2026-02-01 17:50:39 [INFO]:    🔄 Updated: N95 Face Mask
+2026-02-01 17:50:39 [INFO]:    ✅ Created: IV Cannula
+2026-02-01 17:50:39 [INFO]:    ✅ Created: Cotton Roll
+2026-02-01 17:50:39 [INFO]:    ✅ Created: Gauze Pads
+2026-02-01 17:50:39 [INFO]:    ✅ Created: Bandage Roll
+2026-02-01 17:50:39 [INFO]:    🔄 Updated: Bedsheet (Hospital Linen)
+2026-02-01 17:50:39 [INFO]:    🔄 Updated: Wheelchair (Standard)
+2026-02-01 17:50:39 [INFO]:    ✅ Created: Stethoscope
+2026-02-01 17:50:39 [INFO]:    ✅ Created: Thermometer (Digital)
+2026-02-01 17:50:39 [INFO]: 🔧 Inventory policy defaults complete: 6 created, 5 updated, 0 skipped
+2026-02-01 17:50:59 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 17:50:59 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 18:05:05 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 18:57:15 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 18:57:15 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 18:57:23 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 18:57:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:57:23 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 18:57:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:57:23 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 18:57:23 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 18:57:23 [INFO]: 🔌 WebSocket enabled
+2026-02-01 18:57:23 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 18:57:23 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:58:35 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 18:58:35 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 18:58:35 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 18:58:35 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 18:58:35 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:35 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:35 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 18:58:46 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 18:58:46 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 18:58:46 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 18:58:46 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 18:58:59 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 18:58:59 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 18:58:59 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 18:58:59 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:59:31 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 18:59:31 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 18:59:36 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 18:59:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:59:36 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 18:59:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:59:36 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 18:59:36 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 18:59:36 [INFO]: 🔌 WebSocket enabled
+2026-02-01 18:59:36 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 18:59:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 18:59:54 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 18:59:54 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 18:59:54 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Draft created: DPR2026020100001
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5552def0cb15b7340714 for approval...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Draft routed to: finance_head
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool E: Notifying finance_head...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Notified 0 approvers
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 18:59:54 [INFO]: [ReorderAgent] Audit log created: 697f5552def0cb15b7340727
+2026-02-01 19:05:13 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 19:05:13 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:05:21 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:07:11 [INFO]: Client connected: IMOVgbqhTEwd0zQhAAAC
+2026-02-01 19:07:11 [INFO]: Socket IMOVgbqhTEwd0zQhAAAC joined emergency room
+2026-02-01 19:07:11 [INFO]: Client disconnected: IMOVgbqhTEwd0zQhAAAC
+2026-02-01 19:07:26 [INFO]: Client connected: R0b3A3noFqZb6TB0AAAF
+2026-02-01 19:07:26 [INFO]: Socket R0b3A3noFqZb6TB0AAAF joined emergency room
+2026-02-01 19:07:27 [INFO]: Client disconnected: R0b3A3noFqZb6TB0AAAF
+2026-02-01 19:16:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 19:16:42 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:16:47 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:16:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:16:47 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:16:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:16:47 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:16:47 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:16:47 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:16:47 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:16:47 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:19:22 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:19:22 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:19:28 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:19:28 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:19:28 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:19:28 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:19:28 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:19:28 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:19:28 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:19:28 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:19:28 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:19:56 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:19:56 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:20:01 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:20:19 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:20:19 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:20:19 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Draft created: DPR2026020100002
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5a1bd1dccff100a51f90 for approval...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:20:19 [INFO]: [ReorderAgent] Audit log created: 697f5a1bd1dccff100a51fa5
+2026-02-01 19:20:40 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:20:45 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:20:52 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:20:52 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:20:52 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Draft created: DPR2026020100003
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5a3cd1dccff100a51ffc for approval...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:20:52 [INFO]: [ReorderAgent] Audit log created: 697f5a3cd1dccff100a52011
+2026-02-01 19:20:55 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:21:09 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:22:23 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 19:22:23 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:22:28 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:23:08 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:23:08 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:23:13 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:23:13 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:23:13 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:23:13 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:23:13 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:23:13 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:23:13 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:23:13 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:23:13 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:23:29 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:23:29 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:23:29 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Draft created: DPR2026020100004
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5ad976be8cff6be3f4bd for approval...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:23:29 [INFO]: [ReorderAgent] Audit log created: 697f5ad976be8cff6be3f4d2
+2026-02-01 19:23:31 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.
+2026-02-01 19:25:47 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:25:47 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:25:47 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Draft created: DPR2026020100005
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5b6376be8cff6be3f5cc for approval...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:25:47 [INFO]: [ReorderAgent] Audit log created: 697f5b6376be8cff6be3f5e1
+2026-02-01 19:25:49 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.
+2026-02-01 19:26:00 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 19:26:03 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:26:03 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:26:08 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:26:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:26:08 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:26:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:26:08 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:26:08 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:26:08 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:26:08 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:26:08 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:26:13 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:26:13 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:26:13 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Found 7 low stock items
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Plan computed: 5 items included (₹24450), 2 deferred
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Draft created: DPR2026020100006
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5b7d770533bbcf13c2c5 for approval...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:26:13 [INFO]: [ReorderAgent] Audit log created: 697f5b7d770533bbcf13c2da
+2026-02-01 19:26:14 [INFO]: [ReorderController] Draft DPR2026020100006 fulfilled, 5 items updated
+2026-02-01 19:26:22 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:26:22 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:26:22 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Found 2 low stock items
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Plan computed: 2 items included (₹9240), 0 deferred
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Draft created: DPR2026020100007
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5b86770533bbcf13c31c for approval...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:26:22 [INFO]: [ReorderAgent] Audit log created: 697f5b86770533bbcf13c327
+2026-02-01 19:26:28 [INFO]: [ReorderController] Draft DPR2026020100007 fulfilled, 2 items updated
+2026-02-01 19:26:41 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:26:41 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:26:41 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:26:41 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:26:41 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:26:41 [INFO]: [ReorderAgent] Found 0 low stock items
+2026-02-01 19:27:05 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:27:05 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:27:05 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:27:05 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:27:05 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:27:05 [INFO]: [ReorderAgent] Found 0 low stock items
+2026-02-01 19:29:04 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-01 19:29:04 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:29:09 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:29:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:29:09 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:29:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:29:09 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:29:09 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:29:09 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:29:09 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:29:09 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:29:12 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:29:12 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:29:12 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:29:12 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:29:12 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:29:12 [INFO]: [ReorderAgent] Found 0 low stock items
+2026-02-01 19:31:53 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:31:53 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:31:53 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:31:53 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:31:53 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:31:53 [INFO]: [ReorderAgent] Found 0 low stock items
+2026-02-01 19:37:32 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:37:32 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:37:32 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Found 4 low stock items
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹10000), 3 deferred
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:37:32 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Draft created: DPR2026020100008
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5e24e5e407d88aec3d85 for approval...
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:37:33 [INFO]: [ReorderAgent] Audit log created: 697f5e25e5e407d88aec3d94
+2026-02-01 19:37:41 [INFO]: [ReorderController] Draft DPR2026020100008 fulfilled, 1 items updated
+2026-02-01 19:37:50 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:37:50 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:37:50 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:37:50 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:37:50 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Found 3 low stock items
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹25000), 2 deferred
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Draft created: DPR2026020100009
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5e37e5e407d88aec3dc5 for approval...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:37:51 [INFO]: [ReorderAgent] Audit log created: 697f5e37e5e407d88aec3dd2
+2026-02-01 19:37:55 [INFO]: [ReorderController] Draft DPR2026020100009 fulfilled, 1 items updated
+2026-02-01 19:38:11 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:38:11 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:38:11 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Found 2 low stock items
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹25000)...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Plan computed: 0 items included (₹0), 2 deferred
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Draft created: DPR2026020100010
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool D: Routing draft 697f5e4be5e407d88aec3e01 for approval...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:38:11 [INFO]: [ReorderAgent] Audit log created: 697f5e4be5e407d88aec3e0c
+2026-02-01 19:45:41 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 19:45:44 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:45:44 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:45:49 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:45:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:45:49 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:45:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:45:49 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:45:49 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:45:49 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:45:49 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:45:49 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:46:02 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:46:02 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:46:02 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Found 2 low stock items
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹100000)...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹100000), 1 deferred
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Draft created: DPR2026020100011
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool D: Routing draft 697f60224bb8dd3f29892272 for approval...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:46:02 [INFO]: [ReorderAgent] Audit log created: 697f60224bb8dd3f2989227d
+2026-02-01 19:46:29 [INFO]: [ReorderController] Draft DPR2026020100011 fulfilled, 1 items updated
+2026-02-01 19:46:32 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:46:32 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:46:32 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Found 1 low stock items
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹100000)...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Plan computed: 0 items included (₹0), 1 deferred
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Draft created: DPR2026020100012
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool D: Routing draft 697f60404bb8dd3f298922aa for approval...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:46:32 [INFO]: [ReorderAgent] Audit log created: 697f60404bb8dd3f298922b3
+2026-02-01 19:51:42 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 19:54:24 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 19:54:24 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 19:54:30 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 19:54:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:54:30 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 19:54:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:54:30 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 19:54:30 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 19:54:30 [INFO]: 🔌 WebSocket enabled
+2026-02-01 19:54:30 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 19:54:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 19:54:46 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 19:54:46 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 19:54:46 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Found 1 low stock items
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹100000)...
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹75000), 0 deferred
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 19:54:46 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Draft created: DPR2026020100013
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Tool D: Routing draft 697f622e30eda48b6a1d226a for approval...
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 19:54:47 [INFO]: [ReorderAgent] Audit log created: 697f622f30eda48b6a1d2273
+2026-02-01 19:54:49 [INFO]: [ReorderController] Draft DPR2026020100013 fulfilled, 1 items updated
+2026-02-01 20:09:13 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 20:09:47 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 20:09:47 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 20:09:55 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 20:09:55 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:09:55 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 20:09:55 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:09:55 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 20:09:55 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 20:09:55 [INFO]: 🔌 WebSocket enabled
+2026-02-01 20:09:55 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 20:09:55 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:13:23 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 20:13:45 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-01 20:13:45 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 20:13:53 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 20:13:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:13:53 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 20:13:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:13:53 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 20:13:53 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 20:13:53 [INFO]: 🔌 WebSocket enabled
+2026-02-01 20:13:53 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 20:13:53 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:14:28 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 20:16:10 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 20:16:10 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 20:16:17 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 20:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:16:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 20:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:16:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 20:16:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 20:16:17 [INFO]: 🔌 WebSocket enabled
+2026-02-01 20:16:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 20:16:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:26:43 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 20:26:43 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 20:26:43 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Found 1 low stock items
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹100000)...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹2500), 0 deferred
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Draft created: DPR2026020100014
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool D: Routing draft 697f69abfc98d4d7c74b5887 for approval...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 20:26:43 [INFO]: [ReorderAgent] Audit log created: 697f69abfc98d4d7c74b5890
+2026-02-01 20:26:46 [INFO]: [ReorderController] Draft DPR2026020100014 fulfilled, 1 items updated
+2026-02-01 20:57:28 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-01 20:57:31 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-01 20:57:31 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-01 20:57:36 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-01 20:57:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:57:36 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-01 20:57:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:57:36 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-01 20:57:36 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-01 20:57:36 [INFO]: 🔌 WebSocket enabled
+2026-02-01 20:57:36 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-01 20:57:36 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-01 20:58:02 [INFO]: [ReorderController] Agent triggered by user 697f3ff508d60377398080a9
+2026-02-01 20:58:02 [INFO]: [ReorderController] Using direct execution mode
+2026-02-01 20:58:02 [INFO]: [AgentDirect] Running direct reorder agent for user 697f3ff508d60377398080a9...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: getLowStockItems
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool A: Getting low stock items...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Found 1 low stock items
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: computeReorderPlan
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool B: Computing reorder plan (budget cap: ₹100000)...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Plan computed: 1 items included (₹2775), 0 deferred
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: createDraftPurchaseRequest
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool C: Creating draft purchase request...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Draft created: DPR2026020100015
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: routeForApproval
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool D: Routing draft 697f71025817b609ff935466 for approval...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Draft routed to: inventory_manager
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: notifyApprover
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool E: Notifying inventory_manager...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Notified 1 approvers
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Executing tool: writeAuditLog
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Tool F: Writing audit log...
+2026-02-01 20:58:02 [INFO]: [ReorderAgent] Audit log created: 697f71025817b609ff93546f
+2026-02-01 20:58:07 [INFO]: [ReorderController] Draft DPR2026020100015 fulfilled, 1 items updated
+2026-02-01 20:59:54 [WARN]: MongoDB disconnected. Attempting to reconnect...

@@ -303,6 +303,14 @@ const LAB_REPORT_AI_STATUS = {
     FAILED: 'failed',
 };
 
+// Draft Purchase Request Status (Agentic Reorder Workflow)
+const DRAFT_PURCHASE_REQUEST_STATUS = {
+    PENDING_APPROVAL: 'pending_approval',
+    APPROVED: 'approved',
+    REJECTED: 'rejected',
+    CONVERTED: 'converted',
+};
+
 module.exports = {
     USER_ROLES,
     APPOINTMENT_STATUS,
@@ -343,4 +351,6 @@ module.exports = {
     // Lab Report constants
     LAB_REPORT_EXTRACTION_STATUS,
     LAB_REPORT_AI_STATUS,
+    // Agentic Reorder Workflow constants
+    DRAFT_PURCHASE_REQUEST_STATUS,
 };

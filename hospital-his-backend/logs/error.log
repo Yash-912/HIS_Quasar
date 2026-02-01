@@ -6553,3 +6553,240 @@ Error: Not authorized to access this route
 Error: AI summary failed: LLM API failed: User not found.
     at C:\Users\yashd\OneDrive\Desktop\HIS_Quasar_Final2\HIS_Quasar\hospital-his-backend\controllers\lab.controller.js:456:21
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-01 15:11:50 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-01 15:12:51 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-02-01 15:12:51 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+2026-02-01 15:22:32 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryManager.controller.js:691:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:22:36 [ERROR]: Item validation failed: Stock record not found
+Error: Item validation failed: Stock record not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryManager.controller.js:691:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:24 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:24 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:26 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:27 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:27 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:29 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:30 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:32 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:33 [ERROR]: User not found
+Error: User not found
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:55 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:56 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:46:57 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 15:47:20 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:24:32 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:25:14 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:25:16 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 17:26:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-01 18:58:35 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:35 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:35 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:46 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [ERROR]: [ReorderAgent] Tool C error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [ERROR]: [AgentDirect] Error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 18:58:59 [ERROR]: [ReorderController] generateReorderDraft error: DraftPurchaseRequest validation failed: draftNumber: Path `draftNumber` is required.
+2026-02-01 19:05:21 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-02-01 19:20:01 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-02-01 19:20:40 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:20:45 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:20:55 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:21:09 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: Cannot find module '../models/InventoryLocation'
+Require stack:
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/inventoryReorderAgent.controller.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/routes/inventoryManager.routes.js
+- /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/server.js
+2026-02-01 19:22:28 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2026-02-01 19:23:31 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.
+2026-02-01 19:25:49 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.

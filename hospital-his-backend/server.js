@@ -60,6 +60,9 @@ const medicineRoutes = require('./routes/medicine.routes');
 const labReportRoutes = require('./routes/labReport.routes');
 const onboardingRoutes = require('./routes/onboarding.routes');
 
+// Services (auto-run on startup)
+const { ensureInventoryPolicyDefaults } = require('./services/inventoryPolicyDefaults.service');
+
 // Initialize Express app
 const app = express();
 const httpServer = createServer(app);
@@ -243,6 +246,9 @@ const startServer = async () => {
     try {
         // Connect to MongoDB
         await connectDB();
+
+        // Ensure inventory policy defaults are set (idempotent)
+        await ensureInventoryPolicyDefaults();
 
         // Start HTTP server
         httpServer.listen(PORT, () => {

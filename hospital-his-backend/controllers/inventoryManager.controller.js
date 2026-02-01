@@ -160,6 +160,42 @@ exports.updateItem = asyncHandler(async (req, res, next) => {
     res.status(200).json({ success: true, data: item });
 });
 
+exports.consumeStock = asyncHandler(async (req, res, next) => {
+    const { quantity, reason } = req.body;
+    const item = await InventoryItem.findById(req.params.id);
+    if (!item) return next(new ErrorResponse("Item not found", 404));
+
+    /* Find valid stock to reduce */
+    const stocks = await InventoryStock.find({ item: item._id, availableQuantity: { $gt: 0 } }).sort({ expirationDate: 1 });
+    
+    let remainingToConsume = parseInt(quantity);
+    let totalConsumed = 0;
+
+    for (const stock of stocks) {
+        if (remainingToConsume <= 0) break;
+        const consumeAmount = Math.min(stock.availableQuantity, remainingToConsume);
+        stock.quantity -= consumeAmount;
+        stock.availableQuantity -= consumeAmount;
+        await stock.save();
+        remainingToConsume -= consumeAmount;
+        totalConsumed += consumeAmount;
+    }
+
+    if (totalConsumed === 0) return next(new ErrorResponse("No available stock to consume", 400));
+
+    /* Audit Log */
+    await AuditLog.create({
+        user: req.user._id,
+        action: "update",
+        entity: "InventoryItem",
+        entityId: item._id,
+        description: `Manual consumption of ${totalConsumed} units. Reason: ${reason}`,
+        ipAddress: req.ip
+    });
+
+    res.status(200).json({ success: true, message: `Successfully consumed ${totalConsumed} units` });
+});
+
 exports.deactivateItem = asyncHandler(async (req, res, next) => {
     const item = await InventoryItem.findById(req.params.id);
     if (!item) {
