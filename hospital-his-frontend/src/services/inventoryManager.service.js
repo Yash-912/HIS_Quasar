@@ -54,7 +54,12 @@ export const updateItem = async (id, data) => {
 };
 
 export const deactivateItem = async (id, reason) => {
-    const response = await axios.put(`${BASE_URL}/items/${id}/deactivate`, { reason }, getAuthHeaders());
+    const response = await axios.delete(`${BASE_URL}/items/${id}`, { ...getAuthHeaders(), data: { reason } });
+    return response.data;
+};
+
+export const reduceStock = async (id, quantity, reason) => {
+    const response = await axios.post(`${BASE_URL}/items/${id}/consume`, { quantity, reason }, getAuthHeaders());
     return response.data;
 };
 
@@ -340,6 +345,40 @@ export const updateRecallProgress = async (id, data) => {
     return response.data;
 };
 
+// ═══════════════════════════════════════════════════════════════════
+// AGENTIC REORDER WORKFLOW
+// ═══════════════════════════════════════════════════════════════════
+
+export const runReorderAgent = async (useDirect = true) => {
+    const response = await axios.post(`${BASE_URL}/reorder/agent/draft`, { useDirect }, getAuthHeaders());
+    return response.data;
+};
+
+export const getDraftPurchaseRequests = async (params = {}) => {
+    const response = await axios.get(`${BASE_URL}/draft-purchase-requests`, { ...getAuthHeaders(), params });
+    return response.data;
+};
+
+export const getDraftPurchaseRequest = async (id) => {
+    const response = await axios.get(`${BASE_URL}/draft-purchase-requests/${id}`, getAuthHeaders());
+    return response.data;
+};
+
+export const approveDraftPurchaseRequest = async (id) => {
+    const response = await axios.put(`${BASE_URL}/draft-purchase-requests/${id}/approve`, {}, getAuthHeaders());
+    return response.data;
+};
+
+export const rejectDraftPurchaseRequest = async (id, reason) => {
+    const response = await axios.put(`${BASE_URL}/draft-purchase-requests/${id}/reject`, { reason }, getAuthHeaders());
+    return response.data;
+};
+
+export const fulfillDraftPurchaseRequest = async (id) => {
+    const response = await axios.post(`${BASE_URL}/draft-purchase-requests/${id}/fulfill`, {}, getAuthHeaders());
+    return response.data;
+};
+
 export default {
     // Dashboard
     getDashboard,
@@ -349,6 +388,7 @@ export default {
     createItem,
     updateItem,
     deactivateItem,
+    reduceStock,
     getItemAuditLog,
     // Categories
     getCategories,
@@ -406,4 +446,11 @@ export default {
     getRecalls,
     createRecall,
     updateRecallProgress,
+    // Agentic Reorder
+    runReorderAgent,
+    getDraftPurchaseRequests,
+    getDraftPurchaseRequest,
+    approveDraftPurchaseRequest,
+    rejectDraftPurchaseRequest,
+    fulfillDraftPurchaseRequest,
 };

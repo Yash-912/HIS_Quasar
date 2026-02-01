@@ -18,6 +18,9 @@ const ItemForm = () => {
     const [error, setError] = useState(null);
     const [categories, setCategories] = useState([]);
     const [locations, setLocations] = useState([]);
+    const [reduceQty, setReduceQty] = useState('');
+    const [reduceReason, setReduceReason] = useState('Manual adjustment for testing');
+    const [processingStock, setProcessingStock] = useState(false);
 
     const [formData, setFormData] = useState({
         itemCode: '',
@@ -32,6 +35,14 @@ const ItemForm = () => {
         expiryTracking: false,
         defaultLocation: '',
         specifications: '',
+        // Policy fields for reorder agent
+        policyCategory: 'general_stores',
+        policyMinLevel: 10,
+        policyTargetLevel: 50,
+        policyUnitCost: 100,
+        policyMaxOrderQty: 100,
+        policyPriority: 3,
+        policyLeadTimeDays: 7,
     });
 
     const uomOptions = [
@@ -84,6 +95,14 @@ const ItemForm = () => {
                     expiryTracking: item.expiryTracking || false,
                     defaultLocation: item.defaultLocation?._id || item.defaultLocation || '',
                     specifications: item.specifications || '',
+                    // Policy fields
+                    policyCategory: item.policyCategory || 'general_stores',
+                    policyMinLevel: item.policy?.minLevel || 10,
+                    policyTargetLevel: item.policy?.targetLevel || 50,
+                    policyUnitCost: item.policy?.unitCost || 100,
+                    policyMaxOrderQty: item.policy?.maxOrderQty || 100,
+                    policyPriority: item.policy?.priority || 3,
+                    policyLeadTimeDays: item.policy?.leadTimeDays || 7,
                 });
             }
         } catch (err) {
@@ -127,7 +146,25 @@ const ItemForm = () => {
                 ...formData,
                 reorderLevel: parseInt(formData.reorderLevel) || 0,
                 maxStockLevel: parseInt(formData.maxStockLevel) || 0,
+                // Add policy fields for reorder agent
+                policyCategory: formData.policyCategory,
+                policy: {
+                    minLevel: parseInt(formData.policyMinLevel) || 0,
+                    targetLevel: parseInt(formData.policyTargetLevel) || 0,
+                    unitCost: parseFloat(formData.policyUnitCost) || 0,
+                    maxOrderQty: parseInt(formData.policyMaxOrderQty) || 100,
+                    priority: parseInt(formData.policyPriority) || 3,
+                    leadTimeDays: parseInt(formData.policyLeadTimeDays) || 7,
+                },
             };
+
+            // Remove flat policy fields (we send nested policy object)
+            delete dataToSend.policyMinLevel;
+            delete dataToSend.policyTargetLevel;
+            delete dataToSend.policyUnitCost;
+            delete dataToSend.policyMaxOrderQty;
+            delete dataToSend.policyPriority;
+            delete dataToSend.policyLeadTimeDays;
 
             // Remove empty optional fields
             if (!dataToSend.subCategory) delete dataToSend.subCategory;
@@ -150,6 +187,31 @@ const ItemForm = () => {
             console.error('Save error:', err);
         } finally {
             setSaving(false);
+        }
+    };
+
+    const handleReduceStock = async () => {
+        if (!reduceQty || parseInt(reduceQty) <= 0) {
+            alert('Please enter a valid quantity');
+            return;
+        }
+
+        if (!window.confirm(`Are you sure you want to reduce stock by ${reduceQty} units? This cannot be undone.`)) {
+            return;
+        }
+
+        try {
+            setProcessingStock(true);
+            await inventoryManagerService.reduceStock(id, parseInt(reduceQty), reduceReason);
+            alert('Stock consumed successfully!');
+            setReduceQty('');
+            // Refresh item data
+            fetchItem();
+        } catch (err) {
+            const errorMsg = err.response?.data?.message || err.message || 'Failed to reduce stock';
+            alert(errorMsg);
+        } finally {
+            setProcessingStock(false);
         }
     };
 
@@ -205,17 +267,6 @@ const ItemForm = () => {
                                 onChange={handleChange}
                                 placeholder="Enter item name"
                                 required
-                            />
-                        </div>
-                        <div className="form-group full-width">
-                            <label htmlFor="description">Description</label>
-                            <textarea
-                                id="description"
-                                name="description"
-                                value={formData.description}
-                                onChange={handleChange}
-                                placeholder="Enter item description"
-                                rows="3"
                             />
                         </div>
                     </div>
@@ -275,50 +326,97 @@ const ItemForm = () => {
                 </section>
 
                 <section className="form-section">
-                    <h2>Stock Settings</h2>
+                    <h2>🤖 Reorder Policy (for AI Agent)</h2>
+                    <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '1rem' }}>
+                        These settings are used by the AI reorder agent to calculate urgency and recommend order quantities.
+                    </p>
                     <div className="form-grid">
                         <div className="form-group">
-                            <label htmlFor="reorderLevel">Reorder Level</label>
+                            <label htmlFor="policyCategory">Policy Category *</label>
+                            <select
+                                id="policyCategory"
+                                name="policyCategory"
+                                value={formData.policyCategory}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="general_stores">General Stores</option>
+                                <option value="pharmacy">Pharmacy</option>
+                                <option value="equipment">Equipment</option>
+                                <option value="consumables">Consumables</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="policyPriority">Priority (1-5)</label>
+                            <select
+                                id="policyPriority"
+                                name="policyPriority"
+                                value={formData.policyPriority}
+                                onChange={handleChange}
+                            >
+                                <option value="1">1 - Low</option>
+                                <option value="2">2 - Below Normal</option>
+                                <option value="3">3 - Normal</option>
+                                <option value="4">4 - High</option>
+                                <option value="5">5 - Critical</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="policyMinLevel">Min Level (triggers reorder)</label>
                             <input
                                 type="number"
-                                id="reorderLevel"
-                                name="reorderLevel"
-                                value={formData.reorderLevel}
+                                id="policyMinLevel"
+                                name="policyMinLevel"
+                                value={formData.policyMinLevel}
                                 onChange={handleChange}
                                 min="0"
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="maxStockLevel">Max Stock Level</label>
+                            <label htmlFor="policyTargetLevel">Target Level (order up to)</label>
                             <input
                                 type="number"
-                                id="maxStockLevel"
-                                name="maxStockLevel"
-                                value={formData.maxStockLevel}
+                                id="policyTargetLevel"
+                                name="policyTargetLevel"
+                                value={formData.policyTargetLevel}
                                 onChange={handleChange}
                                 min="0"
                             />
                         </div>
-                    </div>
-                    <div className="form-checkboxes">
-                        <label className="checkbox-label">
+                        <div className="form-group">
+                            <label htmlFor="policyUnitCost">Unit Cost (₹)</label>
                             <input
-                                type="checkbox"
-                                name="batchTracking"
-                                checked={formData.batchTracking}
+                                type="number"
+                                id="policyUnitCost"
+                                name="policyUnitCost"
+                                value={formData.policyUnitCost}
                                 onChange={handleChange}
+                                min="0"
+                                step="0.01"
                             />
-                            <span>Enable Batch Tracking</span>
-                        </label>
-                        <label className="checkbox-label">
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="policyMaxOrderQty">Max Order Qty</label>
                             <input
-                                type="checkbox"
-                                name="expiryTracking"
-                                checked={formData.expiryTracking}
+                                type="number"
+                                id="policyMaxOrderQty"
+                                name="policyMaxOrderQty"
+                                value={formData.policyMaxOrderQty}
                                 onChange={handleChange}
+                                min="1"
                             />
-                            <span>Enable Expiry Tracking</span>
-                        </label>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="policyLeadTimeDays">Lead Time (days)</label>
+                            <input
+                                type="number"
+                                id="policyLeadTimeDays"
+                                name="policyLeadTimeDays"
+                                value={formData.policyLeadTimeDays}
+                                onChange={handleChange}
+                                min="0"
+                            />
+                        </div>
                     </div>
                 </section>
 
@@ -336,6 +434,51 @@ const ItemForm = () => {
                         />
                     </div>
                 </section>
+
+                {isEditMode && (
+                    <section className="form-section" style={{ border: '1px solid #fee2e2', backgroundColor: '#fff1f2' }}>
+                        <h2 style={{ color: '#991b1b' }}>📉 Manual Stock Reduction (Demo/Testing)</h2>
+                        <p style={{ color: '#b91c1c', fontSize: '0.875rem', marginBottom: '1rem' }}>
+                            Use this to manually lower stock levels without creating a formal stock issue. Useful for triggering low-stock scenarios for the AI agent.
+                        </p>
+                        <div className="form-grid">
+                            <div className="form-group">
+                                <label htmlFor="reduceQty" style={{ color: '#7f1d1d' }}>Qty to Reduce</label>
+                                <input
+                                    type="number"
+                                    id="reduceQty"
+                                    value={reduceQty}
+                                    onChange={(e) => setReduceQty(e.target.value)}
+                                    placeholder="Qty"
+                                    min="1"
+                                    style={{ borderColor: '#fca5a5' }}
+                                />
+                            </div>
+                            <div className="form-group full-width">
+                                <label htmlFor="reduceReason" style={{ color: '#7f1d1d' }}>Reason</label>
+                                <input
+                                    type="text"
+                                    id="reduceReason"
+                                    value={reduceReason}
+                                    onChange={(e) => setReduceReason(e.target.value)}
+                                    placeholder="Reason for reduction"
+                                    style={{ borderColor: '#fca5a5' }}
+                                />
+                            </div>
+                            <div className="form-group" style={{ display: 'flex', alignItems: 'flex-end' }}>
+                                <button
+                                    type="button"
+                                    onClick={handleReduceStock}
+                                    disabled={processingStock || !reduceQty}
+                                    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 disabled:opacity-50"
+                                    style={{ height: '42px', width: '100%' }}
+                                >
+                                    {processingStock ? 'Processing...' : 'Reduce Stock'}
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                )}
 
                 <div className="form-actions">
                     <button
