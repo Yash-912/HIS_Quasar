@@ -19,6 +19,7 @@ const USER_ROLES = {
     INVENTORY_MANAGER: 'inventory_manager',
     CODER: 'coder',
     SENIOR_CODER: 'senior_coder',
+    INSURANCE_STAFF: 'insurance_staff',
 };
 
 // Appointment Status
@@ -311,6 +312,16 @@ const DRAFT_PURCHASE_REQUEST_STATUS = {
     CONVERTED: 'converted',
 };
 
+// Pre-Auth Queue Status (Insurance Agentic Workflow)
+const PREAUTH_QUEUE_STATUS = {
+    DRAFT: 'draft',
+    READY: 'ready',
+    SUBMITTED: 'submitted',
+    QUERY: 'query',
+    APPROVED: 'approved',
+    DENIED: 'denied',
+};
+
 module.exports = {
     USER_ROLES,
     APPOINTMENT_STATUS,
@@ -353,4 +364,6 @@ module.exports = {
     LAB_REPORT_AI_STATUS,
     // Agentic Reorder Workflow constants
     DRAFT_PURCHASE_REQUEST_STATUS,
+    // Insurance Pre-Auth Workflow constants
+    PREAUTH_QUEUE_STATUS,
 };

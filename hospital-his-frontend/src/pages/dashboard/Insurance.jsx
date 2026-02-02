@@ -8,6 +8,7 @@ import {
 import insuranceService from '../../services/insurance.service';
 import patientService from '../../services/patients.service';
 import { toast } from 'react-hot-toast';
+import PreAuthQueueTab from './PreAuthQueueTab';
 
 const Insurance = () => {
     // Get prefill data from navigation state (from Billing page)
@@ -565,14 +566,14 @@ const Insurance = () => {
             {/* Tabs */}
             <div className="border-b border-gray-200">
                 <nav className="flex gap-6">
-                    {['claims', 'preauth', 'tpa'].map((tab) => (
+                    {['claims', 'preauth', 'preauthqueue', 'tpa'].map((tab) => (
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`pb-3 text-sm font-medium border-b-2 transition-colors capitalize ${activeTab === tab ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'
                                 }`}
                         >
-                            {tab === 'preauth' ? 'Pre-Authorization' : tab}
+                            {tab === 'preauth' ? 'Pre-Authorization' : tab === 'preauthqueue' ? 'Pre-Auth Queue ✨' : tab}
                         </button>
                     ))}
                 </nav>
@@ -657,6 +658,10 @@ const Insurance = () => {
                             <div className="p-8 text-center text-gray-400">No pre-authorization requests found.</div>
                         )}
                     </div>
+                )}
+
+                {activeTab === 'preauthqueue' && (
+                    <PreAuthQueueTab />
                 )}
             </div>
 

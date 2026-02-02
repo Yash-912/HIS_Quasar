@@ -6790,3 +6790,169 @@ Require stack:
 2026-02-01 19:22:28 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
 2026-02-01 19:23:31 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.
 2026-02-01 19:25:49 [ERROR]: [ReorderController] fulfillDraftPurchaseRequest error: InventoryStock validation failed: createdBy: Path `createdBy` is required.
+2026-02-02 17:02:14 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:14 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:17 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:17 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:24 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:24 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:07:03 [ERROR]: Patient validation failed: referral.doctorId: Cast to ObjectId failed for value "" (type string) at path "referral.doctorId" because of "BSONError"
+ValidationError: Patient validation failed: referral.doctorId: Cast to ObjectId failed for value "" (type string) at path "referral.doctorId" because of "BSONError"
+    at Document.invalidate (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:3221:32)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1466:12)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1216:14)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1106:14)
+    at model.Document (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:167:12)
+    at model.Model (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:123:12)
+    at new model (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:4755:15)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:2917:18
+    at Array.map (<anonymous>)
+    at model.create (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:2906:30)
+2026-02-02 17:14:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-02 17:18:05 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:10 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:15 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:44 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:19:13 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:20:11 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:22:39 [ERROR]: AI summary failed: LLM API failed: User not found.
+Error: AI summary failed: LLM API failed: User not found.
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:456:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:26:59 [ERROR]: AI summary failed: LLM API failed: Provider returned error
+Error: AI summary failed: LLM API failed: Provider returned error
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:456:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:30:18 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:30:18 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:30:46 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:34:40 [ERROR]: [PreAuthAgent] OpenRouter API error: [object Object]
+2026-02-02 17:34:40 [ERROR]: LLM API failed: Provider returned error
+Error: LLM API failed: Provider returned error
+    at callOpenRouter (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/services/preAuthAgentLLM.service.js:133:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.generatePreAuthPacket (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/services/preAuthAgentLLM.service.js:206:22)
+    at async /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/preAuthQueue.controller.js:104:18
+2026-02-02 17:49:54 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-02 17:53:33 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001

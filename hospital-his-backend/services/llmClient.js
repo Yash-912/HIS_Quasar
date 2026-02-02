@@ -5,8 +5,8 @@
 
 const axios = require('axios');
 
-// OpenRouter Configuration
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+// OpenRouter Configuration - use primary key, or fall back to agentic inventory key
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || process.env.OPENROUTER_AGENTIC_INVENTORY_API_KEY;
 const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free';
 const OPENROUTER_BASE_URL = 'https://openrouter.ai/api/v1/chat/completions';
 

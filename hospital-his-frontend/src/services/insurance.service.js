@@ -83,6 +83,55 @@ const addTPAProvider = async (providerData) => {
     return response.data;
 };
 
+// ═══════════════════════════════════════════════════════════════════
+// PRE-AUTH QUEUE (Agentic Workflow)
+// ═══════════════════════════════════════════════════════════════════
+
+const createPreAuthCase = async (patientId, insurerName, tpaName, policyNumber) => {
+    const response = await axios.post(`${API_URL}/preauth-queue`,
+        { patientId, insurerName, tpaName, policyNumber }, getConfig());
+    return response.data;
+};
+
+const getPreAuthQueue = async (status = null) => {
+    const config = getConfig();
+    if (status) config.params = { status };
+    const response = await axios.get(`${API_URL}/preauth-queue`, config);
+    return response.data;
+};
+
+const getPreAuthCase = async (caseId) => {
+    const response = await axios.get(`${API_URL}/preauth-queue/${caseId}`, getConfig());
+    return response.data;
+};
+
+const generatePreAuthPacket = async (caseId, useDirect = false) => {
+    const response = await axios.post(
+        `${API_URL}/preauth-queue/${caseId}/generate-packet${useDirect ? '?useDirect=true' : ''}`,
+        {},
+        getConfig()
+    );
+    return response.data;
+};
+
+const updatePreAuthCaseStatus = async (caseId, status) => {
+    const response = await axios.put(
+        `${API_URL}/preauth-queue/${caseId}/status`,
+        { status },
+        getConfig()
+    );
+    return response.data;
+};
+
+const updatePreAuthCase = async (caseId, updates) => {
+    const response = await axios.put(
+        `${API_URL}/preauth-queue/${caseId}`,
+        updates,
+        getConfig()
+    );
+    return response.data;
+};
+
 const insuranceService = {
     getAllClaims,
     getClaimById,
@@ -97,6 +146,14 @@ const insuranceService = {
     getProviders,
     getTPAProviders,
     addTPAProvider,
+    // Pre-Auth Queue
+    createPreAuthCase,
+    getPreAuthQueue,
+    getPreAuthCase,
+    generatePreAuthPacket,
+    updatePreAuthCaseStatus,
+    updatePreAuthCase,
 };
 
 export default insuranceService;
+

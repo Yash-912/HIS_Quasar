@@ -182,3 +182,8 @@ ValidationError: Prescription validation failed: prescriptionNumber: Path `presc
 [2026-01-25T05:30:02.025Z] Found med: Paracetamol 650mg (6974fb05bfe9511b5e31c286)
 [2026-01-25T05:30:02.026Z] Creating Prescription with 1 items
 [2026-01-25T05:30:02.058Z] Created Rx ID: 6975aa5aa85f0bd2d20f50c4
+[2026-02-02T11:44:26.056Z] Start creating prescription for 69808cd0dda0216ce6eca39e
+[2026-02-02T11:44:26.058Z] Processing med: Paracetamol 500mg
+[2026-02-02T11:44:26.070Z] Found med: Paracetamol 500mg (697f3622934ab76cc81d71fd)
+[2026-02-02T11:44:26.070Z] Creating Prescription with 1 items
+[2026-02-02T11:44:26.096Z] Created Rx ID: 69808e1adda0216ce6eca5a2

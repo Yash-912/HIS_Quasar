@@ -17075,3 +17075,322 @@ Require stack:
 2026-02-01 20:58:02 [INFO]: [ReorderAgent] Audit log created: 697f71025817b609ff93546f
 2026-02-01 20:58:07 [INFO]: [ReorderController] Draft DPR2026020100015 fulfilled, 1 items updated
 2026-02-01 20:59:54 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 16:57:54 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-02 16:57:54 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 16:58:00 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 16:58:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 16:58:00 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 16:58:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 16:58:00 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 16:58:00 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 16:58:00 [INFO]: 🔌 WebSocket enabled
+2026-02-02 16:58:00 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 16:58:00 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:01:09 [INFO]: Client connected: RUmOEtrxk-2A63LvAAAC
+2026-02-02 17:01:09 [INFO]: Socket RUmOEtrxk-2A63LvAAAC joined emergency room
+2026-02-02 17:01:10 [INFO]: Client disconnected: RUmOEtrxk-2A63LvAAAC
+2026-02-02 17:02:14 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:14 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:17 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:17 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:24 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:02:24 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:05:47 [INFO]: Client connected: 7uXtqGjG0wQvFV4lAAAF
+2026-02-02 17:05:47 [INFO]: User 697f269a52f4567a06a1e7fa joined personal room
+2026-02-02 17:05:47 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-02T00:00:00.000Z to 2026-02-03T00:00:00.000Z
+2026-02-02 17:05:47 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 55
+2026-02-02 17:05:47 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-02T00:00:00.000Z to 2026-02-03T00:00:00.000Z
+2026-02-02 17:05:47 [INFO]: [ReceptionistDashboard] Registrations today: 0, Total patients: 55
+2026-02-02 17:05:49 [INFO]: Client disconnected: 7uXtqGjG0wQvFV4lAAAF
+2026-02-02 17:07:03 [ERROR]: Patient validation failed: referral.doctorId: Cast to ObjectId failed for value "" (type string) at path "referral.doctorId" because of "BSONError"
+ValidationError: Patient validation failed: referral.doctorId: Cast to ObjectId failed for value "" (type string) at path "referral.doctorId" because of "BSONError"
+    at Document.invalidate (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:3221:32)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1466:12)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1216:14)
+    at model.$set (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:1106:14)
+    at model.Document (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/document.js:167:12)
+    at model.Model (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:123:12)
+    at new model (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:4755:15)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:2917:18
+    at Array.map (<anonymous>)
+    at model.create (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/mongoose/lib/model.js:2906:30)
+2026-02-02 17:08:20 [INFO]: [PatientRegistration] New patient registered: PAT000056 - Jack Sparrow
+2026-02-02 17:10:30 [INFO]: Client connected: 59rckOMrMNLjx0AWAAAI
+2026-02-02 17:10:30 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:10:31 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=2, critical=0
+2026-02-02 17:10:31 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:10:31 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=2, critical=0
+2026-02-02 17:10:33 [INFO]: Client disconnected: 59rckOMrMNLjx0AWAAAI
+2026-02-02 17:14:37 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-02 17:18:05 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:10 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:15 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:18:44 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:19:13 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:20:11 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:22:30 [INFO]: Client connected: B24A28amus-U1yjYAAAL
+2026-02-02 17:22:31 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:22:31 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:22:31 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:22:31 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:22:33 [INFO]: Client disconnected: B24A28amus-U1yjYAAAL
+2026-02-02 17:22:39 [ERROR]: AI summary failed: LLM API failed: User not found.
+Error: AI summary failed: LLM API failed: User not found.
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:456:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:26:39 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:26:42 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 17:26:42 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:26:46 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:26:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:26:46 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:26:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:26:46 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:26:46 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:26:46 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:26:46 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:26:46 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:26:59 [ERROR]: AI summary failed: LLM API failed: Provider returned error
+Error: AI summary failed: LLM API failed: Provider returned error
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/lab.controller.js:456:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:28:17 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:28:20 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 17:28:20 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:28:25 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:28:25 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:28:25 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:28:25 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:28:25 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:28:25 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:28:25 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:28:25 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:28:25 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:30:18 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:30:18 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:30:46 [ERROR]: User role 'billing' is not authorized to access this route
+Error: User role 'billing' is not authorized to access this route
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:284:15
+    at router.process_params (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/node_modules/express/lib/router/index.js:280:10)
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/middleware/auth.middleware.js:46:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-02-02 17:33:07 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:33:56 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-02 17:33:56 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:34:01 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:34:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:34:01 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:34:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:34:01 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:34:01 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:34:01 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:34:01 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:34:01 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:34:39 [INFO]: [PreAuthAgent] Starting packet generation for case 698092c82ade0406510647d6 by user 697f269a52f4567a06a1e802
+2026-02-02 17:34:40 [ERROR]: [PreAuthAgent] OpenRouter API error: [object Object]
+2026-02-02 17:34:40 [ERROR]: LLM API failed: Provider returned error
+Error: LLM API failed: Provider returned error
+    at callOpenRouter (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/services/preAuthAgentLLM.service.js:133:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.generatePreAuthPacket (/Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/services/preAuthAgentLLM.service.js:206:22)
+    at async /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/preAuthQueue.controller.js:104:18
+2026-02-02 17:38:50 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:38:53 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 17:38:53 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:38:58 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:38:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:38:58 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:38:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:38:58 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:38:58 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:38:58 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:38:58 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:38:58 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:39:14 [INFO]: [PreAuthAgent] Starting packet generation for case 698092c82ade0406510647d6 by user 697f269a52f4567a06a1e802
+2026-02-02 17:39:27 [INFO]: [PreAuthAgent] Packet generated successfully in 12228ms
+2026-02-02 17:47:41 [INFO]: Client connected: dx1WE9uEGBKIpzyBAAAC
+2026-02-02 17:47:41 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:47:41 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:47:41 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:47:41 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:47:43 [INFO]: Client disconnected: dx1WE9uEGBKIpzyBAAAC
+2026-02-02 17:49:54 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at /Users/khush/Desktop/Hackathons/Co-Code/HIS_Quasar/hospital-his-backend/controllers/auth.controller.js:36:21
+2026-02-02 17:49:59 [INFO]: Client connected: Q9ZmWDyQQTvOcccpAAAF
+2026-02-02 17:49:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:49:59 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:49:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 697f269a52f4567a06a1e7f2
+2026-02-02 17:49:59 [INFO]: [ClinicalDashboard] Response: appointments=2, labs=3, critical=0
+2026-02-02 17:50:00 [INFO]: Client disconnected: Q9ZmWDyQQTvOcccpAAAF
+2026-02-02 17:51:04 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:52:33 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-02 17:52:33 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:52:42 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:52:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:52:42 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:52:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:52:42 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:52:42 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:52:42 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:52:42 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:52:42 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:53:26 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-02 17:53:26 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:53:33 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:54:12 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-02 17:54:12 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:54:17 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:54:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:54:17 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:54:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:54:17 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:54:17 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:54:17 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:54:17 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:54:17 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:56:59 [INFO]: [PreAuthAgent] Starting packet generation for case 698092c82ade0406510647d6 by user 697f269a52f4567a06a1e802
+2026-02-02 17:57:12 [INFO]: [PreAuthAgent] Packet generated successfully in 13353ms
+2026-02-02 17:57:41 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 17:57:44 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 17:57:44 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 17:57:54 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 17:57:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:57:54 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 17:57:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:57:54 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 17:57:54 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 17:57:54 [INFO]: 🔌 WebSocket enabled
+2026-02-02 17:57:54 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 17:57:54 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 17:58:03 [INFO]: [PreAuthAgent] Starting packet generation for case 698092c82ade0406510647d6 by user 697f269a52f4567a06a1e802
+2026-02-02 17:58:12 [INFO]: [PreAuthAgent] Packet generated successfully in 8826ms
+2026-02-02 18:00:00 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 18:00:03 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 18:00:03 [INFO]: 🔧 Checking inventory policy defaults...
+2026-02-02 18:00:10 [INFO]: 🔧 Inventory policy defaults complete: 0 created, 0 updated, 11 skipped
+2026-02-02 18:00:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 18:00:10 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 18:00:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 18:00:10 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 18:00:10 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 18:00:10 [INFO]: 🔌 WebSocket enabled
+2026-02-02 18:00:10 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 18:00:10 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 18:00:16 [INFO]: [PreAuthAgent] Starting packet generation for case 698092c82ade0406510647d6 by user 697f269a52f4567a06a1e802
+2026-02-02 18:00:22 [INFO]: [PreAuthAgent] Packet generated successfully in 5572ms
+2026-02-02 18:00:36 [WARN]: MongoDB disconnected. Attempting to reconnect...
