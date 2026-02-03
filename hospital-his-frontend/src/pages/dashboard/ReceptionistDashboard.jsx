@@ -528,6 +528,24 @@ const ReceptionistDashboard = () => {
                                     →
                                 </div>
                             </button>
+
+                            <button
+                                onClick={() => navigate('/dashboard/voice-assistant')}
+                                className="w-full group flex items-center justify-between p-4 bg-white/5 hover:bg-white/15 border border-white/5 hover:border-white/20 rounded-2xl transition-all duration-300"
+                            >
+                                <div className="flex items-center gap-4">
+                                    <div className="p-2 bg-emerald-500 rounded-xl group-hover:scale-110 transition-transform">
+                                        <Bell size={20} className="text-white" />
+                                    </div>
+                                    <div className="text-left">
+                                        <div className="font-bold text-sm">Voice Assistant</div>
+                                        <div className="text-[10px] opacity-60">AI Receptionist</div>
+                                    </div>
+                                </div>
+                                <div className="opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all">
+                                    →
+                                </div>
+                            </button>
                         </div>
                     </motion.div>
 

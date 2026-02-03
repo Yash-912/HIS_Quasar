@@ -81,6 +81,9 @@ import CodingDashboard from './pages/coding/CodingDashboard';
 import CodingQueue from './pages/coding/CodingQueue';
 import ProcedureCodes from './pages/coding/ProcedureCodes';
 
+// Voice Assistant
+import VoiceAssistant from './pages/voice/VoiceAssistant';
+
 function App() {
   return (
     <Provider store={store}>
@@ -134,6 +137,9 @@ function App() {
               <Route path="coding/queue" element={<CodingQueue />} />
               <Route path="coding/review" element={<CodingQueue />} />
               <Route path="coding/procedure-codes" element={<ProcedureCodes />} />
+
+              {/* Voice Assistant */}
+              <Route path="voice-assistant" element={<VoiceAssistant />} />
             </Route>
 
             {/* Admin Routes */}

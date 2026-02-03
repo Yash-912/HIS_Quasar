@@ -16198,3 +16198,472 @@ Error: AI summary failed: LLM API failed: User not found.
 2026-01-27 02:31:59 [INFO]: [ClinicalDashboard] Fetching stats for doctor 6970e6e6ae32f124038cc0a6
 2026-01-27 02:32:00 [INFO]: [ClinicalDashboard] Response: appointments=1, labs=20, critical=9
 2026-01-27 02:32:01 [INFO]: Client disconnected: pixHqhPLKkzcMtpGAAAC
+2026-02-02 08:23:15 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-02 08:23:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 08:23:15 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 08:23:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 08:23:15 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 08:23:15 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 08:23:15 [INFO]: 🔌 WebSocket enabled
+2026-02-02 08:23:15 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 08:23:15 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 10:03:38 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 10:03:49 [INFO]: MongoDB reconnected
+2026-02-02 10:22:44 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-00.fs2fnzl.mongodb.net
+2026-02-02 10:22:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 10:22:44 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-02 10:22:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 10:22:44 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-02 10:22:44 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-02 10:22:44 [INFO]: 🔌 WebSocket enabled
+2026-02-02 10:22:44 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-02 10:22:44 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-02 11:01:30 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 11:17:56 [INFO]: MongoDB reconnected
+2026-02-02 12:08:46 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 22:48:53 [INFO]: MongoDB reconnected
+2026-02-02 22:49:15 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-02 22:49:26 [INFO]: MongoDB reconnected
+2026-02-02 23:56:11 [INFO]: Client connected: M0zHR8DGFuQ1ir3PAAAC
+2026-02-02 23:56:11 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:11 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:11 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:11 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:12 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:12 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:14 [ERROR]: User not found
+Error: User not found
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:39:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-02 23:56:27 [INFO]: Client disconnected: M0zHR8DGFuQ1ir3PAAAC
+2026-02-02 23:56:41 [INFO]: Client connected: S149-2IMs0acKygNAAAF
+2026-02-02 23:56:41 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-02T00:00:00.000Z to 2026-02-03T00:00:00.000Z
+2026-02-02 23:56:41 [INFO]: User 697f269a52f4567a06a1e7fa joined personal room
+2026-02-02 23:56:41 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 56
+2026-02-02 23:56:41 [INFO]: [ReceptionistDashboard] Fetching stats for date range: 2026-02-02T00:00:00.000Z to 2026-02-03T00:00:00.000Z
+2026-02-02 23:56:41 [INFO]: [ReceptionistDashboard] Registrations today: 1, Total patients: 56
+2026-02-02 23:56:51 [INFO]: Client disconnected: S149-2IMs0acKygNAAAF
+2026-02-03 00:54:12 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-03 00:54:22 [INFO]: MongoDB reconnected
+2026-02-03 01:17:30 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-01.fs2fnzl.mongodb.net
+2026-02-03 01:17:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 01:17:30 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-03 01:17:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 01:17:30 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-03 01:17:30 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-03 01:17:30 [INFO]: 🔌 WebSocket enabled
+2026-02-03 01:17:30 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-03 01:17:30 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 01:19:33 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-03 01:19:44 [INFO]: MongoDB reconnected
+2026-02-03 01:56:26 [ERROR]: Please provide email and password
+Error: Please provide email and password
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:17:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+2026-02-03 01:59:34 [ERROR]: Please provide email and password
+Error: Please provide email and password
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:17:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+2026-02-03 02:01:24 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-03 02:02:07 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:24:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-03 02:09:59 [ERROR]: Invalid credentials
+Error: Invalid credentials
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\auth.controller.js:36:21
+2026-02-03 02:12:56 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:13:28 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:28:53 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:29:11 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:34:55 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:35:04 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:35:13 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:35:20 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:38:15 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:39:26 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:41:11 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:45:40 [ERROR]: Not authorized to access this route
+Error: Not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:48:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+2026-02-03 02:48:25 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 02:54:21 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 02:54:30 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 02:54:43 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 03:06:52 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 03:41:31 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-03 07:40:31 [INFO]: MongoDB reconnected
+2026-02-03 10:20:31 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-03 10:20:46 [INFO]: MongoDB reconnected
+2026-02-03 10:33:53 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 10:34:03 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 10:34:20 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 10:34:30 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 10:44:47 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 10:45:04 [ERROR]: Search query is required
+Error: Search query is required
+    at D:\cocode\HIS_Quasar\hospital-his-backend\controllers\patient.controller.js:237:21
+    at D:\cocode\HIS_Quasar\hospital-his-backend\utils\asyncHandler.js:7:21
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\auth.middleware.js:46:9
+2026-02-03 11:12:29 [INFO]: MongoDB Connected: ac-3nlnfep-shard-00-02.fs2fnzl.mongodb.net
+2026-02-03 11:12:29 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 11:12:29 [INFO]:        HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        
+2026-02-03 11:12:29 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 11:12:29 [INFO]: 🚀 Server running in development mode on port 5001
+2026-02-03 11:12:29 [INFO]: 📡 API Base URL: http://localhost:5001/api/v1
+2026-02-03 11:12:29 [INFO]: 🔌 WebSocket enabled
+2026-02-03 11:12:29 [INFO]: 📋 Health check: http://localhost:5001/api/health
+2026-02-03 11:12:29 [INFO]: ═══════════════════════════════════════════════════════════════
+2026-02-03 11:41:42 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 11:46:38 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 11:50:15 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 11:58:15 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 12:05:55 [WARN]: MongoDB disconnected. Attempting to reconnect...
+2026-02-03 12:06:06 [INFO]: MongoDB reconnected
+2026-02-03 12:09:28 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 12:20:23 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 12:37:36 [ERROR]: Appointment validation failed: doctor: Doctor is required
+ValidationError: Appointment validation failed: doctor: Doctor is required
+    at Document.invalidate (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3221:32)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\document.js:3014:17
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\mongoose\lib\schematype.js:1368:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-02-03 12:46:14 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 12:46:14 [ERROR]: User role 'receptionist' is not authorized to access this route
+Error: User role 'receptionist' is not authorized to access this route
+    at D:\cocode\HIS_Quasar\hospital-his-backend\middleware\rbac.middleware.js:22:17
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:284:15
+    at param (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\cocode\HIS_Quasar\hospital-his-backend\node_modules\express\lib\router\index.js:280:10)
+2026-02-03 12:56:06 [INFO]: [PatientRegistration] New patient registered: PAT000057 - Yash Doke

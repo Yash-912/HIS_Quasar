@@ -13,3 +13,4 @@ export { default as bedService } from './bed.service';
 export { default as careplanService } from './careplan.service';
 export { default as staffService } from './staff.service';
 export { default as surgeryService } from './surgery.service';
+export { default as voiceAgentService } from './voiceAgent.service';
