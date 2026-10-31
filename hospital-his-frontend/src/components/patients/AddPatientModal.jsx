@@ -287,6 +287,8 @@ const AddPatientModal = ({ isOpen, onClose }) => {
         try {
             // Prepare data for submission
             const submitData = { ...formData };
+            // Optional enum fields must be omitted (not '') when unset
+            if (!submitData.bloodGroup) delete submitData.bloodGroup;
 
             // If ID image was captured, we'll send it as base64
             // Backend will handle saving and return the path

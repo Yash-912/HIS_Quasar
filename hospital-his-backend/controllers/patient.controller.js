@@ -62,6 +62,8 @@ const logger = require('../utils/logger');
  */
 exports.createPatient = asyncHandler(async (req, res, next) => {
     const patientData = { ...req.body };
+    // Optional enum field: treat empty string as not provided
+    if (!patientData.bloodGroup) delete patientData.bloodGroup;
 
     // Handle ID Document Image Upload
     if (req.body.idDocumentImage) {
