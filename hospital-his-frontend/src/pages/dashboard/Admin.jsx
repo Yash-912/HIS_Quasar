@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
-import { API_BASE_URL } from '../../config';
+import { API_BASE_URL, getToken } from '../../config';
 
 const API_URL = `${API_BASE_URL}`;
 
@@ -30,7 +30,7 @@ const Admin = () => {
     const [loading, setLoading] = useState(true);
 
     const getAuthHeaders = () => ({
-        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+        headers: { Authorization: `Bearer ${getToken()}` }
     });
 
     useEffect(() => {

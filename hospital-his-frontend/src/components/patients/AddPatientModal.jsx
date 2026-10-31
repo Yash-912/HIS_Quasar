@@ -6,7 +6,7 @@ import { createPatient } from '../../features/patients/patientsSlice';
 import ScanIDModal from '../idScan/ScanIDModal';
 
 import axios from 'axios';
-import { API_BASE_URL } from '../../config';
+import { API_BASE_URL, getToken } from '../../config';
 
 const API_URL = `${API_BASE_URL}`;
 
@@ -87,7 +87,7 @@ const AddPatientModal = ({ isOpen, onClose }) => {
 
         setIsSearchingDoctors(true);
         try {
-            const token = localStorage.getItem('token');
+            const token = getToken();
             const response = await axios.get(`${API_URL}/users/doctors/search?query=${encodeURIComponent(query)}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
