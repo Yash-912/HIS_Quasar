@@ -60,3 +60,6 @@ build/
 # ===== Misc =====
 coverage/
 .cache/
+
+# Vercel local link
+.vercel/
