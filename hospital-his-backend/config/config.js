@@ -5,6 +5,10 @@ require('dotenv').config();
  * Centralized environment variables and configuration settings
  */
 
+if (process.env.NODE_ENV === 'production' && !process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET must be set in production');
+}
+
 const config = {
     // Server Configuration
     port: process.env.PORT || 5001,

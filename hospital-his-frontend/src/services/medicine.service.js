@@ -4,8 +4,9 @@
  */
 
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
-const API_URL = 'http://localhost:5001/api/v1/medicines';
+const API_URL = `${API_BASE_URL}/medicines`;
 
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user') || '{}');

@@ -6,8 +6,9 @@ import { createPatient } from '../../features/patients/patientsSlice';
 import ScanIDModal from '../idScan/ScanIDModal';
 
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
 
-const API_URL = 'http://localhost:5001/api/v1';
+const API_URL = `${API_BASE_URL}`;
 
 const AddPatientModal = ({ isOpen, onClose }) => {
     const dispatch = useDispatch();

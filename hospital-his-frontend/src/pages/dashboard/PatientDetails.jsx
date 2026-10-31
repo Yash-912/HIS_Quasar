@@ -5,6 +5,7 @@ import patientsService from '../../services/patients.service';
 import toast from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Calendar, Activity, User, MapPin, Phone, Mail, Clock, FlaskConical, X, AlertCircle, CheckCircle, BedDouble } from 'lucide-react';
+import { API_ORIGIN } from '../../config';
 
 const PatientDetails = () => {
     const { id } = useParams();
@@ -141,7 +142,7 @@ const PatientDetails = () => {
                                 </div>
                                 {!isDoctor && (
                                     <a
-                                        href={`http://localhost:5001/${patient.idDocument.imagePath}`}
+                                        href={`${API_ORIGIN}/${patient.idDocument.imagePath}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="px-3 py-1.5 bg-blue-100 text-blue-600 text-xs font-medium rounded-lg hover:bg-blue-200"
@@ -310,7 +311,7 @@ const PatientDetails = () => {
                                 {selectedLabResult.reportPdf && (
                                     <div className="flex gap-2 mb-4">
                                         <a
-                                            href={`http://localhost:5001/${selectedLabResult.reportPdf.replace(/\\\\/g, '/')}`}
+                                            href={`${API_ORIGIN}/${selectedLabResult.reportPdf.replace(/\\\\/g, '/')}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-blue-600 flex items-center gap-2"

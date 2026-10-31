@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FlaskConical, Eye, X, FileText, Bot, Loader, AlertTriangle, CheckCircle, RefreshCw } from 'lucide-react';
 import labService from '../../services/lab.service';
+import { API_ORIGIN } from '../../config';
 
 /**
  * DoctorLabTests - Doctor page to view completed lab tests with PDF + AI Summary
@@ -92,7 +93,7 @@ const DoctorLabTests = () => {
             const pdfPath = selectedTest.reportPdf.startsWith('/')
                 ? selectedTest.reportPdf
                 : '/' + selectedTest.reportPdf;
-            return `http://localhost:5001${pdfPath}`;
+            return `${API_ORIGIN}${pdfPath}`;
         }
         return null;
     };

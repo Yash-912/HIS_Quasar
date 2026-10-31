@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Upload, FileText, CheckCircle, AlertCircle, Search, User } from 'lucide-react';
 import labReportService from '../../services/labReport.service';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
 
 /**
  * LabReportUpload - Lab tech page to upload PDF reports for patients
@@ -23,7 +24,7 @@ const LabReportUpload = () => {
     const fetchPatients = async () => {
         try {
             const user = JSON.parse(localStorage.getItem('user'));
-            const response = await axios.get('http://localhost:5001/api/v1/patients', {
+            const response = await axios.get(`${API_BASE_URL}/patients`, {
                 headers: { Authorization: `Bearer ${user?.token}` }
             });
             setPatients(response.data.data || []);

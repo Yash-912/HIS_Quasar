@@ -62,6 +62,8 @@ const onboardingRoutes = require('./routes/onboarding.routes');
 
 // Initialize Express app
 const app = express();
+// Behind Render's proxy: needed for correct client IPs / rate limiting
+app.set('trust proxy', 1);
 const httpServer = createServer(app);
 
 // Initialize Socket.io

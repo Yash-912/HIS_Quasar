@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 // Align with your backend server URL
-const API_URL = 'http://localhost:5001/api/v1/auth/';
+const API_URL = `${API_BASE_URL}/auth/`;
 
 // Login user
 const login = async (userData) => {

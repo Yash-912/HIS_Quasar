@@ -14,8 +14,9 @@ import {
 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
 
-const API_URL = 'http://localhost:5001/api/v1';
+const API_URL = `${API_BASE_URL}`;
 
 const Admin = () => {
     const [activeTab, setActiveTab] = useState('discounts');

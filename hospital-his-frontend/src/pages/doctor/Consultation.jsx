@@ -8,8 +8,9 @@ import ClinicalCodingTab from '../../components/clinical/ClinicalCodingTab';
 import HandwritingCanvas from '../../components/doctor/HandwritingCanvas';
 import MedicineAutocomplete from '../../components/prescription/MedicineAutocomplete';
 import systemSettingsService from '../../services/systemSettings.service';
+import { API_BASE_URL } from '../../config';
 
-const API_RES_URL = 'http://localhost:5001/api/v1/';
+const API_RES_URL = `${API_BASE_URL}/`;
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
     return { headers: { Authorization: `Bearer ${user?.token}` } };

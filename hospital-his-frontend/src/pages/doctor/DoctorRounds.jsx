@@ -21,8 +21,9 @@ import {
 import axios from 'axios';
 import CarePlanCreator from '../../components/doctor/CarePlanCreator';
 import * as carePlanService from '../../services/careplan.service';
+import { API_BASE_URL } from '../../config';
 
-const API_URL = 'http://localhost:5001/api/v1';
+const API_URL = `${API_BASE_URL}`;
 
 const getAuthHeaders = () => {
     const user = JSON.parse(localStorage.getItem('user'));

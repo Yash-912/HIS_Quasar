@@ -1,0 +1,42 @@
+# Render Blueprint — New > Blueprint > select this repo/branch.
+services:
+  - type: web
+    name: his-backend
+    runtime: node
+    rootDir: hospital-his-backend
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false        # your Vercel URL, e.g. https://his.vercel.app
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: AI_OCR_SERVICE_URL
+        sync: false        # optional: URL of his-id-ocr if you deploy it
+
+  # Optional: heavy (torch + transformers) — needs a paid instance with >=2GB RAM.
+  # Uncomment to deploy the ID-card OCR service.
+  # - type: web
+  #   name: his-id-ocr
+  #   runtime: docker
+  #   rootDir: his-id-ocr
+  #   plan: standard
+  #   healthCheckPath: /health
+  #   envVars:
+  #     - key: CORS_ORIGINS
+  #       sync: false

@@ -14,6 +14,7 @@ import EmergencyTriage from './EmergencyTriage';
 import EmergencyTreatment from './EmergencyTreatment';
 import DowntimeMode from './DowntimeMode';
 import EmergencyRegistration from './EmergencyRegistration';
+import { API_ORIGIN } from '../../config';
 
 const TRIAGE_COLORS = {
     critical: { bg: 'bg-red-600', text: 'text-white', label: 'Critical' },
@@ -68,7 +69,7 @@ const EmergencyDashboard = () => {
 
     // Socket connection
     useEffect(() => {
-        const socketInstance = io('http://localhost:5001', {
+        const socketInstance = io(API_ORIGIN, {
             withCredentials: true,
         });
 

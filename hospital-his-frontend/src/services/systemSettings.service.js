@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
-const API_URL = 'http://localhost:5001/api/v1/system-settings';
+const API_URL = `${API_BASE_URL}/system-settings`;
 
 // Get token from local storage
 const getConfig = () => {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import labReportService from '../../services/labReport.service';
+import { API_ORIGIN } from '../../config';
 
 /**
  * LabReportView - Doctor-facing page for viewing PDF lab reports with AI summary
@@ -255,7 +256,7 @@ const LabReportView = () => {
                     <div className="p-4">
                         {report?.pdf?.url ? (
                             <iframe
-                                src={`http://localhost:5001${report.pdf.url}`}
+                                src={`${API_ORIGIN}${report.pdf.url}`}
                                 className="w-full h-[600px] border rounded-lg"
                                 title="Lab Report PDF"
                             />
