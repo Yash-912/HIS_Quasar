@@ -54,6 +54,8 @@ const TARGET = {
     SystemSettings: 1, SystemConfig: 5, Counter: 0,
 };
 const DEFAULT_TARGET = 12;
+// Emergency numbers are derived from today's document count, so backdating would collide
+const NO_BACKDATE = new Set(['Emergency']);
 const SKIP = new Set(['Counter']); // maintained by the application itself
 
 // ---------------------------------------------------------------- value generation
@@ -442,7 +444,7 @@ async function run(io, models, opts = {}) {
                         setPath(d, p, `${M.modelName.slice(0, 3).toUpperCase()}-MK${pad(have + i + 1, 5)}`);
                     }
                 });
-                if (M.schema.options.timestamps) d.createdAt = daysAgo(int(0, 60));
+                if (M.schema.options.timestamps && !NO_BACKDATE.has(n)) d.createdAt = daysAgo(int(0, 60));
                 try {
                     const created = await io.create(M, d);
                     ctx.add(n, Object.assign({}, d, plain(created)));
