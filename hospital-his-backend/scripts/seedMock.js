@@ -54,8 +54,9 @@ const TARGET = {
     SystemSettings: 1, SystemConfig: 5, Counter: 0,
 };
 const DEFAULT_TARGET = 12;
-// Emergency numbers are derived from today's document count, so backdating would collide
-const NO_BACKDATE = new Set(['Emergency']);
+// Emergency numbers come from a save hook that counts today's documents and collides with
+// mock data, so these models are inserted without save hooks and carry their own number.
+const NO_HOOK = new Set(['Emergency']);
 const SKIP = new Set(['Counter']); // maintained by the application itself
 
 // ---------------------------------------------------------------- value generation
@@ -315,6 +316,9 @@ const FIX = {
         const [t, m, u] = pick(items); d.title = t; d.message = m; d.actionUrl = u; d.isRead = chance(0.4);
         if (!d.isRead) delete d.readAt;
     },
+    Emergency(d, ctx, i) {
+        d.emergencyNumber = `ER${Date.now().toString().slice(-9)}${pad(i, 3)}`;
+    },
     Admission(d, ctx) {
         d.admissionDate = daysAgo(int(1, 20));
         d.status = pick(['admitted', 'admitted', 'discharged']);
@@ -440,11 +444,11 @@ async function run(io, models, opts = {}) {
                 if (FIX[n]) FIX[n](d, ctx, i);
                 // unique string fields get a deterministic unique value
                 M.schema.eachPath((p, t) => {
-                    if (t.options && t.options.unique && t.instance === 'String' && !['patientId', 'appointmentNumber'].includes(p)) {
+                    if (t.options && t.options.unique && t.instance === 'String' && !['patientId', 'appointmentNumber', 'emergencyNumber'].includes(p)) {
                         setPath(d, p, `${M.modelName.slice(0, 3).toUpperCase()}-MK${pad(have + i + 1, 5)}`);
                     }
                 });
-                if (M.schema.options.timestamps && !NO_BACKDATE.has(n)) d.createdAt = daysAgo(int(0, 60));
+                if (M.schema.options.timestamps) d.createdAt = daysAgo(int(0, 60));
                 try {
                     const created = await io.create(M, d);
                     ctx.add(n, Object.assign({}, d, plain(created)));
@@ -470,7 +474,7 @@ if (require.main === module) {
     const io = {
         count: (M) => M.countDocuments(),
         load: (M) => M.find({}).limit(500).lean(),
-        create: (M, d) => M.create(d),
+        create: (M, d) => (NO_HOOK.has(M.modelName) ? M.insertMany([d]).then((r) => r[0]) : M.create(d)),
     };
     (async () => {
         await mongoose.connect(config.mongodbUri);
